@@ -208,10 +208,12 @@ def build():
             'Context limit is a heuristic until Hermes/provider exposes exact gpt-5.5 limit.'
         ]
     }
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    tmp=OUT.with_suffix('.tmp')
-    tmp.write_text(json.dumps(payload, indent=2))
-    tmp.replace(OUT)
+    serialized = json.dumps(payload, indent=2)
+    for target in [OUT, ROOT / 'dashboard' / 'dist' / 'data' / 'live.json']:
+        target.parent.mkdir(parents=True, exist_ok=True)
+        tmp=target.with_suffix('.tmp')
+        tmp.write_text(serialized)
+        tmp.replace(target)
     return payload
 
 if __name__ == '__main__':

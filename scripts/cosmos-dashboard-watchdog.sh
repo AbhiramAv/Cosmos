@@ -1,11 +1,19 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-DASH_DIR="/opt/data/Cosmos/dashboard"
+DASH_ROOT="/opt/data/Cosmos/dashboard"
+DASH_DIR="/opt/data/Cosmos/dashboard/dist"
 PORT="8787"
 SUBDOMAIN="ram-cosmos-dashboard"
 LOG_DIR="/opt/data/logs/cosmos-dashboard"
 mkdir -p "$LOG_DIR"
+
+# Build React dashboard if the dist bundle does not exist yet.
+if [ ! -f "$DASH_DIR/index.html" ]; then
+  cd "$DASH_ROOT"
+  npm install >>"$LOG_DIR/npm-install.log" 2>&1 || true
+  npm run build >>"$LOG_DIR/build.log" 2>&1 || true
+fi
 
 # Refresh live metrics first so the dashboard never boots stale.
 /opt/data/scripts/cosmos-dashboard-collector.py >>"$LOG_DIR/collector.log" 2>&1 || true
@@ -24,7 +32,7 @@ import urllib.request, sys
 url='https://ram-cosmos-dashboard.loca.lt/'
 try:
     data=urllib.request.urlopen(url, timeout=10).read(2000).decode('utf-8','ignore')
-    sys.exit(0 if 'Cosmos Live Mission Control' in data else 1)
+    sys.exit(0 if 'Cosmos Mission Control' in data else 1)
 except Exception:
     sys.exit(1)
 PY

@@ -1,60 +1,60 @@
 {
-  "generated_at": "2026-06-02T04:08:54.656541+00:00",
-  "generated_at_epoch": 1780373334.6565406,
+  "generated_at": "2026-06-02T04:19:56.537083+00:00",
+  "generated_at_epoch": 1780373996.537083,
   "current_session": {
-    "id": "20260602_040613_c90f6c",
-    "title": "Personal Multi-Agent Operating System #3",
+    "id": "20260602_041300_c66554",
+    "title": "Personal Multi-Agent Operating System #4",
     "source": "telegram",
     "model": "gpt-5.5",
     "provider": "openai-codex",
-    "started_at": "2026-06-02T04:06:13.700691+00:00",
+    "started_at": "2026-06-02T04:13:00.933443+00:00",
     "ended_at": null,
-    "duration_seconds": 160,
-    "input_tokens": 82412,
-    "output_tokens": 5720,
-    "reasoning_tokens": 418,
-    "cache_read_tokens": 1240064,
+    "duration_seconds": 415,
+    "input_tokens": 89785,
+    "output_tokens": 13372,
+    "reasoning_tokens": 891,
+    "cache_read_tokens": 2500608,
     "message_count": 0,
     "tool_call_count": 0,
-    "api_call_count": 16,
-    "context_tokens_used": 88550,
+    "api_call_count": 31,
+    "context_tokens_used": 104048,
     "context_limit_estimate": 400000,
-    "context_pct_estimate": 22.1,
+    "context_pct_estimate": 26.0,
     "cost_status": "included",
     "estimated_cost_usd": 0.0
   },
   "totals": {
     "all": {
-      "input_tokens": 1206725,
-      "output_tokens": 128701,
-      "cache_read_tokens": 20816384,
+      "input_tokens": 1299596,
+      "output_tokens": 143213,
+      "cache_read_tokens": 23770624,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 18145,
-      "message_count": 840,
-      "tool_call_count": 378,
-      "api_call_count": 304
+      "reasoning_tokens": 19054,
+      "message_count": 1068,
+      "tool_call_count": 493,
+      "api_call_count": 340
     },
     "last_24h": {
-      "input_tokens": 410564,
-      "output_tokens": 61791,
-      "cache_read_tokens": 9569792,
+      "input_tokens": 503435,
+      "output_tokens": 76303,
+      "cache_read_tokens": 12524032,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 5583,
-      "message_count": 327,
-      "tool_call_count": 156,
-      "api_call_count": 120
+      "reasoning_tokens": 6492,
+      "message_count": 555,
+      "tool_call_count": 271,
+      "api_call_count": 156
     },
     "last_7d": {
-      "input_tokens": 1206725,
-      "output_tokens": 128701,
-      "cache_read_tokens": 20816384,
+      "input_tokens": 1299596,
+      "output_tokens": 143213,
+      "cache_read_tokens": 23770624,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 18145,
-      "message_count": 840,
-      "tool_call_count": 378,
-      "api_call_count": 304
+      "reasoning_tokens": 19054,
+      "message_count": 1068,
+      "tool_call_count": 493,
+      "api_call_count": 340
     },
-    "session_count": 8
+    "session_count": 9
   },
   "series": {
     "daily": [
@@ -109,132 +109,132 @@
       {
         "date": "2026-06-02",
         "label": "Jun 02",
-        "tokens": 228619,
-        "cache": 4779520,
-        "tools": 92,
-        "sessions": 2
+        "tokens": 336911,
+        "cache": 7733760,
+        "tools": 207,
+        "sessions": 3
       }
     ],
     "hourly_activity": [
       {
-        "hour": "04:08",
+        "hour": "04:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "05:08",
+        "hour": "05:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "06:08",
+        "hour": "06:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "07:08",
+        "hour": "07:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "08:08",
+        "hour": "08:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "09:08",
+        "hour": "09:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "10:08",
+        "hour": "10:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "11:08",
+        "hour": "11:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "12:08",
+        "hour": "12:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "13:08",
+        "hour": "13:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "14:08",
+        "hour": "14:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "15:08",
+        "hour": "15:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "16:08",
-        "messages": 5,
-        "tools": 1
-      },
-      {
-        "hour": "17:08",
+        "hour": "16:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "18:08",
+        "hour": "17:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "19:08",
+        "hour": "18:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "20:08",
+        "hour": "19:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "21:08",
+        "hour": "20:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "22:08",
+        "hour": "21:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "23:08",
+        "hour": "22:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "00:08",
+        "hour": "23:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "01:08",
+        "hour": "00:19",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "02:08",
-        "messages": 28,
-        "tools": 12
+        "hour": "01:19",
+        "messages": 0,
+        "tools": 0
       },
       {
-        "hour": "03:08",
-        "messages": 294,
-        "tools": 143
+        "hour": "02:19",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "03:19",
+        "messages": 500,
+        "tools": 248
       }
     ]
   },
@@ -242,10 +242,10 @@
     {
       "provider": "openai-codex",
       "model": "gpt-5.5",
-      "sessions": 8,
-      "tokens": 1353571,
-      "cache": 20816384,
-      "api_calls": 304,
+      "sessions": 9,
+      "tokens": 1461863,
+      "cache": 23770624,
+      "api_calls": 340,
       "cost": 0
     }
   ],
@@ -253,10 +253,10 @@
     {
       "provider": "OpenAI Codex / ChatGPT",
       "model": "gpt-5.5",
-      "used": 88550,
+      "used": 104048,
       "limit": 400000,
       "unit": "context tokens",
-      "pct": 22.1,
+      "pct": 26.0,
       "reset_at": null,
       "reset_in": "not exposed by provider",
       "source": "real Hermes session tokens + heuristic context limit"
@@ -264,12 +264,12 @@
     {
       "provider": "Hermes daily local window",
       "model": "all",
-      "used": 477938,
+      "used": 586230,
       "limit": null,
       "unit": "tokens observed in last 24h",
       "pct": null,
       "reset_at": "2026-06-03T00:00:00+00:00",
-      "reset_in": "19h 51m",
+      "reset_in": "19h 40m",
       "source": "computed from local session DB"
     },
     {
@@ -313,10 +313,10 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 10m",
-      "last_run_at": "2026-06-02T04:00:53.051846+00:00",
-      "next_run_at": "2026-06-02T04:10:53.051846+00:00",
+      "last_run_at": "2026-06-02T04:10:55.458285+00:00",
+      "next_run_at": "2026-06-02T04:20:55.458285+00:00",
       "last_status": "ok",
-      "completed": 1
+      "completed": 2
     },
     {
       "id": "9c9da76fa6f3",
@@ -324,35 +324,35 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 1m",
-      "last_run_at": "2026-06-02T04:07:54.615531+00:00",
-      "next_run_at": "2026-06-02T04:09:54.618251+00:00",
+      "last_run_at": "2026-06-02T04:18:56.482855+00:00",
+      "next_run_at": "2026-06-02T04:20:56.485983+00:00",
       "last_status": "ok",
-      "completed": 5
+      "completed": 16
     }
   ],
   "git": {
-    "status": "## main...origin/main\n M .gitignore\n M dashboard/data/live.json\n?? docs/multi-agent-workflow-adaptation.md\n?? workflows/",
-    "last_commit": "8fb8620 feat: make Cosmos dashboard live telemetry",
+    "status": "## main...origin/main\n M .gitignore\n M dashboard/README.md\n M dashboard/data/live.json\n M dashboard/index.html\n M scripts/cosmos-dashboard-collector.py\n M scripts/cosmos-dashboard-watchdog.sh\n?? dashboard/package-lock.json\n?? dashboard/package.json\n?? dashboard/src/\n?? dashboard/vite.config.ts",
+    "last_commit": "0fbc45d docs: integrate multi-agent workflow reference",
     "clean": false
   },
   "logs": [
     {
       "name": "gateway.log",
-      "size": 122745,
+      "size": 123795,
       "errors": 18,
       "warnings": 16
     },
     {
       "name": "agent.log",
-      "size": 750079,
-      "errors": 53,
-      "warnings": 32
+      "size": 801712,
+      "errors": 54,
+      "warnings": 34
     },
     {
       "name": "errors.log",
-      "size": 34245,
-      "errors": 120,
-      "warnings": 63
+      "size": 36158,
+      "errors": 131,
+      "warnings": 71
     }
   ],
   "providers": {
@@ -367,9 +367,9 @@
   },
   "disk": {
     "total": 102888095744,
-    "used": 19062996992,
-    "free": 83808321536,
-    "pct": 18.5
+    "used": 19377311744,
+    "free": 83494006784,
+    "pct": 18.8
   },
   "data_quality": [
     "Token, session, cron, git, process, and log numbers come from local Hermes/Cosmos files.",
