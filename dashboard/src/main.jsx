@@ -66,6 +66,29 @@ const departments = [
   { name: 'Observability', icon: Gauge, tone: 'blue', desc: 'Usage, cost, quotas, failures, telemetry' }
 ]
 
+const missions = [
+  { step: '01', name: 'Capture', status: 'Live', desc: 'Telegram input, voice, links, notes, and goals enter the CEO queue.', tone: 'cyan' },
+  { step: '02', name: 'Route', status: 'Active', desc: 'CEO classifies task type, budget, context needs, and specialist lane.', tone: 'violet' },
+  { step: '03', name: 'Execute', status: 'Ready', desc: 'Generic agents run research, coding, ops, personal admin, or memory work.', tone: 'pink' },
+  { step: '04', name: 'Verify', status: 'Required', desc: 'Artifacts are tested, inspected, and linked before reporting completion.', tone: 'amber' },
+  { step: '05', name: 'Remember', status: 'Guarded', desc: 'Only durable preferences, procedures, and source-of-truth facts persist.', tone: 'green' },
+  { step: '06', name: 'Dream', status: 'Nightly', desc: 'Cron reviews usage, gaps, stale work, and improvement opportunities.', tone: 'blue' }
+]
+
+const commandTemplates = [
+  { label: 'Inspect live dashboard', command: 'Cosmos: inspect the live dashboard, check console/errors, and report only blockers.' },
+  { label: 'Run mission triage', command: 'Cosmos: run mission triage. Pick the highest leverage improvement and create the next actionable task.' },
+  { label: 'Pause autonomous work', command: 'Cosmos: pause non-critical autonomous work and report what is currently scheduled.' },
+  { label: 'Show artifacts', command: 'Cosmos: list today’s artifacts, links, commits, and dashboard updates.' },
+  { label: 'Refresh telemetry', command: 'Cosmos: refresh dashboard telemetry and verify the public link.' }
+]
+
+function asArray(value, mapper) {
+  if (Array.isArray(value)) return value
+  if (value && typeof value === 'object') return Object.entries(value).map(([key, val]) => mapper ? mapper(key, val) : ({ name: key, value: val }))
+  return []
+}
+
 function compact(n) {
   if (n === null || n === undefined || Number.isNaN(Number(n))) return '—'
   const num = Number(n)
@@ -124,10 +147,12 @@ function Dashboard({ data, error }) {
   const totals = data.totals || {}
   const t24 = totals.last_24h || {}
   const t7 = totals.last_7d || {}
-  const quota = data.quotas || []
-  const providers = data.providers || []
-  const daily = data.series?.daily || []
-  const hourly = data.series?.hourly_activity || []
+  const quota = asArray(data.quotas)
+  const providers = asArray(data.providers, (provider, present) => ({ provider, model: provider, tokens: 0, sessions: present ? 1 : 0, cost_usd: 0, status: present ? 'key detected' : 'not connected' }))
+  const credentials = asArray(data.credentials, (name, present) => ({ name, present }))
+  const cron = asArray(data.cron)
+  const daily = asArray(data.series?.daily)
+  const hourly = asArray(data.series?.hourly_activity)
   const contextPct = Math.min(100, Number(cs.context_pct_estimate || 0))
   const effectiveTokens = (cs.input_tokens || 0) + (cs.output_tokens || 0) + (cs.reasoning_tokens || 0)
   const totalTokens7 = (t7.input_tokens || 0) + (t7.output_tokens || 0) + (t7.reasoning_tokens || 0)
@@ -215,6 +240,14 @@ function Dashboard({ data, error }) {
         </ResponsiveContainer>
       </Panel>
 
+      <Panel className="span-8" title="Mission Workflow Cards" icon={Workflow}>
+        <MissionWorkflow />
+      </Panel>
+
+      <Panel className="span-4" title="iPad Command Mode" icon={LayoutDashboard}>
+        <CommandMode />
+      </Panel>
+
       <Panel className="span-6" title="Agent Company / Pantheon" icon={Bot}>
         <div className="agent-grid">
           {departments.map((d) => <div className={`agent-card ${d.tone}`} key={d.name}>
@@ -226,7 +259,7 @@ function Dashboard({ data, error }) {
       <Panel className="span-6" title="Provider / Model Usage" icon={CircleDollarSign}>
         <div className="provider-table">
           {providers.map((p, i) => <div className="provider-row" key={i}>
-            <div><b>{p.model || p.provider}</b><span>{p.provider || 'provider'}</span></div>
+            <div><b>{p.model || p.provider}</b><span>{p.status || p.provider || 'provider'}</span></div>
             <span>{compact(p.tokens)} tokens</span>
             <span>{compact(p.sessions)} sessions</span>
             <span>{money(p.cost_usd)}</span>
@@ -241,14 +274,14 @@ function Dashboard({ data, error }) {
 
       <Panel className="span-4" title="Cron Registry" icon={Clock3}>
         <div className="cron-list">
-          {(data.cron || []).map((c, i) => <div className="cron" key={i}><CheckCircle2 size={16}/><div><b>{c.name}</b><span>{c.schedule || c.next_run_at || 'scheduled'}</span></div></div>)}
+          {cron.map((c, i) => <div className="cron" key={i}><CheckCircle2 size={16}/><div><b>{c.name}</b><span>{c.schedule || c.next_run_at || 'scheduled'}</span></div></div>)}
         </div>
       </Panel>
 
       <Panel className="span-4" title="Secrets Boundary" icon={ShieldCheck}>
         <div className="secret-grid">
-          {(data.credentials || []).map((c, i) => <div className="secret" key={i}><KeyRound size={16}/><span>{c.name || c}</span></div>)}
-          {!(data.credentials||[]).length && <Empty text="No exposed secret values. Key names only."/>}
+          {credentials.map((c, i) => <div className="secret" key={i}><KeyRound size={16}/><span>{c.name || c}</span></div>)}
+          {!credentials.length && <Empty text="No exposed secret values. Key names only."/>}
         </div>
       </Panel>
     </section>
@@ -285,6 +318,29 @@ function Panel({ title, icon: Icon, children, className='', action }) { return <
 function MetricLine({ label, value }) { return <div className="metric-line"><span>{label}</span><b>{value}</b></div> }
 function Segmented() { return <div className="seg"><button>Tokens</button><button>Cache</button><button>Tools</button></div> }
 function Empty({ text }) { return <div className="empty">{text}</div> }
+function MissionWorkflow() {
+  return <div className="mission-grid">
+    {missions.map((m) => <article className={`mission ${m.tone}`} key={m.step}>
+      <div className="mission-top"><span>{m.step}</span><b>{m.status}</b></div>
+      <h4>{m.name}</h4>
+      <p>{m.desc}</p>
+    </article>)}
+  </div>
+}
+function CommandMode() {
+  const [selected, setSelected] = useState(commandTemplates[0].command)
+  async function copyCommand() {
+    try { await navigator.clipboard.writeText(selected) } catch {}
+  }
+  return <div className="command-mode">
+    <p className="command-help">Tap a command, copy it, then paste/send it in Telegram. Server-side command execution comes next.</p>
+    <div className="command-buttons">
+      {commandTemplates.map((c) => <button key={c.label} className={selected === c.command ? 'active' : ''} onClick={() => setSelected(c.command)}>{c.label}</button>)}
+    </div>
+    <div className="command-output"><TerminalSquare size={16}/><span>{selected}</span></div>
+    <button className="copy-btn" onClick={copyCommand}>Copy command</button>
+  </div>
+}
 function ChartTip({ active, payload, label }) {
   if (!active || !payload?.length) return null
   return <div className="tip"><b>{label}</b>{payload.map((p,i)=><span key={i}>{p.name}: {compact(p.value)}</span>)}</div>

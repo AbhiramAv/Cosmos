@@ -29,4 +29,6 @@ scratch/
 tmp/
 external/
 *.log
+probe-*.png
+public-url.txt
 !logs/.gitkeep

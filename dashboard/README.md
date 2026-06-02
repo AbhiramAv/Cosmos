@@ -4,11 +4,19 @@ Modern React/Vite Mission Control dashboard for Cosmos Agentic OS.
 
 ## Public free link
 
+The current no-interstitial Cloudflare quick tunnel URL is stored locally at:
+
 ```text
-https://ram-cosmos-dashboard.loca.lt/
+dashboard/public-url.txt
 ```
 
-This is hosted for free using localtunnel pointed at the local dashboard server. A Hermes cron watchdog keeps the local server/tunnel alive.
+Current live URL:
+
+```text
+https://ent-tool-especially-based.trycloudflare.com/
+```
+
+Cloudflare quick tunnels are free and avoid the localtunnel browser warning screen. They are not permanent URLs; if the tunnel restarts, the watchdog refreshes `public-url.txt`.
 
 ## Frontend stack
 
@@ -96,10 +104,12 @@ http://127.0.0.1:8787
 
 - React/Vite live dashboard
 - Responsive layout for iPad and all major screen sizes
+- Mission workflow cards
+- iPad Command Mode with copyable Telegram command templates
 - Data source: `dashboard/data/live.json` / `dashboard/dist/data/live.json`
 - Collector refresh: every 1 minute
 - Browser refresh: every 20 seconds
 - No secrets in dashboard data
 - No Supabase dependency yet
-- Free public tunnel: localtunnel
+- Free public tunnel: Cloudflare quick tunnel, with localtunnel fallback
 - Watchdog script: `/opt/data/scripts/cosmos-dashboard-watchdog.sh`

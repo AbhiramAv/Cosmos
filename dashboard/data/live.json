@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-02T04:19:56.537083+00:00",
-  "generated_at_epoch": 1780373996.537083,
+  "generated_at": "2026-06-02T04:48:09.911298+00:00",
+  "generated_at_epoch": 1780375689.9112976,
   "current_session": {
     "id": "20260602_041300_c66554",
     "title": "Personal Multi-Agent Operating System #4",
@@ -9,50 +9,50 @@
     "provider": "openai-codex",
     "started_at": "2026-06-02T04:13:00.933443+00:00",
     "ended_at": null,
-    "duration_seconds": 415,
-    "input_tokens": 89785,
-    "output_tokens": 13372,
-    "reasoning_tokens": 891,
-    "cache_read_tokens": 2500608,
-    "message_count": 0,
-    "tool_call_count": 0,
-    "api_call_count": 31,
-    "context_tokens_used": 104048,
+    "duration_seconds": 2108,
+    "input_tokens": 316722,
+    "output_tokens": 26552,
+    "reasoning_tokens": 2687,
+    "cache_read_tokens": 7212544,
+    "message_count": 78,
+    "tool_call_count": 39,
+    "api_call_count": 92,
+    "context_tokens_used": 345961,
     "context_limit_estimate": 400000,
-    "context_pct_estimate": 26.0,
+    "context_pct_estimate": 86.5,
     "cost_status": "included",
     "estimated_cost_usd": 0.0
   },
   "totals": {
     "all": {
-      "input_tokens": 1299596,
-      "output_tokens": 143213,
-      "cache_read_tokens": 23770624,
+      "input_tokens": 1526533,
+      "output_tokens": 156393,
+      "cache_read_tokens": 28482560,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 19054,
-      "message_count": 1068,
-      "tool_call_count": 493,
-      "api_call_count": 340
+      "reasoning_tokens": 20850,
+      "message_count": 1146,
+      "tool_call_count": 532,
+      "api_call_count": 401
     },
     "last_24h": {
-      "input_tokens": 503435,
-      "output_tokens": 76303,
-      "cache_read_tokens": 12524032,
+      "input_tokens": 730372,
+      "output_tokens": 89483,
+      "cache_read_tokens": 17235968,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 6492,
-      "message_count": 555,
-      "tool_call_count": 271,
-      "api_call_count": 156
+      "reasoning_tokens": 8288,
+      "message_count": 633,
+      "tool_call_count": 310,
+      "api_call_count": 217
     },
     "last_7d": {
-      "input_tokens": 1299596,
-      "output_tokens": 143213,
-      "cache_read_tokens": 23770624,
+      "input_tokens": 1526533,
+      "output_tokens": 156393,
+      "cache_read_tokens": 28482560,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 19054,
-      "message_count": 1068,
-      "tool_call_count": 493,
-      "api_call_count": 340
+      "reasoning_tokens": 20850,
+      "message_count": 1146,
+      "tool_call_count": 532,
+      "api_call_count": 401
     },
     "session_count": 9
   },
@@ -109,132 +109,132 @@
       {
         "date": "2026-06-02",
         "label": "Jun 02",
-        "tokens": 336911,
-        "cache": 7733760,
-        "tools": 207,
+        "tokens": 578824,
+        "cache": 12445696,
+        "tools": 246,
         "sessions": 3
       }
     ],
     "hourly_activity": [
       {
-        "hour": "04:19",
+        "hour": "04:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "05:19",
+        "hour": "05:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "06:19",
+        "hour": "06:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "07:19",
+        "hour": "07:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "08:19",
+        "hour": "08:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "09:19",
+        "hour": "09:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "10:19",
+        "hour": "10:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "11:19",
+        "hour": "11:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "12:19",
+        "hour": "12:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "13:19",
+        "hour": "13:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "14:19",
+        "hour": "14:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "15:19",
+        "hour": "15:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "16:19",
+        "hour": "16:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "17:19",
+        "hour": "17:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "18:19",
+        "hour": "18:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "19:19",
+        "hour": "19:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "20:19",
+        "hour": "20:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "21:19",
+        "hour": "21:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "22:19",
+        "hour": "22:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "23:19",
+        "hour": "23:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "00:19",
+        "hour": "00:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "01:19",
+        "hour": "01:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "02:19",
+        "hour": "02:48",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "03:19",
+        "hour": "03:48",
         "messages": 500,
-        "tools": 248
+        "tools": 250
       }
     ]
   },
@@ -243,9 +243,9 @@
       "provider": "openai-codex",
       "model": "gpt-5.5",
       "sessions": 9,
-      "tokens": 1461863,
-      "cache": 23770624,
-      "api_calls": 340,
+      "tokens": 1703776,
+      "cache": 28482560,
+      "api_calls": 401,
       "cost": 0
     }
   ],
@@ -253,10 +253,10 @@
     {
       "provider": "OpenAI Codex / ChatGPT",
       "model": "gpt-5.5",
-      "used": 104048,
+      "used": 345961,
       "limit": 400000,
       "unit": "context tokens",
-      "pct": 26.0,
+      "pct": 86.5,
       "reset_at": null,
       "reset_in": "not exposed by provider",
       "source": "real Hermes session tokens + heuristic context limit"
@@ -264,12 +264,12 @@
     {
       "provider": "Hermes daily local window",
       "model": "all",
-      "used": 586230,
+      "used": 828143,
       "limit": null,
       "unit": "tokens observed in last 24h",
       "pct": null,
       "reset_at": "2026-06-03T00:00:00+00:00",
-      "reset_in": "19h 40m",
+      "reset_in": "19h 11m",
       "source": "computed from local session DB"
     },
     {
@@ -313,10 +313,10 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 10m",
-      "last_run_at": "2026-06-02T04:10:55.458285+00:00",
-      "next_run_at": "2026-06-02T04:20:55.458285+00:00",
+      "last_run_at": "2026-06-02T04:41:09.099562+00:00",
+      "next_run_at": "2026-06-02T04:51:09.099562+00:00",
       "last_status": "ok",
-      "completed": 2
+      "completed": 5
     },
     {
       "id": "9c9da76fa6f3",
@@ -324,35 +324,35 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 1m",
-      "last_run_at": "2026-06-02T04:18:56.482855+00:00",
-      "next_run_at": "2026-06-02T04:20:56.485983+00:00",
+      "last_run_at": "2026-06-02T04:47:09.865412+00:00",
+      "next_run_at": "2026-06-02T04:49:09.868931+00:00",
       "last_status": "ok",
-      "completed": 16
+      "completed": 44
     }
   ],
   "git": {
-    "status": "## main...origin/main\n M .gitignore\n M dashboard/README.md\n M dashboard/data/live.json\n M dashboard/index.html\n M scripts/cosmos-dashboard-collector.py\n M scripts/cosmos-dashboard-watchdog.sh\n?? dashboard/package-lock.json\n?? dashboard/package.json\n?? dashboard/src/\n?? dashboard/vite.config.ts",
-    "last_commit": "0fbc45d docs: integrate multi-agent workflow reference",
+    "status": "## main...origin/main\n M .gitignore\n M dashboard/README.md\n M dashboard/data/live.json\n M dashboard/package-lock.json\n M dashboard/package.json\n M dashboard/src/main.jsx\n M dashboard/src/styles.css\n M scripts/cosmos-dashboard-watchdog.sh\n?? dashboard/scripts/",
+    "last_commit": "f57c20d feat: rebuild dashboard with React mission control",
     "clean": false
   },
   "logs": [
     {
       "name": "gateway.log",
-      "size": 123795,
+      "size": 125473,
       "errors": 18,
       "warnings": 16
     },
     {
       "name": "agent.log",
-      "size": 801712,
-      "errors": 54,
-      "warnings": 34
+      "size": 886438,
+      "errors": 42,
+      "warnings": 33
     },
     {
       "name": "errors.log",
-      "size": 36158,
-      "errors": 131,
-      "warnings": 71
+      "size": 39857,
+      "errors": 150,
+      "warnings": 86
     }
   ],
   "providers": {
@@ -367,9 +367,9 @@
   },
   "disk": {
     "total": 102888095744,
-    "used": 19377311744,
-    "free": 83494006784,
-    "pct": 18.8
+    "used": 20221468672,
+    "free": 82649849856,
+    "pct": 19.7
   },
   "data_quality": [
     "Token, session, cron, git, process, and log numbers come from local Hermes/Cosmos files.",
