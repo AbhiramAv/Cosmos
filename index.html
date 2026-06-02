@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cosmos Agentic OS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="orb"></div>
+        <div>
+          <p class="eyebrow">Ram's Agent Company</p>
+          <h1>Cosmos OS</h1>
+        </div>
+      </div>
+      <nav>
+        <a href="#command">Command Center</a>
+        <a href="#staff">Agent Staff</a>
+        <a href="#missions">Mission Control</a>
+        <a href="#queue">Task Queue</a>
+        <a href="#dream">Dream Briefs</a>
+        <a href="#artifacts">Artifacts</a>
+        <a href="#usage">Usage</a>
+        <a href="#cron">Cron Registry</a>
+        <a href="#integrations">Integrations</a>
+      </nav>
+      <div class="side-note">
+        <strong>Mode:</strong> Blueprint MVP<br />
+        <strong>Backend:</strong> static local data<br />
+        <strong>Secrets:</strong> not stored here
+      </div>
+    </aside>
+
+    <main>
+      <section id="command" class="hero panel">
+        <div>
+          <p class="eyebrow">CEO Command Center</p>
+          <h2>Cosmos CEO is online as the orchestrator layer.</h2>
+          <p>One visual home for agents, missions, memory, artifacts, cron jobs, and AI usage.</p>
+          <div class="actions">
+            <button>Queue Task</button>
+            <button>Set Mission</button>
+            <button>Run Dream Review</button>
+            <button>Open Artifact Library</button>
+          </div>
+        </div>
+        <div class="status-card">
+          <span class="pulse"></span>
+          <h3>System status</h3>
+          <div id="systemStatus"></div>
+        </div>
+      </section>
+
+      <section class="grid two">
+        <div id="missions" class="panel">
+          <div class="section-title"><p class="eyebrow">Mission Control</p><h2>Active missions</h2></div>
+          <div id="missionsList"></div>
+        </div>
+        <div id="queue" class="panel">
+          <div class="section-title"><p class="eyebrow">Queue</p><h2>Work pipeline</h2></div>
+          <div id="queueList"></div>
+        </div>
+      </section>
+
+      <section id="staff" class="panel">
+        <div class="section-title"><p class="eyebrow">Pantheon</p><h2>Agent staff map</h2></div>
+        <div class="org-chart" id="orgChart"></div>
+      </section>
+
+      <section class="grid three">
+        <div id="dream" class="panel tall">
+          <div class="section-title"><p class="eyebrow">Dream Agent</p><h2>Nightly insights</h2></div>
+          <div id="dreamList"></div>
+        </div>
+        <div id="usage" class="panel tall">
+          <div class="section-title"><p class="eyebrow">Spend</p><h2>Usage snapshot</h2></div>
+          <div id="usageList"></div>
+        </div>
+        <div id="integrations" class="panel tall">
+          <div class="section-title"><p class="eyebrow">Connections</p><h2>Integration status</h2></div>
+          <div id="integrationsList"></div>
+        </div>
+      </section>
+
+      <section class="grid two">
+        <div id="artifacts" class="panel">
+          <div class="section-title"><p class="eyebrow">Artifact Library</p><h2>Saved outputs</h2></div>
+          <div id="artifactList"></div>
+        </div>
+        <div id="cron" class="panel">
+          <div class="section-title"><p class="eyebrow">Heartbeat</p><h2>Cron registry</h2></div>
+          <div id="cronList"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
