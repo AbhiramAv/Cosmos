@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, os, sqlite3, time, datetime, subprocess, shutil
+import json, os, re, sqlite3, time, datetime, subprocess, shutil
 from pathlib import Path
 
 ROOT = Path('/opt/data/Cosmos')
@@ -187,6 +187,87 @@ def env_key_names():
     return sorted(set(k for k in keys if k))
 
 
+
+def read_session_timing(sessions, current_view, now):
+    ended = [s for s in sessions if s.get('ended_at')]
+    last_ended = max(ended, key=lambda s: s.get('ended_at') or 0) if ended else None
+    started = current_view.get('started_at')
+    started_epoch = None
+    try:
+        if started:
+            started_epoch = datetime.datetime.fromisoformat(started.replace('Z','+00:00')).timestamp()
+    except Exception:
+        started_epoch = None
+    age_seconds = int(now - started_epoch) if started_epoch else current_view.get('duration_seconds')
+    context_pct = current_view.get('context_pct_estimate')
+    # Hermes compression/new-session resets are local context lifecycle, not provider quota resets.
+    if context_pct is None:
+        reset_status = 'unknown'
+    elif context_pct >= 85:
+        reset_status = 'near context limit; start /new soon or expect compression pressure'
+    elif context_pct >= 50:
+        reset_status = 'compression zone; context may compact before a hard reset'
+    else:
+        reset_status = 'healthy; context reset only when a new session starts'
+    return {
+        'current_started_at': current_view.get('started_at'),
+        'current_started_epoch': started_epoch,
+        'current_age_seconds': age_seconds,
+        'current_ends_at': current_view.get('ended_at'),
+        'current_end_reason': None,
+        'last_ended_at': iso(last_ended.get('ended_at')) if last_ended else None,
+        'last_ended_epoch': last_ended.get('ended_at') if last_ended else None,
+        'last_end_reason': last_ended.get('end_reason') if last_ended else None,
+        'last_session_title': last_ended.get('title') if last_ended else None,
+        'local_context_reset_status': reset_status,
+        'local_context_reset_source': 'Hermes session start/end from /opt/data/state.db; reset is local context lifecycle, separate from Codex provider quota.'
+    }
+
+
+def read_codex_reset(now):
+    # Codex does not expose a normal quota endpoint locally. The most reliable
+    # signal we have is the backend's 429 payload, which includes resets_at.
+    events=[]
+    pattern=re.compile(r"usage_limit_reached.*?'resets_at':\s*(\d+).*?'resets_in_seconds':\s*(\d+)")
+    alt=re.compile(r'"type"\s*:\s*"usage_limit_reached".*?"resets_at"\s*:\s*(\d+).*?"resets_in_seconds"\s*:\s*(\d+)')
+    for p in sorted(LOGS.glob('*.log')):
+        txt=tail_text(p, max_bytes=400_000)
+        for m in list(pattern.finditer(txt)) + list(alt.finditer(txt)):
+            line_start=txt.rfind('\n', 0, m.start())+1
+            line_end=txt.find('\n', m.end())
+            if line_end < 0: line_end=len(txt)
+            line=txt[line_start:line_end]
+            ts_match=re.match(r'(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})', line)
+            observed=None
+            if ts_match:
+                try:
+                    observed=datetime.datetime.strptime(ts_match.group(1), '%Y-%m-%d %H:%M:%S').replace(tzinfo=datetime.timezone.utc).timestamp()
+                except Exception:
+                    observed=None
+            resets_at=float(m.group(1)); resets_in=int(m.group(2))
+            events.append({'observed_at': iso(observed) if observed else None, 'observed_epoch': observed, 'resets_at': iso(resets_at), 'resets_at_epoch': resets_at, 'resets_in_seconds_reported': resets_in, 'source': str(p)})
+    events.sort(key=lambda e: e.get('observed_epoch') or 0, reverse=True)
+    latest=events[0] if events else None
+    active = bool(latest and latest['resets_at_epoch'] > now)
+    if latest:
+        seconds_until=int(latest['resets_at_epoch']-now)
+        status='rate limited now' if active else 'last observed reset has passed; next provider reset unknown until Codex returns another limit payload'
+    else:
+        seconds_until=None
+        status='no Codex limit/reset payload found in local logs yet'
+    return {
+        'provider': 'openai-codex',
+        'status': status,
+        'is_rate_limited_now': active,
+        'latest_resets_at': latest.get('resets_at') if latest else None,
+        'latest_resets_at_epoch': latest.get('resets_at_epoch') if latest else None,
+        'seconds_until_reset': max(0, seconds_until) if seconds_until is not None else None,
+        'last_limit_observed_at': latest.get('observed_at') if latest else None,
+        'last_limit_observed_epoch': latest.get('observed_epoch') if latest else None,
+        'recent_limit_events': events[:6],
+        'source': 'Parsed from Codex HTTP 429 usage_limit_reached errors in /opt/data/logs/errors.log. Codex quota cap/reset is not otherwise exposed locally.'
+    }
+
 def read_connections():
     keys=env_key_names()
     def has_any(parts): return any(any(part.upper() in k.upper() for part in parts) for k in keys)
@@ -317,6 +398,8 @@ def build():
     obsidian=read_obsidian(now)
     repo_activity=read_repo_activity(now)
     tool_usage=read_tool_usage(messages)
+    session_timing=read_session_timing(sessions, current_view, now)
+    codex_reset=read_codex_reset(now)
 
     capacities=[
         capacity(current_view.get('context_tokens_used'), current_view.get('context_limit_estimate'), 'context tokens', 'Current session context', 'real current-session tokens; context limit is a conservative estimate'),
@@ -328,6 +411,8 @@ def build():
     payload={
         'generated_at': iso(now), 'generated_at_epoch': now,
         'current_session': current_view,
+        'session_timing': session_timing,
+        'codex_reset': codex_reset,
         'active_sessions': [session_view(s, now) for s in sessions if not s.get('ended_at')][:12],
         'recent_sessions': [session_view(s, now) for s in sessions[:12]],
         'totals': {'all':totals, 'last_24h':totals24, 'last_7d':totals7, 'session_count':len(sessions)},
@@ -356,7 +441,8 @@ def build():
             'Static workflow placeholders removed; dashboard now renders cron, agent, provider, kanban, storage, and session data from live local sources.',
             'OpenAI/Codex usage is populated from Hermes sessions now. Actual OpenAI weekly cap/reset is not available locally yet, so it is labeled unknown instead of guessed.',
             'Kanban board is wired to /opt/data/kanban.db; it will show cards as soon as tasks exist.',
-            'New easy-track sources: Obsidian readiness, log/error counts, repo activity, connection readiness, and tool usage.'
+            'New easy-track sources: Obsidian readiness, log/error counts, repo activity, connection readiness, and tool usage.',
+            'Session start/end times come from the Hermes SQLite session store; Codex reset time is parsed from real 429 usage_limit_reached payloads when available.'
         ]
     }
     serialized=json.dumps(payload, indent=2)

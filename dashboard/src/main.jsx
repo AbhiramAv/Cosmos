@@ -13,6 +13,7 @@ function money(n) { return n ? `$${Number(n).toFixed(3)}` : '$0.000' }
 function duration(sec) { sec=Number(sec||0); if(sec<60)return`${sec}s`; const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60); return h?`${h}h ${m}m`:`${m}m` }
 function since(epoch) { if(!epoch)return'unknown'; const s=Math.max(0,Math.floor(Date.now()/1000-epoch)); if(s<60)return`${s}s ago`; if(s<3600)return`${Math.floor(s/60)}m ago`; if(s<86400)return`${Math.floor(s/3600)}h ago`; return`${Math.floor(s/86400)}d ago` }
 function fmtDate(s) { if(!s)return'unknown'; try { return new Date(s).toLocaleString([], { month:'short', day:'numeric', hour:'numeric', minute:'2-digit' }) } catch { return s } }
+function fmtFull(s) { if(!s)return'unknown'; try { return new Date(s).toLocaleString([], { weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit', timeZoneName:'short' }) } catch { return s } }
 function valueWithUnit(v, unit) { return unit === 'bytes' ? bytes(v) : `${compact(v)} ${unit || ''}`.trim() }
 
 function useLiveData() {
@@ -31,7 +32,7 @@ function Dashboard({data,error}) {
   const cs=data.current_session||{}, daily=data.series?.daily||[], hourly=data.series?.hourly_activity||[]
   const context=data.capacities?.find(c=>c.label==='Current session context') || {}
   const storage=data.capacities?.find(c=>c.label==='/opt/data storage') || {}
-  const openai=data.openai||{}, logs=data.logs||{}, obsidian=data.obsidian||{}, connections=data.connections||[]
+  const openai=data.openai||{}, logs=data.logs||{}, obsidian=data.obsidian||{}, connections=data.connections||[], timing=data.session_timing||{}, codex=data.codex_reset||{}
   const connected=connections.filter(c=>c.connected).length
   const totalErrors=logs.error_total||0
   return <main className="shell">
@@ -60,6 +61,7 @@ function Dashboard({data,error}) {
       <Panel className="span-8" title="OpenAI/Codex + provider usage from sessions" icon={CircleDollarSign}><ProviderUsage rows={data.provider_usage||[]} openai={openai}/></Panel>
       <Panel className="span-8" title="Usage history: actual local sessions" icon={BarChart3}><UsageChart daily={daily}/></Panel>
       <Panel className="span-4" title="24h message/tool pulse" icon={Activity}><PulseChart hourly={hourly}/></Panel>
+      <Panel className="span-12" title="Session timeline + Codex reset watch" icon={Clock3}><SessionTimingPanel timing={timing} codex={codex} cs={cs}/></Panel>
 
       <Panel className="span-6" title="Obsidian / second-brain readiness" icon={FileText}><ObsidianPanel obsidian={obsidian}/></Panel>
       <Panel className="span-6" title="Connections to wire next" icon={PlugZap}><ConnectionsPanel connections={connections}/></Panel>
@@ -91,6 +93,18 @@ function CapacityCard({cap}){return <div className="capacity-card"><div classNam
 function ProviderUsage({rows,openai}){return <div className="provider-wrap"><div className="openai-box"><b>OpenAI/Codex populated from local sessions</b><span>{compact(openai.weekly_observed_tokens)} tokens observed this week across {openai.weekly_observed_sessions||0} sessions.</span><small>{openai.reset_in}</small></div><div className="provider-table">{rows.map((p,i)=><div className="provider-row" key={i}><div><b>{p.model}</b><span>{p.provider} · {p.cost_status||'cost status unknown'}</span></div><span>{compact(p.tokens)} tokens</span><span>{compact(p.cache)} cache</span><span>{money(p.estimated_cost_usd)}</span></div>)}{!rows.length&&<Empty text="No provider sessions recorded yet."/>}</div></div>}
 function UsageChart({daily}){return <ResponsiveContainer width="100%" height={310}><AreaChart data={daily} margin={{left:-20,right:10,top:20,bottom:0}}><defs><linearGradient id="tokenFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stopColor="#00e5ff" stopOpacity=".55"/><stop offset="100%" stopColor="#00e5ff" stopOpacity="0"/></linearGradient><linearGradient id="cacheFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stopColor="#7c3cff" stopOpacity=".38"/><stop offset="100%" stopColor="#7c3cff" stopOpacity="0"/></linearGradient></defs><CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false}/><XAxis dataKey="label" tickLine={false} axisLine={false} stroke="rgba(255,255,255,.42)" fontSize={12}/><YAxis tickFormatter={compact} tickLine={false} axisLine={false} stroke="rgba(255,255,255,.42)" fontSize={12}/><Tooltip content={<ChartTip/>}/><Area type="monotone" dataKey="cache" stroke="#7c3cff" fill="url(#cacheFill)" strokeWidth={2} name="Cache read"/><Area type="monotone" dataKey="tokens" stroke="#00e5ff" fill="url(#tokenFill)" strokeWidth={3} name="Tokens"/></AreaChart></ResponsiveContainer>}
 function PulseChart({hourly}){return <ResponsiveContainer width="100%" height={270}><BarChart data={hourly} margin={{left:-20,right:8,top:10,bottom:0}}><CartesianGrid stroke="rgba(255,255,255,.07)" vertical={false}/><XAxis dataKey="hour" interval="preserveStartEnd" minTickGap={18} tickLine={false} axisLine={false} stroke="rgba(255,255,255,.38)" fontSize={11}/><YAxis tickFormatter={compact} tickLine={false} axisLine={false} stroke="rgba(255,255,255,.38)" fontSize={11}/><Tooltip content={<ChartTip/>}/><Bar dataKey="messages" radius={[8,8,0,0]} name="Messages">{hourly.map((_,i)=><Cell key={i} fill={COLORS[i%COLORS.length]}/>)}</Bar><Bar dataKey="tools" radius={[8,8,0,0]} name="Tools" fill="#3cff9b"/></BarChart></ResponsiveContainer>}
+
+function SessionTimingPanel({timing,codex,cs}){
+  const resetFuture=codex?.is_rate_limited_now && codex?.seconds_until_reset!==null && codex?.seconds_until_reset!==undefined
+  return <div className="timeline-grid">
+    <div className="time-card primary-time"><span>Current session started</span><b>{fmtFull(timing.current_started_at||cs.started_at)}</b><small>Age: {duration(timing.current_age_seconds||cs.duration_seconds)} · session id {cs.id||'unknown'}</small></div>
+    <div className="time-card"><span>Current session ends</span><b>{timing.current_ends_at ? fmtFull(timing.current_ends_at) : 'Still running'}</b><small>{timing.local_context_reset_status||'Context status unknown'}</small></div>
+    <div className="time-card"><span>Last session ended/reset</span><b>{fmtFull(timing.last_ended_at)}</b><small>{timing.last_end_reason||'unknown reason'} · {timing.last_session_title||'previous session'}</small></div>
+    <div className={`time-card ${resetFuture?'danger-time':'ok-time'}`}><span>Codex provider reset</span><b>{codex.latest_resets_at ? fmtFull(codex.latest_resets_at) : 'Not observed yet'}</b><small>{resetFuture ? `${duration(codex.seconds_until_reset)} until reset` : codex.status || 'Provider reset unavailable locally'}</small></div>
+    <div className="time-card wide"><span>What this means</span><b>Session reset ≠ Codex quota reset</b><small>Session start/end is local Hermes context. Codex reset is parsed only when OpenAI returns a real 429 usage_limit_reached payload with resets_at; otherwise the next reset is unknown instead of guessed.</small></div>
+  </div>
+}
+
 function ObsidianPanel({obsidian}){if(!obsidian.connected)return <div className="missing-box"><XCircle size={22}/><b>Obsidian not connected yet</b><p>{obsidian.question||'Need vault path.'}</p></div>; return <div className="mini-list"><MetricLine label="Vault" value={obsidian.path}/><MetricLine label="Markdown notes" value={compact(obsidian.note_count)}/>{(obsidian.recent_notes||[]).slice(0,8).map(n=><div className="mini-row" key={n.path}><FileText size={15}/><div><b>{n.relative_path}</b><span>{bytes(n.size)} · updated {fmtDate(n.updated_at)}</span></div></div>)}</div>}
 function ConnectionsPanel({connections}){return <div className="connections-grid">{connections.map(c=><div className={`connection ${c.connected?'connected':'missing'}`} key={c.name}>{c.connected?<CheckCircle2 size={17}/>:<XCircle size={17}/>}<div><b>{c.name}</b><span>{c.note}</span></div></div>)}</div>}
 function LogsPanel({logs}){return <div className="mini-list"><MetricLine label="Total error signals" value={compact(logs.error_total||0)}/><MetricLine label="Warnings" value={compact(logs.warning_total||0)}/>{(logs.logs||[]).slice(0,8).map(l=><div className="mini-row" key={l.path}><AlertTriangle size={15}/><div><b>{l.name}</b><span>{compact(l.errors)} error signals · {compact(l.warnings)} warnings · {bytes(l.size)} · {since(Date.parse(l.updated_at)/1000)}</span></div></div>)}</div>}
