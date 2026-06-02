@@ -11,3 +11,7 @@
 - Weekly AI Usage Review
 - Weekly Agent Performance Review
 - Failed Job Watchdog
+
+## Active dashboard hosting
+
+- Cosmos dashboard localtunnel watchdog — every 10 minutes — keeps `https://ram-cosmos-dashboard.loca.lt/` alive.

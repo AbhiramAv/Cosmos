@@ -1,55 +1,236 @@
 {
   "status": [
-    {"label":"Cosmos repo", "value":"Blueprint committed and pushed", "class":"status-ok"},
-    {"label":"Dashboard", "value":"Static local MVP", "class":"status-ok"},
-    {"label":"Supabase", "value":"Skipped for v1 until real tables are needed", "class":"status-warn"},
-    {"label":"Obsidian", "value":"Repo-hosted workspace created; real vault path optional", "class":"status-warn"}
+    {
+      "label": "Cosmos repo",
+      "value": "Blueprint committed and pushed",
+      "class": "status-ok"
+    },
+    {
+      "label": "Dashboard",
+      "value": "Hosted via free localtunnel URL + local server",
+      "class": "status-ok"
+    },
+    {
+      "label": "Supabase",
+      "value": "Skipped for v1 until real tables are needed",
+      "class": "status-warn"
+    },
+    {
+      "label": "Obsidian",
+      "value": "Repo-hosted workspace created; real vault path optional",
+      "class": "status-warn"
+    }
   ],
   "missions": [
-    {"title":"Build Cosmos Agentic OS v1", "description":"Create the CEO/company structure, visual layer, memory architecture, artifacts, cron registry, and dashboard foundation.", "progress":42, "status":"active"},
-    {"title":"Create Local Visual Command Center", "description":"Make Cosmos clickable and inspectable through a local web dashboard.", "progress":65, "status":"active"}
+    {
+      "title": "Build Cosmos Agentic OS v1",
+      "description": "Create the CEO/company structure, visual layer, memory architecture, artifacts, cron registry, and dashboard foundation.",
+      "progress": 42,
+      "status": "active"
+    },
+    {
+      "title": "Create Local Visual Command Center",
+      "description": "Make Cosmos clickable and inspectable through a local web dashboard.",
+      "progress": 65,
+      "status": "active"
+    }
   ],
   "queue": [
-    {"title":"Wire live Hermes cron data into dashboard", "owner":"Engineering", "status":"planned", "priority":"P2"},
-    {"title":"Create Obsidian workspace starter notes", "owner":"Knowledge", "status":"in progress", "priority":"P1"},
-    {"title":"Design authentication/public link strategy", "owner":"CEO", "status":"waiting on hosting choice", "priority":"P1"},
-    {"title":"Create Dream Agent cron after dashboard foundation", "owner":"Observability", "status":"planned", "priority":"P2"}
+    {
+      "title": "Wire live Hermes cron data into dashboard",
+      "owner": "Engineering",
+      "status": "planned",
+      "priority": "P2"
+    },
+    {
+      "title": "Create Obsidian workspace starter notes",
+      "owner": "Knowledge",
+      "status": "in progress",
+      "priority": "P1"
+    },
+    {
+      "title": "Design authentication/public link strategy",
+      "owner": "CEO",
+      "status": "waiting on hosting choice",
+      "priority": "P1"
+    },
+    {
+      "title": "Create Dream Agent cron after dashboard foundation",
+      "owner": "Observability",
+      "status": "planned",
+      "priority": "P2"
+    }
   ],
   "departments": [
-    {"name":"Operations", "purpose":"Daily execution, tasks, reminders, cron jobs, follow-ups.", "agents":["Task Manager", "Cron Manager", "Admin Assistant"]},
-    {"name":"Knowledge", "purpose":"Memory, Obsidian, notes, logs, decision history.", "agents":["Obsidian Librarian", "Memory Curator", "Daily Log Agent"]},
-    {"name":"Research", "purpose":"Public research, scraping, source validation, reports.", "agents":["Quick Researcher", "Scraper Agent", "Source Validator"]},
-    {"name":"Engineering", "purpose":"Code, GitHub, dashboard, Supabase, automation.", "agents":["Coding Agent", "Debugging Agent", "GitHub Manager", "Supabase Agent"]},
-    {"name":"Life OS", "purpose":"Habits, routines, goals, reflection, personal systems.", "agents":["Habit Agent", "Reflection Agent", "Goal Tracker"]},
-    {"name":"Observability", "purpose":"Usage, spend, failures, ROI, dashboards, watchdogs.", "agents":["Usage Tracker", "Cost Optimizer", "Failure Monitor"]}
+    {
+      "name": "Operations",
+      "purpose": "Daily execution, tasks, reminders, cron jobs, follow-ups.",
+      "agents": [
+        "Task Manager",
+        "Cron Manager",
+        "Admin Assistant"
+      ]
+    },
+    {
+      "name": "Knowledge",
+      "purpose": "Memory, Obsidian, notes, logs, decision history.",
+      "agents": [
+        "Obsidian Librarian",
+        "Memory Curator",
+        "Daily Log Agent"
+      ]
+    },
+    {
+      "name": "Research",
+      "purpose": "Public research, scraping, source validation, reports.",
+      "agents": [
+        "Quick Researcher",
+        "Scraper Agent",
+        "Source Validator"
+      ]
+    },
+    {
+      "name": "Engineering",
+      "purpose": "Code, GitHub, dashboard, Supabase, automation.",
+      "agents": [
+        "Coding Agent",
+        "Debugging Agent",
+        "GitHub Manager",
+        "Supabase Agent"
+      ]
+    },
+    {
+      "name": "Life OS",
+      "purpose": "Habits, routines, goals, reflection, personal systems.",
+      "agents": [
+        "Habit Agent",
+        "Reflection Agent",
+        "Goal Tracker"
+      ]
+    },
+    {
+      "name": "Observability",
+      "purpose": "Usage, spend, failures, ROI, dashboards, watchdogs.",
+      "agents": [
+        "Usage Tracker",
+        "Cost Optimizer",
+        "Failure Monitor"
+      ]
+    }
   ],
   "dreams": [
-    {"title":"Nightly Dream Agent", "note":"Review conversations, missions, usage, failures, memory changes, and artifacts to produce morning insights.", "type":"planned cron"},
-    {"title":"Cost optimization dream", "note":"Flag expensive model use that could have gone to OpenRouter free or cheap models.", "type":"planned"},
-    {"title":"Mission drift detector", "note":"Warn when active missions stall or lack next actions.", "type":"planned"}
+    {
+      "title": "Nightly Dream Agent",
+      "note": "Review conversations, missions, usage, failures, memory changes, and artifacts to produce morning insights.",
+      "type": "planned cron"
+    },
+    {
+      "title": "Cost optimization dream",
+      "note": "Flag expensive model use that could have gone to OpenRouter free or cheap models.",
+      "type": "planned"
+    },
+    {
+      "title": "Mission drift detector",
+      "note": "Warn when active missions stall or lack next actions.",
+      "type": "planned"
+    }
   ],
   "usage": [
-    {"label":"OpenRouter budget", "value":"$20", "note":"known budget"},
-    {"label":"OpenAI", "value":"paid", "note":"premium reasoning"},
-    {"label":"Claude", "value":"paid", "note":"deep reasoning/coding"},
-    {"label":"Supabase", "value":"skip v1", "note":"until tables are useful"}
+    {
+      "label": "OpenRouter budget",
+      "value": "$20",
+      "note": "known budget"
+    },
+    {
+      "label": "OpenAI",
+      "value": "paid",
+      "note": "premium reasoning"
+    },
+    {
+      "label": "Claude",
+      "value": "paid",
+      "note": "deep reasoning/coding"
+    },
+    {
+      "label": "Supabase",
+      "value": "skip v1",
+      "note": "until tables are useful"
+    }
   ],
   "integrations": [
-    {"name":"Telegram", "status":"connected", "note":"current command surface", "class":"status-ok"},
-    {"name":"GitHub", "status":"connected", "note":"Cosmos repo pushed via deploy key", "class":"status-ok"},
-    {"name":"Obsidian", "status":"workspace created in repo", "note":"can sync or copy to actual vault later", "class":"status-warn"},
-    {"name":"Supabase", "status":"deferred", "note":"schema drafted; no live connection yet", "class":"status-warn"},
-    {"name":"Web dashboard", "status":"local MVP", "note":"static app ready for hosting", "class":"status-ok"}
+    {
+      "name": "Telegram",
+      "status": "connected",
+      "note": "current command surface",
+      "class": "status-ok"
+    },
+    {
+      "name": "GitHub",
+      "status": "connected",
+      "note": "Cosmos repo pushed via deploy key",
+      "class": "status-ok"
+    },
+    {
+      "name": "Obsidian",
+      "status": "workspace created in repo",
+      "note": "can sync or copy to actual vault later",
+      "class": "status-warn"
+    },
+    {
+      "name": "Supabase",
+      "status": "deferred",
+      "note": "schema drafted; no live connection yet",
+      "class": "status-warn"
+    },
+    {
+      "name": "Web dashboard",
+      "status": "hosted free",
+      "note": "https://ram-cosmos-dashboard.loca.lt/ via localtunnel watchdog",
+      "class": "status-ok"
+    }
   ],
   "artifacts": [
-    {"title":"Agentic OS Blueprint", "description":"Master architecture for Cosmos CEO, departments, memory, routing, dashboard, and cron.", "type":"markdown"},
-    {"title":"Dashboard MVP", "description":"This visual command center for the first local Cosmos dashboard.", "type":"web"},
-    {"title":"Obsidian Templates", "description":"Dashboard, mission, and dream brief templates for second-brain setup.", "type":"markdown"}
+    {
+      "title": "Agentic OS Blueprint",
+      "description": "Master architecture for Cosmos CEO, departments, memory, routing, dashboard, and cron.",
+      "type": "markdown"
+    },
+    {
+      "title": "Dashboard MVP",
+      "description": "This visual command center for the first local Cosmos dashboard.",
+      "type": "web"
+    },
+    {
+      "title": "Obsidian Templates",
+      "description": "Dashboard, mission, and dream brief templates for second-brain setup.",
+      "type": "markdown"
+    }
   ],
   "cron": [
-    {"name":"Cosmos nightly GitHub sync", "schedule":"hourly watchdog, syncs once during midnight Eastern", "status":"existing"},
-    {"name":"Nightly Dream Review", "schedule":"planned", "status":"not created"},
-    {"name":"Daily Morning Brief", "schedule":"planned", "status":"not created"},
-    {"name":"Weekly Usage Review", "schedule":"planned", "status":"not created"}
+    {
+      "name": "Cosmos nightly GitHub sync",
+      "schedule": "hourly watchdog, syncs once during midnight Eastern",
+      "status": "existing"
+    },
+    {
+      "name": "Nightly Dream Review",
+      "schedule": "planned",
+      "status": "not created"
+    },
+    {
+      "name": "Daily Morning Brief",
+      "schedule": "planned",
+      "status": "not created"
+    },
+    {
+      "name": "Weekly Usage Review",
+      "schedule": "planned",
+      "status": "not created"
+    },
+    {
+      "name": "Cosmos dashboard localtunnel watchdog",
+      "schedule": "every 10 minutes",
+      "status": "enabled"
+    }
   ]
 }

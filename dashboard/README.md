@@ -2,6 +2,14 @@
 
 Static MVP dashboard for Cosmos Agentic OS.
 
+## Public free link
+
+```text
+https://ram-cosmos-dashboard.loca.lt/
+```
+
+This is hosted for free using localtunnel pointed at the local dashboard server. A Hermes cron watchdog keeps the local server/tunnel alive every 10 minutes.
+
 ## Run locally
 
 ```bash
@@ -15,12 +23,11 @@ Then open:
 http://127.0.0.1:8787
 ```
 
-If running on a remote server, the dashboard needs a secure tunnel, reverse proxy, or hosted deployment before Ram can open it from a phone/browser.
-
 ## Current status
 
 - Static HTML/CSS/JS
 - Data source: `dashboard/data/cosmos.json`
 - No secrets
 - No Supabase dependency yet
-- Ready to become a live dashboard later
+- Free public tunnel: localtunnel
+- Watchdog script: `/opt/data/scripts/cosmos-dashboard-watchdog.sh`
