@@ -236,7 +236,11 @@ def build():
     serialized=json.dumps(payload, indent=2)
     for target in [OUT, ROOT / 'dashboard' / 'dist' / 'data' / 'live.json']:
         target.parent.mkdir(parents=True, exist_ok=True)
-        tmp=target.with_suffix('.tmp'); tmp.write_text(serialized); tmp.replace(target)
+        # Use a per-process temp path so concurrent collector/watchdog runs do not
+        # steal each other's shared live.tmp before os.replace().
+        tmp=target.with_name(f'{target.stem}.{os.getpid()}.{time.time_ns()}.tmp')
+        tmp.write_text(serialized)
+        tmp.replace(target)
     return payload
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-02T05:00:11.712277+00:00",
-  "generated_at_epoch": 1780376411.712277,
+  "generated_at": "2026-06-02T12:57:38.676240+00:00",
+  "generated_at_epoch": 1780405058.6762402,
   "current_session": {
     "id": "20260602_041300_c66554",
     "title": "Personal Multi-Agent Operating System #4",
@@ -10,15 +10,15 @@
     "parent_session_id": "20260602_040613_c90f6c",
     "started_at": "2026-06-02T04:13:00.933443+00:00",
     "ended_at": null,
-    "duration_seconds": 2830,
-    "input_tokens": 381693,
-    "output_tokens": 44645,
-    "reasoning_tokens": 3995,
-    "cache_read_tokens": 9108480,
-    "message_count": 78,
-    "tool_call_count": 39,
-    "api_call_count": 116,
-    "context_tokens_used": 430333,
+    "duration_seconds": 31477,
+    "input_tokens": 493154,
+    "output_tokens": 49400,
+    "reasoning_tokens": 4646,
+    "cache_read_tokens": 11198464,
+    "message_count": 118,
+    "tool_call_count": 58,
+    "api_call_count": 138,
+    "context_tokens_used": 547200,
     "context_limit_estimate": 400000,
     "context_remaining_estimate": 0,
     "context_pct_estimate": 100,
@@ -35,15 +35,15 @@
       "parent_session_id": "20260602_040613_c90f6c",
       "started_at": "2026-06-02T04:13:00.933443+00:00",
       "ended_at": null,
-      "duration_seconds": 2830,
-      "input_tokens": 381693,
-      "output_tokens": 44645,
-      "reasoning_tokens": 3995,
-      "cache_read_tokens": 9108480,
-      "message_count": 78,
-      "tool_call_count": 39,
-      "api_call_count": 116,
-      "context_tokens_used": 430333,
+      "duration_seconds": 31477,
+      "input_tokens": 493154,
+      "output_tokens": 49400,
+      "reasoning_tokens": 4646,
+      "cache_read_tokens": 11198464,
+      "message_count": 118,
+      "tool_call_count": 58,
+      "api_call_count": 138,
+      "context_tokens_used": 547200,
       "context_limit_estimate": 400000,
       "context_remaining_estimate": 0,
       "context_pct_estimate": 100,
@@ -61,15 +61,15 @@
       "parent_session_id": "20260602_040613_c90f6c",
       "started_at": "2026-06-02T04:13:00.933443+00:00",
       "ended_at": null,
-      "duration_seconds": 2830,
-      "input_tokens": 381693,
-      "output_tokens": 44645,
-      "reasoning_tokens": 3995,
-      "cache_read_tokens": 9108480,
-      "message_count": 78,
-      "tool_call_count": 39,
-      "api_call_count": 116,
-      "context_tokens_used": 430333,
+      "duration_seconds": 31477,
+      "input_tokens": 493154,
+      "output_tokens": 49400,
+      "reasoning_tokens": 4646,
+      "cache_read_tokens": 11198464,
+      "message_count": 118,
+      "tool_call_count": 58,
+      "api_call_count": 138,
+      "context_tokens_used": 547200,
       "context_limit_estimate": 400000,
       "context_remaining_estimate": 0,
       "context_pct_estimate": 100,
@@ -271,34 +271,34 @@
   ],
   "totals": {
     "all": {
-      "input_tokens": 1591504,
-      "output_tokens": 174486,
-      "cache_read_tokens": 30378496,
+      "input_tokens": 1702965,
+      "output_tokens": 179241,
+      "cache_read_tokens": 32468480,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 22158,
-      "message_count": 1146,
-      "tool_call_count": 532,
-      "api_call_count": 425
+      "reasoning_tokens": 22809,
+      "message_count": 1186,
+      "tool_call_count": 551,
+      "api_call_count": 447
     },
     "last_24h": {
-      "input_tokens": 795343,
-      "output_tokens": 107576,
-      "cache_read_tokens": 19131904,
+      "input_tokens": 906804,
+      "output_tokens": 112331,
+      "cache_read_tokens": 21221888,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 9596,
-      "message_count": 633,
-      "tool_call_count": 310,
-      "api_call_count": 241
+      "reasoning_tokens": 10247,
+      "message_count": 673,
+      "tool_call_count": 329,
+      "api_call_count": 263
     },
     "last_7d": {
-      "input_tokens": 1591504,
-      "output_tokens": 174486,
-      "cache_read_tokens": 30378496,
+      "input_tokens": 1702965,
+      "output_tokens": 179241,
+      "cache_read_tokens": 32468480,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 22158,
-      "message_count": 1146,
-      "tool_call_count": 532,
-      "api_call_count": 425
+      "reasoning_tokens": 22809,
+      "message_count": 1186,
+      "tool_call_count": 551,
+      "api_call_count": 447
     },
     "session_count": 9
   },
@@ -355,155 +355,155 @@
       {
         "date": "2026-06-02",
         "label": "Jun 02",
-        "tokens": 663196,
-        "cache": 14341632,
-        "tools": 246,
+        "tokens": 780063,
+        "cache": 16431616,
+        "tools": 265,
         "sessions": 3
       }
     ],
     "hourly_activity": [
       {
-        "hour": "05:00",
+        "hour": "12:57",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "06:00",
+        "hour": "13:57",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "07:00",
+        "hour": "14:57",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "08:00",
-        "messages": 0,
-        "tools": 0,
-        "tokens": 0
-      },
-      {
-        "hour": "09:00",
-        "messages": 0,
-        "tools": 0,
-        "tokens": 0
-      },
-      {
-        "hour": "10:00",
-        "messages": 0,
-        "tools": 0,
-        "tokens": 0
-      },
-      {
-        "hour": "11:00",
-        "messages": 0,
-        "tools": 0,
-        "tokens": 0
-      },
-      {
-        "hour": "12:00",
-        "messages": 0,
-        "tools": 0,
-        "tokens": 0
-      },
-      {
-        "hour": "13:00",
-        "messages": 0,
-        "tools": 0,
-        "tokens": 0
-      },
-      {
-        "hour": "14:00",
-        "messages": 0,
-        "tools": 0,
-        "tokens": 0
-      },
-      {
-        "hour": "15:00",
-        "messages": 0,
-        "tools": 0,
-        "tokens": 0
-      },
-      {
-        "hour": "16:00",
+        "hour": "15:57",
         "messages": 5,
         "tools": 1,
         "tokens": 0
       },
       {
-        "hour": "17:00",
+        "hour": "16:57",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "18:00",
+        "hour": "17:57",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "19:00",
+        "hour": "18:57",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "20:00",
+        "hour": "19:57",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "21:00",
+        "hour": "20:57",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "22:00",
+        "hour": "21:57",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "23:00",
+        "hour": "22:57",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "00:00",
+        "hour": "23:57",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "01:00",
+        "hour": "00:57",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "02:00",
+        "hour": "01:57",
         "messages": 28,
         "tools": 12,
         "tokens": 0
       },
       {
-        "hour": "03:00",
+        "hour": "02:57",
         "messages": 109,
         "tools": 51,
         "tokens": 0
       },
       {
-        "hour": "04:00",
+        "hour": "03:57",
         "messages": 491,
         "tools": 246,
+        "tokens": 0
+      },
+      {
+        "hour": "04:57",
+        "messages": 40,
+        "tools": 22,
+        "tokens": 0
+      },
+      {
+        "hour": "05:57",
+        "messages": 0,
+        "tools": 0,
+        "tokens": 0
+      },
+      {
+        "hour": "06:57",
+        "messages": 0,
+        "tools": 0,
+        "tokens": 0
+      },
+      {
+        "hour": "07:57",
+        "messages": 0,
+        "tools": 0,
+        "tokens": 0
+      },
+      {
+        "hour": "08:57",
+        "messages": 0,
+        "tools": 0,
+        "tokens": 0
+      },
+      {
+        "hour": "09:57",
+        "messages": 0,
+        "tools": 0,
+        "tokens": 0
+      },
+      {
+        "hour": "10:57",
+        "messages": 0,
+        "tools": 0,
+        "tokens": 0
+      },
+      {
+        "hour": "11:57",
+        "messages": 0,
+        "tools": 0,
         "tokens": 0
       }
     ]
@@ -513,9 +513,9 @@
       "provider": "openai-codex",
       "model": "gpt-5.5",
       "sessions": 9,
-      "tokens": 1788148,
-      "cache": 30378496,
-      "api_calls": 425,
+      "tokens": 1905015,
+      "cache": 32468480,
+      "api_calls": 447,
       "estimated_cost_usd": 0,
       "cost_status": "included"
     }
@@ -523,7 +523,7 @@
   "openai": {
     "observed_sessions": 9,
     "weekly_observed_sessions": 9,
-    "weekly_observed_tokens": 1788148,
+    "weekly_observed_tokens": 1905015,
     "weekly_limit": null,
     "reset_at": null,
     "reset_in": "OpenAI weekly/message reset is not exposed by local Hermes telemetry yet",
@@ -532,7 +532,7 @@
   "quota_panels": [
     {
       "provider": "OpenAI/Codex",
-      "used": 1788148,
+      "used": 1905015,
       "limit": null,
       "remaining": null,
       "pct": null,
@@ -542,7 +542,7 @@
     },
     {
       "provider": "Current session context",
-      "used": 430333,
+      "used": 547200,
       "limit": 400000,
       "remaining": 0,
       "pct": 100,
@@ -574,7 +574,7 @@
   "capacities": [
     {
       "label": "Current session context",
-      "used": 430333,
+      "used": 547200,
       "limit": 400000,
       "remaining": 0,
       "pct": 100,
@@ -583,7 +583,7 @@
     },
     {
       "label": "All providers: last 7 days",
-      "used": 1788148,
+      "used": 1905015,
       "limit": null,
       "remaining": null,
       "pct": null,
@@ -592,7 +592,7 @@
     },
     {
       "label": "OpenAI/Codex observed weekly usage",
-      "used": 1788148,
+      "used": 1905015,
       "limit": null,
       "remaining": null,
       "pct": null,
@@ -601,9 +601,9 @@
     },
     {
       "label": "/opt/data storage",
-      "used": 20222140416,
+      "used": 20226076672,
       "limit": 102888095744,
-      "remaining": 82665955328,
+      "remaining": 82662019072,
       "pct": 19.7,
       "unit": "bytes",
       "source": "real OS disk usage"
@@ -619,30 +619,30 @@
       "script": "cosmos-nightly-sync.sh",
       "no_agent": true,
       "deliver": "origin",
-      "last_run_at": "2026-06-02T05:00:11.661940+00:00",
-      "next_run_at": "2026-06-02T06:00:00+00:00",
+      "last_run_at": "2026-06-02T12:00:45.345369+00:00",
+      "next_run_at": "2026-06-02T13:00:00+00:00",
       "last_status": "ok",
       "last_error": null,
-      "completed": 55,
+      "completed": 62,
       "target": "Abhiram",
       "purpose": "Script-only watchdog for Ram's Cosmos repository. The script is silent except during the 00:00-00:59 America/New_York window, when it commits and pushes /opt/data/Cosmos to https://github.com/AbhiramAv/Cosmos. Empty stdo"
     },
     {
       "id": "ea3385f39c25",
-      "name": "Cosmos dashboard Cloudflare tunnel watchdog",
+      "name": "Cosmos dashboard localtunnel watchdog",
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 10m",
       "script": "cosmos-dashboard-watchdog.sh",
       "no_agent": true,
       "deliver": "origin",
-      "last_run_at": "2026-06-02T04:51:10.588141+00:00",
-      "next_run_at": "2026-06-02T05:01:10.588141+00:00",
+      "last_run_at": "2026-06-02T12:52:54.352420+00:00",
+      "next_run_at": "2026-06-02T12:57:13.340691+00:00",
       "last_status": "ok",
       "last_error": null,
-      "completed": 6,
+      "completed": 54,
       "target": "Abhiram",
-      "purpose": ""
+      "purpose": "Script-only watchdog for Ram's Cosmos dashboard. Builds the React dashboard if needed, refreshes live metrics, starts/keeps the local HTTP server on port 8787, and starts/keeps the localtunnel public URL https://ram-cosm"
     },
     {
       "id": "9c9da76fa6f3",
@@ -653,11 +653,11 @@
       "script": "cosmos-dashboard-collector.py",
       "no_agent": true,
       "deliver": "origin",
-      "last_run_at": "2026-06-02T04:59:11.540296+00:00",
-      "next_run_at": "2026-06-02T05:01:11.582427+00:00",
+      "last_run_at": "2026-06-02T12:56:54.827694+00:00",
+      "next_run_at": "2026-06-02T12:57:10.114881+00:00",
       "last_status": "ok",
       "last_error": null,
-      "completed": 56,
+      "completed": 532,
       "target": "Abhiram",
       "purpose": ""
     }
@@ -731,8 +731,8 @@
     }
   ],
   "git": {
-    "status": "## main...origin/main\n M dashboard/data/live.json\n M dashboard/src/main.jsx\n M dashboard/src/styles.css\n M scripts/cosmos-dashboard-collector.py",
-    "last_commit": "3cbe6ae fix: stabilize dashboard rendering and add command mode",
+    "status": "## main...origin/main\n M dashboard/data/live.json\n M scripts/cosmos-dashboard-collector.py",
+    "last_commit": "bbf0e20 feat: make dashboard operational and data-driven",
     "clean": false
   },
   "processes": {
@@ -741,8 +741,8 @@
   },
   "disk": {
     "total": 102888095744,
-    "used": 20222140416,
-    "free": 82649178112,
+    "used": 20226076672,
+    "free": 82645241856,
     "pct": 19.7
   },
   "data_quality": [
