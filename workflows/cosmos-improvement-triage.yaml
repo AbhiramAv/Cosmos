@@ -1,0 +1,162 @@
+# Draft Cosmos workflow config inspired by tonbistudio/hermes-multi-agent-workflow.
+# This is not active yet. It documents the first workflow Cosmos should implement:
+# a self-improvement triage loop for dashboard gaps, user ideas, bugs, and automation opportunities.
+
+name: cosmos-improvement-triage
+board: cosmos-improvements
+workspace_root: ./workflows/work
+cost_gate_usd: 2
+
+sources:
+  - id: ram_requests
+    profile: default
+    skill: cosmos-request-scout
+    schedule: "*/30 * * * *"
+    query: |
+      Review recent Ram/Cosmos conversations and identify concrete requests,
+      dissatisfaction, dashboard gaps, or workflow improvements. Only emit items
+      that can be turned into an actionable improvement.
+
+  - id: telemetry_gaps
+    profile: default
+    skill: cosmos-telemetry-scout
+    schedule: "17 * * * *"
+    query: |
+      Inspect dashboard live metrics, Hermes logs, cron registry, and Git status.
+      Find missing telemetry, failed jobs, stale data, unavailable provider quota
+      fields, broken tunnels, and visibility gaps.
+
+  - id: external_references
+    profile: webresearch
+    skill: cosmos-reference-scout
+    schedule: "43 */4 * * *"
+    query: |
+      Review user-provided references such as multi-agent workflow repos, Hermes
+      examples, and dashboard/agent OS inspiration. Extract implementable patterns
+      and route them into Cosmos if they are useful.
+
+item_schema:
+  fields:
+    - title
+    - claim
+    - sources
+    - why_it_may_matter
+    - current_gap
+    - expected_impact
+    - risk_level
+    - likely_department
+    - suggested_route
+
+dedup:
+  method: token-cosine
+  duplicate_threshold: 0.72
+  possible_threshold: 0.46
+
+rubric:
+  threshold: 68
+  dimensions:
+    - {key: user_impact, max: 25, hint: "How much better this makes Cosmos for Ram"}
+    - {key: automation_leverage, max: 20, hint: "How much repeated work this removes"}
+    - {key: feasibility, max: 20, hint: "Can it be built with current local tools/data"}
+    - {key: urgency, max: 15, hint: "Does this block the current Cosmos build"}
+    - {key: observability_value, max: 10, hint: "Does it make hidden agent/system work visible"}
+    - {key: safety_fit, max: 10, hint: "Can it be done without exposing secrets or risky autonomy"}
+
+research_lanes:
+  role: researcher
+  lanes:
+    - verify_need
+    - inspect_current_state
+    - reference_solution_audit
+    - implementation_estimate
+  classifier_lane: implementation_estimate
+
+route:
+  classifier: implementation_estimate.recommended_route
+  map:
+    dashboard: dashboard
+    workflow_engine: workflow_engine
+    docs: docs
+    integration: integration
+    research: research
+    unsafe_or_unclear: shelve
+    low_value: shelve
+
+paths:
+  dashboard:
+    prep:
+      - {stage: define_metric_contract, role: analyst}
+      - {stage: design_ui_panel, role: designer}
+    propose: {role: orchestrator, template: workflows/templates/proposals/dashboard.md}
+    fulfill:
+      - {stage: implement_collector_change, role: builder}
+      - {stage: implement_dashboard_ui, role: builder}
+      - {stage: verify_public_dashboard, role: tester}
+      - {stage: final_report, role: orchestrator}
+    workspace_subdir: dashboard
+    scope_rails: workflows/templates/rails/dashboard.md
+
+  workflow_engine:
+    prep:
+      - {stage: specify_pipeline_config, role: analyst}
+      - {stage: map_to_hermes_kanban, role: engineer}
+    propose: {role: orchestrator, template: workflows/templates/proposals/workflow_engine.md}
+    fulfill:
+      - {stage: implement_workflow_config, role: builder}
+      - {stage: run_reference_tests, role: tester}
+      - {stage: dry_run_pipeline, role: tester}
+      - {stage: final_report, role: orchestrator}
+    workspace_subdir: workflow_engine
+    scope_rails: workflows/templates/rails/workflow_engine.md
+
+  docs:
+    prep:
+      - {stage: outline_doc_change, role: analyst}
+    propose: {role: orchestrator, template: workflows/templates/proposals/docs.md}
+    fulfill:
+      - {stage: write_docs, role: writer}
+      - {stage: consistency_check, role: tester}
+      - {stage: final_report, role: orchestrator}
+    workspace_subdir: docs
+
+  integration:
+    prep:
+      - {stage: connection_requirements, role: analyst}
+      - {stage: security_review, role: security}
+    propose: {role: orchestrator, template: workflows/templates/proposals/integration.md}
+    fulfill:
+      - {stage: implement_connection, role: builder}
+      - {stage: verify_no_secret_leak, role: tester}
+      - {stage: final_report, role: orchestrator}
+    workspace_subdir: integrations
+    scope_rails: workflows/templates/rails/integration.md
+
+  research:
+    prep:
+      - {stage: research_plan, role: researcher}
+    propose: {role: orchestrator, template: workflows/templates/proposals/research.md}
+    fulfill:
+      - {stage: deep_research, role: researcher}
+      - {stage: synthesize, role: analyst}
+      - {stage: final_report, role: orchestrator}
+    workspace_subdir: research
+
+  shelve:
+    auto: true
+
+roles:
+  orchestrator: default
+  researcher: openrouter_researcher
+  analyst: gpt_analyst
+  designer: claude_designer
+  engineer: claude_engineer
+  builder: codex_builder
+  tester: gpt_tester
+  writer: gpt_writer
+  security: claude_security
+
+gate:
+  channel: telegram
+  approve: [approve]
+  shelve: [shelve, "reject the rest"]
+  modify: [modify]

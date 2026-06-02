@@ -1,60 +1,60 @@
 {
-  "generated_at": "2026-06-02T04:03:12.172177+00:00",
-  "generated_at_epoch": 1780372992.1721768,
+  "generated_at": "2026-06-02T04:08:54.656541+00:00",
+  "generated_at_epoch": 1780373334.6565406,
   "current_session": {
-    "id": "20260602_035604_faae67",
-    "title": "Personal Multi-Agent Operating System #2",
+    "id": "20260602_040613_c90f6c",
+    "title": "Personal Multi-Agent Operating System #3",
     "source": "telegram",
     "model": "gpt-5.5",
     "provider": "openai-codex",
-    "started_at": "2026-06-02T03:56:04.474560+00:00",
+    "started_at": "2026-06-02T04:06:13.700691+00:00",
     "ended_at": null,
-    "duration_seconds": 427,
-    "input_tokens": 114916,
-    "output_tokens": 15918,
-    "reasoning_tokens": 1538,
-    "cache_read_tokens": 2584576,
+    "duration_seconds": 160,
+    "input_tokens": 82412,
+    "output_tokens": 5720,
+    "reasoning_tokens": 418,
+    "cache_read_tokens": 1240064,
     "message_count": 0,
     "tool_call_count": 0,
-    "api_call_count": 27,
-    "context_tokens_used": 132372,
+    "api_call_count": 16,
+    "context_tokens_used": 88550,
     "context_limit_estimate": 400000,
-    "context_pct_estimate": 33.1,
+    "context_pct_estimate": 22.1,
     "cost_status": "included",
     "estimated_cost_usd": 0.0
   },
   "totals": {
     "all": {
-      "input_tokens": 1119108,
-      "output_tokens": 121057,
-      "cache_read_tokens": 18621440,
+      "input_tokens": 1206725,
+      "output_tokens": 128701,
+      "cache_read_tokens": 20816384,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 17159,
-      "message_count": 655,
-      "tool_call_count": 286,
-      "api_call_count": 280
+      "reasoning_tokens": 18145,
+      "message_count": 840,
+      "tool_call_count": 378,
+      "api_call_count": 304
     },
     "last_24h": {
-      "input_tokens": 322947,
-      "output_tokens": 54147,
-      "cache_read_tokens": 7374848,
+      "input_tokens": 410564,
+      "output_tokens": 61791,
+      "cache_read_tokens": 9569792,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 4597,
-      "message_count": 142,
-      "tool_call_count": 64,
-      "api_call_count": 96
+      "reasoning_tokens": 5583,
+      "message_count": 327,
+      "tool_call_count": 156,
+      "api_call_count": 120
     },
     "last_7d": {
-      "input_tokens": 1119108,
-      "output_tokens": 121057,
-      "cache_read_tokens": 18621440,
+      "input_tokens": 1206725,
+      "output_tokens": 128701,
+      "cache_read_tokens": 20816384,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 17159,
-      "message_count": 655,
-      "tool_call_count": 286,
-      "api_call_count": 280
+      "reasoning_tokens": 18145,
+      "message_count": 840,
+      "tool_call_count": 378,
+      "api_call_count": 304
     },
-    "session_count": 7
+    "session_count": 8
   },
   "series": {
     "daily": [
@@ -109,132 +109,132 @@
       {
         "date": "2026-06-02",
         "label": "Jun 02",
-        "tokens": 132372,
-        "cache": 2584576,
-        "tools": 0,
-        "sessions": 1
+        "tokens": 228619,
+        "cache": 4779520,
+        "tools": 92,
+        "sessions": 2
       }
     ],
     "hourly_activity": [
       {
-        "hour": "04:03",
+        "hour": "04:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "05:03",
+        "hour": "05:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "06:03",
+        "hour": "06:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "07:03",
+        "hour": "07:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "08:03",
+        "hour": "08:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "09:03",
+        "hour": "09:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "10:03",
+        "hour": "10:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "11:03",
+        "hour": "11:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "12:03",
+        "hour": "12:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "13:03",
+        "hour": "13:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "14:03",
+        "hour": "14:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "15:03",
+        "hour": "15:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "16:03",
+        "hour": "16:08",
         "messages": 5,
         "tools": 1
       },
       {
-        "hour": "17:03",
+        "hour": "17:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "18:03",
+        "hour": "18:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "19:03",
+        "hour": "19:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "20:03",
+        "hour": "20:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "21:03",
+        "hour": "21:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "22:03",
+        "hour": "22:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "23:03",
+        "hour": "23:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "00:03",
+        "hour": "00:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "01:03",
+        "hour": "01:08",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "02:03",
+        "hour": "02:08",
         "messages": 28,
         "tools": 12
       },
       {
-        "hour": "03:03",
-        "messages": 109,
-        "tools": 51
+        "hour": "03:08",
+        "messages": 294,
+        "tools": 143
       }
     ]
   },
@@ -242,10 +242,10 @@
     {
       "provider": "openai-codex",
       "model": "gpt-5.5",
-      "sessions": 7,
-      "tokens": 1257324,
-      "cache": 18621440,
-      "api_calls": 280,
+      "sessions": 8,
+      "tokens": 1353571,
+      "cache": 20816384,
+      "api_calls": 304,
       "cost": 0
     }
   ],
@@ -253,10 +253,10 @@
     {
       "provider": "OpenAI Codex / ChatGPT",
       "model": "gpt-5.5",
-      "used": 132372,
+      "used": 88550,
       "limit": 400000,
       "unit": "context tokens",
-      "pct": 33.1,
+      "pct": 22.1,
       "reset_at": null,
       "reset_in": "not exposed by provider",
       "source": "real Hermes session tokens + heuristic context limit"
@@ -264,12 +264,12 @@
     {
       "provider": "Hermes daily local window",
       "model": "all",
-      "used": 381691,
+      "used": 477938,
       "limit": null,
       "unit": "tokens observed in last 24h",
       "pct": null,
       "reset_at": "2026-06-03T00:00:00+00:00",
-      "reset_in": "19h 56m",
+      "reset_in": "19h 51m",
       "source": "computed from local session DB"
     },
     {
@@ -324,35 +324,35 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 1m",
-      "last_run_at": null,
-      "next_run_at": "2026-06-02T04:03:03.167097+00:00",
-      "last_status": null,
-      "completed": 0
+      "last_run_at": "2026-06-02T04:07:54.615531+00:00",
+      "next_run_at": "2026-06-02T04:09:54.618251+00:00",
+      "last_status": "ok",
+      "completed": 5
     }
   ],
   "git": {
-    "status": "## main...origin/main\n M dashboard/README.md\n M dashboard/app.js\n M dashboard/data/live.json\n M scripts/cosmos-dashboard-collector.py\n?? scripts/cosmos-dashboard-watchdog.sh",
-    "last_commit": "0e83f8f chore: nightly Cosmos sync 2026-06-02",
+    "status": "## main...origin/main\n M .gitignore\n M dashboard/data/live.json\n?? docs/multi-agent-workflow-adaptation.md\n?? workflows/",
+    "last_commit": "8fb8620 feat: make Cosmos dashboard live telemetry",
     "clean": false
   },
   "logs": [
     {
       "name": "gateway.log",
-      "size": 122287,
+      "size": 122745,
       "errors": 18,
       "warnings": 16
     },
     {
       "name": "agent.log",
-      "size": 712967,
-      "errors": 49,
-      "warnings": 24
+      "size": 750079,
+      "errors": 53,
+      "warnings": 32
     },
     {
       "name": "errors.log",
-      "size": 32353,
-      "errors": 112,
-      "warnings": 55
+      "size": 34245,
+      "errors": 120,
+      "warnings": 63
     }
   ],
   "providers": {
@@ -367,8 +367,8 @@
   },
   "disk": {
     "total": 102888095744,
-    "used": 19020300288,
-    "free": 83851018240,
+    "used": 19062996992,
+    "free": 83808321536,
     "pct": 18.5
   },
   "data_quality": [

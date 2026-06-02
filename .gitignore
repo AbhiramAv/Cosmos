@@ -26,5 +26,6 @@ build/
 # Local scratch
 scratch/
 tmp/
+external/
 *.log
 !logs/.gitkeep
