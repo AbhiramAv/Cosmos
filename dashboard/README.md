@@ -104,12 +104,16 @@ http://127.0.0.1:8787
 
 - React/Vite live dashboard
 - Responsive layout for iPad and all major screen sizes
-- Mission workflow cards
-- iPad Command Mode with copyable Telegram command templates
 - Data source: `dashboard/data/live.json` / `dashboard/dist/data/live.json`
 - Collector refresh: every 1 minute
 - Browser refresh: every 20 seconds
+- CEO/current-session panel with used / total / remaining context math
+- OpenAI/Codex usage populated from local Hermes sessions now
+- Full cron registry: name, purpose, schedule, script, last run, next run, status
+- Agent roster: CEO, specialist sub-agent roles, assigned/unassigned work, active session IDs
+- Kanban board wired to `/opt/data/kanban.db` with To do / Doing / Blocked / Done columns
+- Capacity cards show used / remaining / total for context, weekly observed tokens, OpenAI observed usage, and disk
 - No secrets in dashboard data
 - No Supabase dependency yet
-- Free public tunnel: Cloudflare quick tunnel, with localtunnel fallback
+- Free public tunnel: localtunnel
 - Watchdog script: `/opt/data/scripts/cosmos-dashboard-watchdog.sh`

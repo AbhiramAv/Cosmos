@@ -1,358 +1,106 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import {
-  Activity,
-  AlertTriangle,
-  BarChart3,
-  Bot,
-  Brain,
-  CalendarClock,
-  CheckCircle2,
-  ChevronRight,
-  CircleDollarSign,
-  Clock3,
-  Cloud,
-  Code2,
-  Cpu,
-  Database,
-  GitBranch,
-  Gauge,
-  HardDrive,
-  KeyRound,
-  LayoutDashboard,
-  Link2,
-  Lock,
-  Network,
-  Orbit,
-  RefreshCcw,
-  Server,
-  ShieldCheck,
-  Sparkles,
-  TerminalSquare,
-  TimerReset,
-  Workflow,
-  Zap
-} from 'lucide-react'
-import {
-  Area,
-  AreaChart,
-  Bar,
-  BarChart,
-  CartesianGrid,
-  Cell,
-  Line,
-  LineChart,
-  Pie,
-  PieChart,
-  PolarAngleAxis,
-  RadialBar,
-  RadialBarChart,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis
-} from 'recharts'
+import { Activity, AlertTriangle, BarChart3, Bot, Brain, CalendarClock, CheckCircle2, ChevronRight, CircleDollarSign, Clock3, Cloud, Code2, Cpu, Database, GitBranch, Gauge, HardDrive, KeyRound, KanbanSquare, Link2, Network, Orbit, RefreshCcw, Server, ShieldCheck, Sparkles, TerminalSquare, TimerReset, Workflow, Zap } from 'lucide-react'
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, PolarAngleAxis, RadialBar, RadialBarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import './styles.css'
 
-const LIVE_URL = `/data/live.json?t=${Date.now()}`
 const COLORS = ['#00e5ff', '#7c3cff', '#ff4fd8', '#ffb020', '#3cff9b', '#ff6b6b']
 
-const departments = [
-  { name: 'CEO Core', icon: Brain, tone: 'cyan', desc: 'Routing, memory, permissions, final review' },
-  { name: 'Operations', icon: Workflow, tone: 'violet', desc: 'Tasks, cron, reminders, admin execution' },
-  { name: 'Knowledge', icon: Database, tone: 'green', desc: 'Obsidian, memory, artifacts, daily logs' },
-  { name: 'Research', icon: Network, tone: 'amber', desc: 'Web, references, scout lanes, validation' },
-  { name: 'Engineering', icon: Code2, tone: 'pink', desc: 'Codex/Claude Code, tests, GitHub, deploys' },
-  { name: 'Observability', icon: Gauge, tone: 'blue', desc: 'Usage, cost, quotas, failures, telemetry' }
-]
-
-const missions = [
-  { step: '01', name: 'Capture', status: 'Live', desc: 'Telegram input, voice, links, notes, and goals enter the CEO queue.', tone: 'cyan' },
-  { step: '02', name: 'Route', status: 'Active', desc: 'CEO classifies task type, budget, context needs, and specialist lane.', tone: 'violet' },
-  { step: '03', name: 'Execute', status: 'Ready', desc: 'Generic agents run research, coding, ops, personal admin, or memory work.', tone: 'pink' },
-  { step: '04', name: 'Verify', status: 'Required', desc: 'Artifacts are tested, inspected, and linked before reporting completion.', tone: 'amber' },
-  { step: '05', name: 'Remember', status: 'Guarded', desc: 'Only durable preferences, procedures, and source-of-truth facts persist.', tone: 'green' },
-  { step: '06', name: 'Dream', status: 'Nightly', desc: 'Cron reviews usage, gaps, stale work, and improvement opportunities.', tone: 'blue' }
-]
-
-const commandTemplates = [
-  { label: 'Inspect live dashboard', command: 'Cosmos: inspect the live dashboard, check console/errors, and report only blockers.' },
-  { label: 'Run mission triage', command: 'Cosmos: run mission triage. Pick the highest leverage improvement and create the next actionable task.' },
-  { label: 'Pause autonomous work', command: 'Cosmos: pause non-critical autonomous work and report what is currently scheduled.' },
-  { label: 'Show artifacts', command: 'Cosmos: list today’s artifacts, links, commits, and dashboard updates.' },
-  { label: 'Refresh telemetry', command: 'Cosmos: refresh dashboard telemetry and verify the public link.' }
-]
-
-function asArray(value, mapper) {
-  if (Array.isArray(value)) return value
-  if (value && typeof value === 'object') return Object.entries(value).map(([key, val]) => mapper ? mapper(key, val) : ({ name: key, value: val }))
-  return []
-}
-
 function compact(n) {
-  if (n === null || n === undefined || Number.isNaN(Number(n))) return '—'
+  if (n === null || n === undefined || Number.isNaN(Number(n))) return 'unknown'
   const num = Number(n)
   if (Math.abs(num) >= 1e9) return `${(num / 1e9).toFixed(1)}B`
   if (Math.abs(num) >= 1e6) return `${(num / 1e6).toFixed(1)}M`
   if (Math.abs(num) >= 1e3) return `${(num / 1e3).toFixed(1)}K`
   return String(Math.round(num))
 }
-function pct(n) { return `${Number(n || 0).toFixed(1)}%` }
+function bytes(n) {
+  if (n === null || n === undefined) return 'unknown'
+  const units = ['B','KB','MB','GB','TB']; let v=Number(n), i=0
+  while (v >= 1024 && i < units.length-1) { v/=1024; i++ }
+  return `${v.toFixed(i ? 1 : 0)} ${units[i]}`
+}
+function pct(n) { return n === null || n === undefined ? 'unknown' : `${Number(n).toFixed(1)}%` }
 function money(n) { return n ? `$${Number(n).toFixed(3)}` : '$0.000' }
-function since(epoch) {
-  if (!epoch) return '—'
-  const sec = Math.max(0, Math.floor(Date.now()/1000 - epoch))
-  if (sec < 60) return `${sec}s ago`
-  if (sec < 3600) return `${Math.floor(sec/60)}m ago`
-  return `${Math.floor(sec/3600)}h ago`
-}
-function duration(sec) {
-  sec = Number(sec || 0)
-  if (sec < 60) return `${sec}s`
-  const h = Math.floor(sec/3600), m = Math.floor((sec%3600)/60)
-  return h ? `${h}h ${m}m` : `${m}m`
-}
+function duration(sec) { sec=Number(sec||0); if(sec<60)return`${sec}s`; const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60); return h?`${h}h ${m}m`:`${m}m` }
+function since(epoch) { if(!epoch)return'unknown'; const s=Math.max(0,Math.floor(Date.now()/1000-epoch)); if(s<60)return`${s}s ago`; if(s<3600)return`${Math.floor(s/60)}m ago`; return`${Math.floor(s/3600)}h ago` }
+function fmtDate(s) { if(!s)return'unknown'; try { return new Date(s).toLocaleString([], { month:'short', day:'numeric', hour:'numeric', minute:'2-digit' }) } catch { return s } }
+function valueWithUnit(v, unit) { return unit === 'bytes' ? bytes(v) : `${compact(v)} ${unit || ''}`.trim() }
 
 function useLiveData() {
-  const [data, setData] = useState(null)
-  const [error, setError] = useState(null)
-  const [tick, setTick] = useState(0)
+  const [data, setData] = useState(null), [error, setError] = useState(null)
   useEffect(() => {
     let alive = true
     async function load() {
-      try {
-        const res = await fetch(`/data/live.json?t=${Date.now()}`)
-        if (!res.ok) throw new Error(`${res.status} ${res.statusText}`)
-        const json = await res.json()
-        if (alive) { setData(json); setError(null) }
-      } catch (e) {
-        if (alive) setError(e.message)
-      }
+      try { const res = await fetch(`/data/live.json?t=${Date.now()}`); if(!res.ok) throw new Error(`${res.status} ${res.statusText}`); const json=await res.json(); if(alive){setData(json); setError(null)} }
+      catch(e){ if(alive) setError(e.message) }
     }
-    load()
-    const id = setInterval(() => { setTick(v => v + 1); load() }, 20000)
-    return () => { alive = false; clearInterval(id) }
+    load(); const id=setInterval(load, 20000); return()=>{alive=false; clearInterval(id)}
   }, [])
-  return { data, error, tick }
+  return { data, error }
 }
 
-function App() {
-  const { data, error } = useLiveData()
-  if (!data) return <div className="boot"><Orbit className="spin"/> <span>Booting Cosmos Mission Control…</span>{error && <small>{error}</small>}</div>
-  return <Dashboard data={data} error={error} />
-}
+function App(){ const {data,error}=useLiveData(); if(!data) return <div className="boot"><Orbit className="spin"/><span>Loading real Cosmos telemetry…</span>{error&&<small>{error}</small>}</div>; return <Dashboard data={data} error={error}/> }
 
-function Dashboard({ data, error }) {
-  const cs = data.current_session || {}
-  const totals = data.totals || {}
-  const t24 = totals.last_24h || {}
-  const t7 = totals.last_7d || {}
-  const quota = asArray(data.quotas)
-  const providers = asArray(data.providers, (provider, present) => ({ provider, model: provider, tokens: 0, sessions: present ? 1 : 0, cost_usd: 0, status: present ? 'key detected' : 'not connected' }))
-  const credentials = asArray(data.credentials, (name, present) => ({ name, present }))
-  const cron = asArray(data.cron)
-  const daily = asArray(data.series?.daily)
-  const hourly = asArray(data.series?.hourly_activity)
-  const contextPct = Math.min(100, Number(cs.context_pct_estimate || 0))
-  const effectiveTokens = (cs.input_tokens || 0) + (cs.output_tokens || 0) + (cs.reasoning_tokens || 0)
-  const totalTokens7 = (t7.input_tokens || 0) + (t7.output_tokens || 0) + (t7.reasoning_tokens || 0)
-  const liveHealth = data.health || {}
-
+function Dashboard({data,error}) {
+  const cs=data.current_session||{}, daily=data.series?.daily||[], hourly=data.series?.hourly_activity||[]
+  const context=data.capacities?.find(c=>c.label==='Current session context') || {}
+  const storage=data.capacities?.find(c=>c.label==='/opt/data storage') || {}
+  const openai=data.openai||{}
+  const total7=(data.totals?.last_7d?.input_tokens||0)+(data.totals?.last_7d?.output_tokens||0)+(data.totals?.last_7d?.reasoning_tokens||0)
   return <main className="shell">
     <TopNav data={data}/>
-    <section className="hero-grid">
+    <section className="hero-grid compact-hero">
       <div className="hero-card glass">
-        <div className="eyebrow"><Sparkles size={14}/> LIVE AGENTIC OS</div>
-        <h1>Cosmos Mission Control</h1>
-        <p>Real-time Hermes usage, model pressure, workflows, reset visibility, and agent operations — designed for iPad, phone, and desktop.</p>
-        <div className="hero-actions">
-          <a className="btn primary" href="/data/live.json" target="_blank">Open live JSON <ChevronRight size={16}/></a>
-          <button className="btn ghost" onClick={() => location.reload()}><RefreshCcw size={16}/> Refresh</button>
-        </div>
+        <div className="eyebrow"><Sparkles size={14}/> REAL DATA ONLY</div>
+        <h1>CEO Agent Command Center</h1>
+        <p>No more placeholder workflow cards. This view now shows the CEO session, assigned sub-agents, cron jobs, OpenAI/Codex usage from sessions, capacity math, and Kanban work pulled from local Cosmos/Hermes state.</p>
+        <div className="hero-actions"><a className="btn primary" href="/data/live.json" target="_blank">Inspect live JSON <ChevronRight size={16}/></a><button className="btn ghost" onClick={()=>location.reload()}><RefreshCcw size={16}/> Refresh</button></div>
       </div>
-      <LiveNow cs={cs} data={data}/>
+      <LiveSession cs={cs}/>
     </section>
 
     <section className="kpi-grid">
-      <Kpi icon={Gauge} label="Session Context" value={pct(contextPct)} sub={`${compact(cs.context_tokens_used)} / ${compact(cs.context_limit_estimate)} est.`} tone="cyan"/>
-      <Kpi icon={Zap} label="Current Session" value={compact(effectiveTokens)} sub={`${compact(cs.cache_read_tokens)} cache read`} tone="violet"/>
-      <Kpi icon={TerminalSquare} label="Tool Calls" value={compact(cs.tool_call_count)} sub={`${compact(cs.api_call_count)} API calls`} tone="green"/>
-      <Kpi icon={CalendarClock} label="7d Tokens" value={compact(totalTokens7)} sub={`${compact(t7.tool_call_count)} tools · ${compact(totals.session_count)} sessions`} tone="pink"/>
+      <Kpi icon={Brain} label="CEO context used" value={pct(context.pct)} sub={`${valueWithUnit(context.used, context.unit)} used · ${valueWithUnit(context.remaining, context.unit)} left of ${valueWithUnit(context.limit, context.unit)}`} tone="cyan"/>
+      <Kpi icon={CircleDollarSign} label="OpenAI/Codex this week" value={compact(openai.weekly_observed_tokens)} sub={`${openai.weekly_observed_sessions||0} sessions · weekly cap/reset not connected`} tone="violet"/>
+      <Kpi icon={Clock3} label="Cron jobs" value={compact(data.cron?.length||0)} sub={`${(data.cron||[]).filter(c=>c.enabled).length} enabled · ${(data.cron||[]).filter(c=>c.last_status==='ok').length} last ok`} tone="green"/>
+      <Kpi icon={HardDrive} label="Storage" value={pct(storage.pct)} sub={`${bytes(storage.used)} used · ${bytes(storage.remaining)} free of ${bytes(storage.limit)}`} tone="pink"/>
     </section>
 
     <section className="dashboard-grid">
-      <Panel className="span-8" title="Usage Command Graph" icon={BarChart3} action={<Segmented/>}>
-        <ResponsiveContainer width="100%" height={310}>
-          <AreaChart data={daily} margin={{ left: -20, right: 10, top: 20, bottom: 0 }}>
-            <defs>
-              <linearGradient id="tokenFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stopColor="#00e5ff" stopOpacity=".55"/><stop offset="100%" stopColor="#00e5ff" stopOpacity="0"/></linearGradient>
-              <linearGradient id="cacheFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stopColor="#7c3cff" stopOpacity=".38"/><stop offset="100%" stopColor="#7c3cff" stopOpacity="0"/></linearGradient>
-            </defs>
-            <CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false}/>
-            <XAxis dataKey="label" tickLine={false} axisLine={false} stroke="rgba(255,255,255,.42)" fontSize={12}/>
-            <YAxis tickFormatter={compact} tickLine={false} axisLine={false} stroke="rgba(255,255,255,.42)" fontSize={12}/>
-            <Tooltip content={<ChartTip/>}/>
-            <Area type="monotone" dataKey="cache" stroke="#7c3cff" fill="url(#cacheFill)" strokeWidth={2} name="Cache read"/>
-            <Area type="monotone" dataKey="tokens" stroke="#00e5ff" fill="url(#tokenFill)" strokeWidth={3} name="Input+output+reasoning"/>
-          </AreaChart>
-        </ResponsiveContainer>
-      </Panel>
+      <Panel className="span-4" title="Current Session: used vs left" icon={Gauge}><CapacityCard cap={context}/><div className="split-stats"><span>Input <b>{compact(cs.input_tokens)}</b></span><span>Output <b>{compact(cs.output_tokens)}</b></span><span>Reasoning <b>{compact(cs.reasoning_tokens)}</b></span></div></Panel>
+      <Panel className="span-8" title="OpenAI/Codex + provider usage from sessions" icon={CircleDollarSign}><ProviderUsage rows={data.provider_usage||[]} openai={openai}/></Panel>
 
-      <Panel className="span-4" title="Context Pressure" icon={Cpu}>
-        <div className="gauge-wrap">
-          <ResponsiveContainer width="100%" height={220}>
-            <RadialBarChart cx="50%" cy="58%" innerRadius="62%" outerRadius="95%" barSize={15} data={[{name:'context', value: contextPct, fill:'#00e5ff'}]} startAngle={210} endAngle={-30}>
-              <PolarAngleAxis type="number" domain={[0,100]} tick={false}/>
-              <RadialBar dataKey="value" cornerRadius={30} background={{ fill: 'rgba(255,255,255,.07)' }}/>
-            </RadialBarChart>
-          </ResponsiveContainer>
-          <div className="gauge-center"><b>{pct(contextPct)}</b><span>of estimated context</span></div>
-        </div>
-        <div className="split-stats">
-          <span>Input <b>{compact(cs.input_tokens)}</b></span>
-          <span>Output <b>{compact(cs.output_tokens)}</b></span>
-          <span>Reasoning <b>{compact(cs.reasoning_tokens)}</b></span>
-        </div>
-      </Panel>
+      <Panel className="span-8" title="Usage history: actual local sessions" icon={BarChart3}><UsageChart daily={daily}/></Panel>
+      <Panel className="span-4" title="24h message/tool pulse" icon={Activity}><PulseChart hourly={hourly}/></Panel>
 
-      <Panel className="span-5" title="Model Quotas & Reset Visibility" icon={TimerReset}>
-        <div className="quota-list">
-          {quota.map((q, i) => <div className="quota-row" key={q.provider || i}>
-            <div><strong>{q.provider}</strong><span>{q.status || 'not connected'}</span></div>
-            <div className="quota-meter"><i style={{width:`${q.percent_known ? q.percent_known : 18}%`}}/></div>
-            <small>{q.reset || q.reset_status || 'Provider reset source not connected'}</small>
-          </div>)}
-          {!quota.length && <Empty text="No provider quota APIs connected yet."/>}
-        </div>
-      </Panel>
+      <Panel className="span-12" title="CEO + sub-agents: assigned vs unassigned" icon={Bot}><AgentRoster agents={data.agent_roster||[]}/></Panel>
+      <Panel className="span-12" title="Kanban board: current assigned work" icon={KanbanSquare}><KanbanBoard kanban={data.kanban}/></Panel>
+      <Panel className="span-12" title="Cron registry: every job, purpose, next run" icon={Clock3}><CronTable cron={data.cron||[]}/></Panel>
 
-      <Panel className="span-7" title="24h Activity Pulse" icon={Activity}>
-        <ResponsiveContainer width="100%" height={260}>
-          <BarChart data={hourly} margin={{ left: -20, right: 8, top: 10, bottom: 0 }}>
-            <CartesianGrid stroke="rgba(255,255,255,.07)" vertical={false}/>
-            <XAxis dataKey="hour" interval="preserveStartEnd" minTickGap={18} tickLine={false} axisLine={false} stroke="rgba(255,255,255,.38)" fontSize={11}/>
-            <YAxis tickFormatter={compact} tickLine={false} axisLine={false} stroke="rgba(255,255,255,.38)" fontSize={11}/>
-            <Tooltip content={<ChartTip/>}/>
-            <Bar dataKey="tokens" radius={[8,8,0,0]} name="Tokens">
-              {hourly.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]}/>) }
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
-      </Panel>
-
-      <Panel className="span-8" title="Mission Workflow Cards" icon={Workflow}>
-        <MissionWorkflow />
-      </Panel>
-
-      <Panel className="span-4" title="iPad Command Mode" icon={LayoutDashboard}>
-        <CommandMode />
-      </Panel>
-
-      <Panel className="span-6" title="Agent Company / Pantheon" icon={Bot}>
-        <div className="agent-grid">
-          {departments.map((d) => <div className={`agent-card ${d.tone}`} key={d.name}>
-            <d.icon size={22}/><div><b>{d.name}</b><span>{d.desc}</span></div>
-          </div>)}
-        </div>
-      </Panel>
-
-      <Panel className="span-6" title="Provider / Model Usage" icon={CircleDollarSign}>
-        <div className="provider-table">
-          {providers.map((p, i) => <div className="provider-row" key={i}>
-            <div><b>{p.model || p.provider}</b><span>{p.status || p.provider || 'provider'}</span></div>
-            <span>{compact(p.tokens)} tokens</span>
-            <span>{compact(p.sessions)} sessions</span>
-            <span>{money(p.cost_usd)}</span>
-          </div>)}
-          {!providers.length && <Empty text="Provider rollup will appear after sessions are recorded."/>}
-        </div>
-      </Panel>
-
-      <Panel className="span-4" title="System Health" icon={Server}>
-        <HealthGrid health={liveHealth} git={data.git} disk={data.disk}/>
-      </Panel>
-
-      <Panel className="span-4" title="Cron Registry" icon={Clock3}>
-        <div className="cron-list">
-          {cron.map((c, i) => <div className="cron" key={i}><CheckCircle2 size={16}/><div><b>{c.name}</b><span>{c.schedule || c.next_run_at || 'scheduled'}</span></div></div>)}
-        </div>
-      </Panel>
-
-      <Panel className="span-4" title="Secrets Boundary" icon={ShieldCheck}>
-        <div className="secret-grid">
-          {credentials.map((c, i) => <div className="secret" key={i}><KeyRound size={16}/><span>{c.name || c}</span></div>)}
-          {!credentials.length && <Empty text="No exposed secret values. Key names only."/>}
-        </div>
-      </Panel>
+      <Panel className="span-6" title="Capacity math across system" icon={Cpu}><CapacityList capacities={data.capacities||[]}/></Panel>
+      <Panel className="span-6" title="System health / source-of-truth" icon={Server}><HealthGrid data={data}/></Panel>
+      <Panel className="span-12" title="Data quality notes" icon={ShieldCheck}><div className="note-list">{(data.data_quality||[]).map((n,i)=><div className="note" key={i}>{n}</div>)}</div></Panel>
     </section>
-
-    <footer className="footer-note">
-      <span>Generated {since(data.generated_at_epoch)} · source: real local telemetry</span>
-      {error && <span className="warn"><AlertTriangle size={14}/> {error}</span>}
-    </footer>
+    <footer className="footer-note"><span>Generated {since(data.generated_at_epoch)} · source: local Hermes/Cosmos telemetry</span>{error&&<span className="warn"><AlertTriangle size={14}/> {error}</span>}</footer>
   </main>
 }
 
-function TopNav({ data }) {
-  return <header className="topnav">
-    <div className="brand"><div className="logo"><Orbit size={20}/></div><div><b>Cosmos</b><span>Agentic OS</span></div></div>
-    <nav><a href="#">Mission</a><a href="#">Usage</a><a href="#">Agents</a><a href="#">Cron</a></nav>
-    <div className="live-pill"><span/> Live · {since(data.generated_at_epoch)}</div>
-  </header>
-}
-function LiveNow({ cs, data }) {
-  return <div className="live-card glass">
-    <div className="card-head"><span>Current Session</span><Activity size={18}/></div>
-    <h2>{cs.model || 'Unknown model'}</h2>
-    <p>{cs.provider || 'provider'} · {cs.source || 'source'} · {duration(cs.duration_seconds)}</p>
-    <div className="live-stack">
-      <MetricLine label="Messages" value={compact(cs.message_count)}/>
-      <MetricLine label="API calls" value={compact(cs.api_call_count)}/>
-      <MetricLine label="Tools" value={compact(cs.tool_call_count)}/>
-      <MetricLine label="Cost status" value={cs.cost_status || 'unknown'}/>
-    </div>
-  </div>
-}
-function Kpi({ icon: Icon, label, value, sub, tone }) { return <article className={`kpi ${tone}`}><Icon size={21}/><span>{label}</span><b>{value}</b><small>{sub}</small></article> }
-function Panel({ title, icon: Icon, children, className='', action }) { return <section className={`panel ${className}`}><div className="panel-title"><div><Icon size={18}/><h3>{title}</h3></div>{action}</div>{children}</section> }
-function MetricLine({ label, value }) { return <div className="metric-line"><span>{label}</span><b>{value}</b></div> }
-function Segmented() { return <div className="seg"><button>Tokens</button><button>Cache</button><button>Tools</button></div> }
-function Empty({ text }) { return <div className="empty">{text}</div> }
-function MissionWorkflow() {
-  return <div className="mission-grid">
-    {missions.map((m) => <article className={`mission ${m.tone}`} key={m.step}>
-      <div className="mission-top"><span>{m.step}</span><b>{m.status}</b></div>
-      <h4>{m.name}</h4>
-      <p>{m.desc}</p>
-    </article>)}
-  </div>
-}
-function CommandMode() {
-  const [selected, setSelected] = useState(commandTemplates[0].command)
-  async function copyCommand() {
-    try { await navigator.clipboard.writeText(selected) } catch {}
-  }
-  return <div className="command-mode">
-    <p className="command-help">Tap a command, copy it, then paste/send it in Telegram. Server-side command execution comes next.</p>
-    <div className="command-buttons">
-      {commandTemplates.map((c) => <button key={c.label} className={selected === c.command ? 'active' : ''} onClick={() => setSelected(c.command)}>{c.label}</button>)}
-    </div>
-    <div className="command-output"><TerminalSquare size={16}/><span>{selected}</span></div>
-    <button className="copy-btn" onClick={copyCommand}>Copy command</button>
-  </div>
-}
-function ChartTip({ active, payload, label }) {
-  if (!active || !payload?.length) return null
-  return <div className="tip"><b>{label}</b>{payload.map((p,i)=><span key={i}>{p.name}: {compact(p.value)}</span>)}</div>
-}
-function HealthGrid({ health={}, git={}, disk={} }) {
-  const items = [
-    ['Dashboard', health.dashboard_server || health.server || 'running', Cloud],
-    ['Tunnel', health.localtunnel || 'active', Link2],
-    ['Git', git?.status || git?.branch || 'synced', GitBranch],
-    ['Disk', disk?.pct ? pct(disk.pct) : 'ok', HardDrive]
-  ]
-  return <div className="health-grid">{items.map(([k,v,Icon]) => <div className="health" key={k}><Icon size={18}/><span>{k}</span><b>{v}</b></div>)}</div>
-}
+function TopNav({data}){return <header className="topnav"><div className="brand"><div className="logo"><Orbit size={20}/></div><div><b>Cosmos</b><span>CEO OS</span></div></div><nav><a href="#agents">Agents</a><a href="#kanban">Kanban</a><a href="#cron">Cron</a><a href="/data/live.json">JSON</a></nav><div className="live-pill"><span/> Live · {since(data.generated_at_epoch)}</div></header>}
+function LiveSession({cs}){return <div className="live-card glass"><div className="card-head"><span>CEO/current session</span><Activity size={18}/></div><h2>{cs.title||cs.model||'No active session'}</h2><p>{cs.model||'model unknown'} · {cs.provider||'provider unknown'} · {duration(cs.duration_seconds)}</p><div className="live-stack"><MetricLine label="Context used" value={`${compact(cs.context_tokens_used)} / ${compact(cs.context_limit_estimate)}`}/><MetricLine label="Context left" value={compact(cs.context_remaining_estimate)}/><MetricLine label="Messages / tools" value={`${compact(cs.message_count)} / ${compact(cs.tool_call_count)}`}/><MetricLine label="API calls" value={compact(cs.api_call_count)}/></div></div>}
+function Kpi({icon:Icon,label,value,sub,tone}){return <article className={`kpi ${tone}`}><Icon size={21}/><span>{label}</span><b>{value}</b><small>{sub}</small></article>}
+function Panel({title,icon:Icon,children,className=''}){return <section className={`panel ${className}`}><div className="panel-title"><div><Icon size={18}/><h3>{title}</h3></div></div>{children}</section>}
+function MetricLine({label,value}){return <div className="metric-line"><span>{label}</span><b>{value}</b></div>}
+function Empty({text}){return <div className="empty">{text}</div>}
+function ChartTip({active,payload,label}){if(!active||!payload?.length)return null; return <div className="tip"><b>{label}</b>{payload.map((p,i)=><span key={i}>{p.name}: {compact(p.value)}</span>)}</div>}
+function CapacityCard({cap}){return <div className="capacity-card"><div className="gauge-wrap"><ResponsiveContainer width="100%" height={210}><RadialBarChart cx="50%" cy="58%" innerRadius="62%" outerRadius="95%" barSize={15} data={[{name:'used',value:cap.pct||0,fill:'#00e5ff'}]} startAngle={210} endAngle={-30}><PolarAngleAxis type="number" domain={[0,100]} tick={false}/><RadialBar dataKey="value" cornerRadius={30} background={{fill:'rgba(255,255,255,.07)'}}/></RadialBarChart></ResponsiveContainer><div className="gauge-center"><b>{pct(cap.pct)}</b><span>{valueWithUnit(cap.used, cap.unit)} used</span></div></div><MetricLine label="Total" value={valueWithUnit(cap.limit, cap.unit)}/><MetricLine label="Remaining" value={valueWithUnit(cap.remaining, cap.unit)}/><p className="source">{cap.source}</p></div>}
+function ProviderUsage({rows,openai}){return <div className="provider-wrap"><div className="openai-box"><b>OpenAI/Codex populated now</b><span>{compact(openai.weekly_observed_tokens)} tokens observed this week across {openai.weekly_observed_sessions||0} sessions.</span><small>{openai.reset_in}</small></div><div className="provider-table">{rows.map((p,i)=><div className="provider-row" key={i}><div><b>{p.model}</b><span>{p.provider} · {p.cost_status||'cost status unknown'}</span></div><span>{compact(p.tokens)} tokens</span><span>{compact(p.cache)} cache</span><span>{money(p.estimated_cost_usd)}</span></div>)}{!rows.length&&<Empty text="No provider sessions recorded yet."/>}</div></div>}
+function UsageChart({daily}){return <ResponsiveContainer width="100%" height={310}><AreaChart data={daily} margin={{left:-20,right:10,top:20,bottom:0}}><defs><linearGradient id="tokenFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stopColor="#00e5ff" stopOpacity=".55"/><stop offset="100%" stopColor="#00e5ff" stopOpacity="0"/></linearGradient><linearGradient id="cacheFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stopColor="#7c3cff" stopOpacity=".38"/><stop offset="100%" stopColor="#7c3cff" stopOpacity="0"/></linearGradient></defs><CartesianGrid stroke="rgba(255,255,255,.08)" vertical={false}/><XAxis dataKey="label" tickLine={false} axisLine={false} stroke="rgba(255,255,255,.42)" fontSize={12}/><YAxis tickFormatter={compact} tickLine={false} axisLine={false} stroke="rgba(255,255,255,.42)" fontSize={12}/><Tooltip content={<ChartTip/>}/><Area type="monotone" dataKey="cache" stroke="#7c3cff" fill="url(#cacheFill)" strokeWidth={2} name="Cache read"/><Area type="monotone" dataKey="tokens" stroke="#00e5ff" fill="url(#tokenFill)" strokeWidth={3} name="Tokens"/></AreaChart></ResponsiveContainer>}
+function PulseChart({hourly}){return <ResponsiveContainer width="100%" height={270}><BarChart data={hourly} margin={{left:-20,right:8,top:10,bottom:0}}><CartesianGrid stroke="rgba(255,255,255,.07)" vertical={false}/><XAxis dataKey="hour" interval="preserveStartEnd" minTickGap={18} tickLine={false} axisLine={false} stroke="rgba(255,255,255,.38)" fontSize={11}/><YAxis tickFormatter={compact} tickLine={false} axisLine={false} stroke="rgba(255,255,255,.38)" fontSize={11}/><Tooltip content={<ChartTip/>}/><Bar dataKey="messages" radius={[8,8,0,0]} name="Messages">{hourly.map((_,i)=><Cell key={i} fill={COLORS[i%COLORS.length]}/>)}</Bar><Bar dataKey="tools" radius={[8,8,0,0]} name="Tools" fill="#3cff9b"/></BarChart></ResponsiveContainer>}
+function AgentRoster({agents}){return <div id="agents" className="agent-roster">{agents.map((a,i)=><article className={`agent-row ${a.status}`} key={i}><div className="agent-icon">{i===0?<Brain size={22}/>:<Bot size={22}/>}</div><div><h4>{a.name}</h4><p>{a.responsibility}</p><small>Assigned work: {a.assigned_work}</small>{a.session_id&&<small>Session: {a.session_id}</small>}</div><b>{a.status}</b></article>)}</div>}
+function KanbanBoard({kanban={}}){const cols=kanban.columns||{}; const labels=[['todo','To do'],['running','Doing'],['blocked','Blocked'],['completed','Done']]; return <div id="kanban"><p className="source">{kanban.source}</p><div className="kanban-grid">{labels.map(([key,label])=><div className="kanban-col" key={key}><div className="kanban-head"><b>{label}</b><span>{kanban.stats?.[key]||0}</span></div>{(cols[key]||[]).map(card=><div className="kanban-card" key={card.id}><b>{card.title}</b><span>{card.assignee} · priority {card.priority}</span><small>{card.summary||'No summary yet'}</small></div>)}{!(cols[key]||[]).length&&<div className="kanban-empty">No cards</div>}</div>)}</div></div>}
+function CronTable({cron}){return <div id="cron" className="cron-table">{cron.map(c=><article className="cron-row" key={c.id}><div><b>{c.name}</b><span>{c.purpose||'script-only job'}</span></div><div><label>Schedule</label><strong>{c.schedule}</strong></div><div><label>Last</label><strong>{c.last_status||'unknown'} · {fmtDate(c.last_run_at)}</strong></div><div><label>Next</label><strong>{fmtDate(c.next_run_at)}</strong></div><div><label>Script</label><strong>{c.script||'agent prompt'}</strong></div><i className={c.enabled?'ok':'off'}>{c.enabled?'enabled':'disabled'}</i></article>)}{!cron.length&&<Empty text="No cron jobs registered."/>}</div>}
+function CapacityList({capacities}){return <div className="capacity-list">{capacities.map((c,i)=><div className="capacity-row" key={i}><div><b>{c.label}</b><span>{c.source}</span></div><div className="quota-meter"><i style={{width:`${c.pct??0}%`}}/></div><small>{valueWithUnit(c.used,c.unit)} used · {valueWithUnit(c.remaining,c.unit)} remaining · {valueWithUnit(c.limit,c.unit)} total</small></div>)}</div>}
+function HealthGrid({data}){const items=[['Dashboard server',data.processes?.dashboard_server?'running':'not detected',Cloud],['Public tunnel',data.processes?.localtunnel?'running':'not detected',Link2],['Git',data.git?.last_commit||data.git?.status||'unknown',GitBranch],['Disk',`${bytes(data.disk?.used)} / ${bytes(data.disk?.total)} (${pct(data.disk?.pct)})`,HardDrive],['Kanban source',data.kanban?.source||'unknown',KanbanSquare],['Live JSON','/data/live.json',Database]]; return <div className="health-grid">{items.map(([k,v,Icon])=><div className="health" key={k}><Icon size={18}/><span>{k}</span><b>{v}</b></div>)}</div>}
 
 createRoot(document.getElementById('root')).render(<App />)
