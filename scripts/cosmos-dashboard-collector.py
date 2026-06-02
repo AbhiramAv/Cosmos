@@ -132,6 +132,114 @@ def read_kanban(now):
         return {'columns': columns, 'stats': stats, 'source': f'kanban read failed: {e}'}
 
 
+
+def line_count(path):
+    try:
+        with open(path, 'rb') as f:
+            return sum(1 for _ in f)
+    except Exception:
+        return None
+
+
+def tail_text(path, max_bytes=120_000):
+    try:
+        p=Path(path)
+        if not p.exists(): return ''
+        with p.open('rb') as f:
+            if p.stat().st_size > max_bytes:
+                f.seek(-max_bytes, os.SEEK_END)
+            return f.read().decode('utf-8','ignore')
+    except Exception:
+        return ''
+
+
+def read_log_summary(now):
+    logs=[]
+    for p in sorted(LOGS.rglob('*.log')):
+        try:
+            st=p.stat(); txt=tail_text(p)
+            logs.append({
+                'name': str(p.relative_to(LOGS)), 'path': str(p), 'size': st.st_size,
+                'updated_at': iso(st.st_mtime), 'age_seconds': int(now-st.st_mtime),
+                'errors': sum(txt.lower().count(x) for x in ['error','traceback','exception','failed']),
+                'warnings': txt.lower().count('warning'),
+                'lines': line_count(p),
+                'tail': txt[-360:]
+            })
+        except Exception:
+            pass
+    logs.sort(key=lambda x:(x['errors'], -x['age_seconds']), reverse=True)
+    return {'logs': logs[:20], 'error_total': sum(x['errors'] for x in logs), 'warning_total': sum(x['warnings'] for x in logs), 'stale': [x for x in logs if x['age_seconds'] > 3600][:10]}
+
+
+def env_key_names():
+    keys=[]
+    for env_file in [Path('/opt/data/.env'), Path('/opt/data/Cosmos/.env')]:
+        if env_file.exists():
+            try:
+                for line in env_file.read_text(errors='ignore').splitlines():
+                    line=line.strip()
+                    if not line or line.startswith('#') or '=' not in line: continue
+                    keys.append(line.split('=',1)[0].strip())
+            except Exception:
+                pass
+    keys.extend(os.environ.keys())
+    return sorted(set(k for k in keys if k))
+
+
+def read_connections():
+    keys=env_key_names()
+    def has_any(parts): return any(any(part.upper() in k.upper() for part in parts) for k in keys)
+    rows=[
+        ('Telegram control surface', True, 'Already connected: current DM control channel'),
+        ('GitHub source-of-truth', (ROOT/'.git').exists(), 'Local Cosmos git repo + deploy-key push path'),
+        ('Obsidian vault', bool(os.environ.get('OBSIDIAN_VAULT_PATH')) or any(Path(p).exists() for p in ['/opt/data/Obsidian','/opt/data/Obsidian Vault','/opt/data/vault','/opt/data/Documents/Obsidian Vault']), 'Needs vault path if not detected'),
+        ('Supabase backend/vector store', has_any(['SUPABASE']), 'Needs URL + service role/key if desired'),
+        ('Google Workspace', has_any(['GOOGLE','GWS']), 'Needs OAuth/client setup if desired'),
+        ('Notion', has_any(['NOTION']), 'Needs Notion token/database IDs if desired'),
+        ('Linear', has_any(['LINEAR']), 'Needs Linear API key/team IDs if desired'),
+        ('OpenRouter quota', has_any(['OPENROUTER']), 'Could add credits/quota endpoint if key exists'),
+        ('Anthropic/Claude quota', has_any(['ANTHROPIC','CLAUDE']), 'Quota/reset integration not connected'),
+        ('OpenAI/Codex quota', has_any(['OPENAI','CODEX']), 'Local usage visible; provider cap/reset not exposed yet'),
+    ]
+    return [{'name':n,'connected':bool(c),'status':'connected' if c else 'missing','note':note} for n,c,note in rows]
+
+
+def read_obsidian(now):
+    candidates=[]
+    if os.environ.get('OBSIDIAN_VAULT_PATH'): candidates.append(Path(os.environ['OBSIDIAN_VAULT_PATH']))
+    candidates += [Path('/opt/data/Obsidian'), Path('/opt/data/Obsidian Vault'), Path('/opt/data/vault'), Path('/opt/data/Documents/Obsidian Vault')]
+    vault=next((p for p in candidates if p.exists() and p.is_dir()), None)
+    if not vault:
+        return {'connected': False, 'path': None, 'note_count': 0, 'recent_notes': [], 'status': 'missing vault path', 'question': 'What is the absolute Obsidian vault path on this machine or should I create /opt/data/Obsidian Vault?'}
+    notes=sorted(vault.rglob('*.md'), key=lambda x:x.stat().st_mtime, reverse=True)
+    recent=[]
+    for n in notes[:12]:
+        st=n.stat()
+        recent.append({'name': n.stem, 'path': str(n), 'relative_path': str(n.relative_to(vault)), 'updated_at': iso(st.st_mtime), 'age_seconds': int(now-st.st_mtime), 'size': st.st_size})
+    return {'connected': True, 'path': str(vault), 'note_count': len(notes), 'recent_notes': recent, 'status': 'connected'}
+
+
+def read_repo_activity(now):
+    changed=run('git status --porcelain', cwd=str(ROOT))['out'].splitlines()
+    branches=run('git branch --show-current', cwd=str(ROOT))['out']
+    remote=run('git remote get-url origin', cwd=str(ROOT))['out']
+    commits=[]
+    out=run('git log --pretty=format:%h%x09%ct%x09%s -8', cwd=str(ROOT))['out']
+    for line in out.splitlines():
+        parts=line.split('\t',2)
+        if len(parts)==3:
+            commits.append({'sha':parts[0], 'timestamp':iso(float(parts[1])), 'age_seconds':int(now-float(parts[1])), 'subject':parts[2]})
+    return {'branch': branches, 'remote': remote, 'changed_files': changed[:25], 'dirty_count': len(changed), 'recent_commits': commits}
+
+
+def read_tool_usage(messages):
+    counts={}
+    for m in messages:
+        name=m.get('tool_name')
+        if name: counts[name]=counts.get(name,0)+1
+    return [{'tool':k,'count':v} for k,v in sorted(counts.items(), key=lambda x:x[1], reverse=True)[:18]]
+
 def build_agent_roster(sessions, kanban, now):
     active = [s for s in sessions if not s.get('ended_at')]
     root = [s for s in active if not s.get('parent_session_id')]
@@ -196,7 +304,19 @@ def build():
     kanban=read_kanban(now)
     disk=shutil.disk_usage('/opt/data')
     status=run('git status --short --branch', cwd=str(ROOT)); log=run('git log -1 --oneline', cwd=str(ROOT))
-    procs={'dashboard_server': int(run("pgrep -f 'python3 -m http.server 8787' | wc -l")['out'] or 0), 'localtunnel': int(run("pgrep -f 'localtunnel --port 8787' | wc -l")['out'] or 0)}
+    public_url_path = ROOT / 'dashboard' / 'public-url.txt'
+    public_url = public_url_path.read_text().strip() if public_url_path.exists() else None
+    procs={
+        'dashboard_server': int(run("pgrep -f '[p]ython3 -m http.server 8787' | wc -l")['out'] or 0),
+        'cloudflared': int(run("pgrep -f '[c]loudflared.*8787' | wc -l")['out'] or 0),
+        'localtunnel': int(run("pgrep -f '[l]ocaltunnel --port 8787' | wc -l")['out'] or 0),
+        'public_url': public_url,
+    }
+    logs=read_log_summary(now)
+    connections=read_connections()
+    obsidian=read_obsidian(now)
+    repo_activity=read_repo_activity(now)
+    tool_usage=read_tool_usage(messages)
 
     capacities=[
         capacity(current_view.get('context_tokens_used'), current_view.get('context_limit_estimate'), 'context tokens', 'Current session context', 'real current-session tokens; context limit is a conservative estimate'),
@@ -226,11 +346,17 @@ def build():
         'agent_roster': build_agent_roster(sessions, kanban, now),
         'git': {'status':status['out'], 'last_commit':log['out'], 'clean': status['ok'] and ('\n' not in status['out'].strip() and status['out'].startswith('##'))},
         'processes': procs,
+        'logs': logs,
+        'connections': connections,
+        'obsidian': obsidian,
+        'repo_activity': repo_activity,
+        'tool_usage': tool_usage,
         'disk': {'total':disk.total,'used':disk.used,'free':disk.free,'pct':round(disk.used/disk.total*100,1)},
         'data_quality': [
             'Static workflow placeholders removed; dashboard now renders cron, agent, provider, kanban, storage, and session data from live local sources.',
             'OpenAI/Codex usage is populated from Hermes sessions now. Actual OpenAI weekly cap/reset is not available locally yet, so it is labeled unknown instead of guessed.',
-            'Kanban board is wired to /opt/data/kanban.db; it will show cards as soon as tasks exist.'
+            'Kanban board is wired to /opt/data/kanban.db; it will show cards as soon as tasks exist.',
+            'New easy-track sources: Obsidian readiness, log/error counts, repo activity, connection readiness, and tool usage.'
         ]
     }
     serialized=json.dumps(payload, indent=2)
