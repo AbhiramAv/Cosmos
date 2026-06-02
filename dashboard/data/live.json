@@ -1,0 +1,368 @@
+{
+  "generated_at": "2026-06-02T03:58:57.742644+00:00",
+  "generated_at_epoch": 1780372737.742644,
+  "current_session": {
+    "id": "20260602_035604_faae67",
+    "title": "Personal Multi-Agent Operating System #2",
+    "source": "telegram",
+    "model": "gpt-5.5",
+    "provider": "openai-codex",
+    "started_at": "2026-06-02T03:56:04.474560+00:00",
+    "ended_at": null,
+    "duration_seconds": 173,
+    "input_tokens": 93614,
+    "output_tokens": 5870,
+    "reasoning_tokens": 1079,
+    "cache_read_tokens": 894464,
+    "message_count": 0,
+    "tool_call_count": 0,
+    "api_call_count": 12,
+    "context_tokens_used": 100563,
+    "context_limit_estimate": 400000,
+    "context_pct_estimate": 25.1,
+    "cost_status": "included",
+    "estimated_cost_usd": 0.0
+  },
+  "totals": {
+    "all": {
+      "input_tokens": 1097806,
+      "output_tokens": 111009,
+      "cache_read_tokens": 16931328,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 16700,
+      "message_count": 655,
+      "tool_call_count": 286,
+      "api_call_count": 265
+    },
+    "last_24h": {
+      "input_tokens": 301645,
+      "output_tokens": 44099,
+      "cache_read_tokens": 5684736,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 4138,
+      "message_count": 142,
+      "tool_call_count": 64,
+      "api_call_count": 81
+    },
+    "last_7d": {
+      "input_tokens": 1097806,
+      "output_tokens": 111009,
+      "cache_read_tokens": 16931328,
+      "cache_write_tokens": 0,
+      "reasoning_tokens": 16700,
+      "message_count": 655,
+      "tool_call_count": 286,
+      "api_call_count": 265
+    },
+    "session_count": 7
+  },
+  "series": {
+    "daily": [
+      {
+        "date": "2026-05-27",
+        "label": "May 27",
+        "tokens": 0,
+        "cache": 0,
+        "tools": 0,
+        "sessions": 0
+      },
+      {
+        "date": "2026-05-28",
+        "label": "May 28",
+        "tokens": 0,
+        "cache": 0,
+        "tools": 0,
+        "sessions": 0
+      },
+      {
+        "date": "2026-05-29",
+        "label": "May 29",
+        "tokens": 0,
+        "cache": 0,
+        "tools": 0,
+        "sessions": 0
+      },
+      {
+        "date": "2026-05-30",
+        "label": "May 30",
+        "tokens": 712234,
+        "cache": 10987008,
+        "tools": 171,
+        "sessions": 4
+      },
+      {
+        "date": "2026-05-31",
+        "label": "May 31",
+        "tokens": 163399,
+        "cache": 259584,
+        "tools": 51,
+        "sessions": 1
+      },
+      {
+        "date": "2026-06-01",
+        "label": "Jun 01",
+        "tokens": 249319,
+        "cache": 4790272,
+        "tools": 64,
+        "sessions": 1
+      },
+      {
+        "date": "2026-06-02",
+        "label": "Jun 02",
+        "tokens": 100563,
+        "cache": 894464,
+        "tools": 0,
+        "sessions": 1
+      }
+    ],
+    "hourly_activity": [
+      {
+        "hour": "03:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "04:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "05:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "06:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "07:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "08:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "09:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "10:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "11:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "12:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "13:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "14:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "15:58",
+        "messages": 5,
+        "tools": 1
+      },
+      {
+        "hour": "16:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "17:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "18:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "19:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "20:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "21:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "22:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "23:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "00:58",
+        "messages": 0,
+        "tools": 0
+      },
+      {
+        "hour": "01:58",
+        "messages": 28,
+        "tools": 12
+      },
+      {
+        "hour": "02:58",
+        "messages": 109,
+        "tools": 51
+      }
+    ]
+  },
+  "by_model": [
+    {
+      "provider": "openai-codex",
+      "model": "gpt-5.5",
+      "sessions": 7,
+      "tokens": 1225515,
+      "cache": 16931328,
+      "api_calls": 265,
+      "cost": 0
+    }
+  ],
+  "quota": [
+    {
+      "provider": "OpenAI Codex / ChatGPT",
+      "model": "gpt-5.5",
+      "used": 100563,
+      "limit": 400000,
+      "unit": "context tokens",
+      "pct": 25.1,
+      "reset_at": null,
+      "reset_in": "not exposed by provider",
+      "source": "real Hermes session tokens + heuristic context limit"
+    },
+    {
+      "provider": "Hermes daily local window",
+      "model": "all",
+      "used": 349882,
+      "limit": null,
+      "unit": "tokens observed in last 24h",
+      "pct": null,
+      "reset_at": "2026-06-03T00:00:00+00:00",
+      "reset_in": "20h 1m",
+      "source": "computed from local session DB"
+    },
+    {
+      "provider": "OpenRouter budget",
+      "model": "all OpenRouter models",
+      "used": 0,
+      "limit": 20,
+      "unit": "USD budget configured by Ram",
+      "pct": 0,
+      "reset_at": "2026-07-01T00:00:00+00:00",
+      "reset_in": "28d 20h",
+      "source": "budget known; live OpenRouter key/API not connected"
+    },
+    {
+      "provider": "Claude / Anthropic",
+      "model": "all Claude models",
+      "used": null,
+      "limit": null,
+      "unit": "provider quota",
+      "pct": null,
+      "reset_at": null,
+      "reset_in": "not connected",
+      "source": "no Anthropic key/quota API found locally"
+    }
+  ],
+  "cron": [
+    {
+      "id": "7580b716a6dc",
+      "name": "Cosmos nightly GitHub sync (midnight Eastern)",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "0 * * * *",
+      "last_run_at": "2026-06-02T03:00:52.288864+00:00",
+      "next_run_at": "2026-06-02T04:00:00+00:00",
+      "last_status": "ok",
+      "completed": 53
+    },
+    {
+      "id": "ea3385f39c25",
+      "name": "Cosmos dashboard localtunnel watchdog",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 10m",
+      "last_run_at": null,
+      "next_run_at": "2026-06-02T04:00:12.037813+00:00",
+      "last_status": null,
+      "completed": 0
+    }
+  ],
+  "git": {
+    "status": "## main...origin/main\n?? scripts/",
+    "last_commit": "02d3b1d docs: record free dashboard hosting",
+    "clean": false
+  },
+  "logs": [
+    {
+      "name": "gateway.log",
+      "size": 121768,
+      "errors": 18,
+      "warnings": 16
+    },
+    {
+      "name": "agent.log",
+      "size": 695312,
+      "errors": 47,
+      "warnings": 22
+    },
+    {
+      "name": "errors.log",
+      "size": 31808,
+      "errors": 110,
+      "warnings": 53
+    }
+  ],
+  "providers": {
+    "openrouter": false,
+    "openai": false,
+    "anthropic": false,
+    "telegram": true
+  },
+  "processes": {
+    "dashboard_server": "2",
+    "localtunnel": "2"
+  },
+  "disk": {
+    "total": 102888095744,
+    "used": 18987724800,
+    "free": 83883593728,
+    "pct": 18.5
+  },
+  "data_quality": [
+    "Token, session, cron, git, process, and log numbers come from local Hermes/Cosmos files.",
+    "Provider reset/quota timers require provider quota APIs or browser/OAuth integrations; unavailable sources are labeled instead of guessed.",
+    "Context limit is a heuristic until Hermes/provider exposes exact gpt-5.5 limit."
+  ]
+}

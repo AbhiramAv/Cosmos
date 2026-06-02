@@ -3,96 +3,117 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cosmos Agentic OS</title>
+  <title>Cosmos Live Mission Control</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar">
-      <div class="brand">
-        <div class="orb"></div>
+  <div class="shell">
+    <aside class="rail">
+      <div class="logo-row">
+        <div class="logo"><span></span></div>
         <div>
-          <p class="eyebrow">Ram's Agent Company</p>
-          <h1>Cosmos OS</h1>
+          <div class="micro">COSMOS OS</div>
+          <h1>Live Control</h1>
         </div>
       </div>
       <nav>
-        <a href="#command">Command Center</a>
-        <a href="#staff">Agent Staff</a>
-        <a href="#missions">Mission Control</a>
-        <a href="#queue">Task Queue</a>
-        <a href="#dream">Dream Briefs</a>
-        <a href="#artifacts">Artifacts</a>
-        <a href="#usage">Usage</a>
-        <a href="#cron">Cron Registry</a>
-        <a href="#integrations">Integrations</a>
+        <a href="#overview">Overview</a>
+        <a href="#quota">Limits</a>
+        <a href="#charts">Graphs</a>
+        <a href="#models">Models</a>
+        <a href="#agents">Agents</a>
+        <a href="#cron">Cron</a>
+        <a href="#quality">Sources</a>
       </nav>
-      <div class="side-note">
-        <strong>Mode:</strong> Blueprint MVP<br />
-        <strong>Backend:</strong> static local data<br />
-        <strong>Secrets:</strong> not stored here
+      <div class="rail-card">
+        <div class="micro">PUBLIC LINK</div>
+        <a class="public-link" href="https://ram-cosmos-dashboard.loca.lt/">ram-cosmos-dashboard.loca.lt</a>
+        <p>Live from local Hermes files. No Supabase needed yet.</p>
       </div>
     </aside>
 
     <main>
-      <section id="command" class="hero panel">
-        <div>
-          <p class="eyebrow">CEO Command Center</p>
-          <h2>Cosmos CEO is online as the orchestrator layer.</h2>
-          <p>One visual home for agents, missions, memory, artifacts, cron jobs, and AI usage.</p>
-          <div class="actions">
-            <button>Queue Task</button>
-            <button>Set Mission</button>
-            <button>Run Dream Review</button>
-            <button>Open Artifact Library</button>
+      <section id="overview" class="hero">
+        <div class="hero-copy">
+          <div class="micro">RAM'S AGENTIC OS · REAL TELEMETRY</div>
+          <h2>Not a mockup anymore. Cosmos is reading live Hermes session data.</h2>
+          <p id="lastUpdated">Loading live metrics…</p>
+        </div>
+        <div class="hero-stack">
+          <div class="live-pill"><span class="dot"></span><span id="liveStatus">Connecting</span></div>
+          <div class="session-title" id="sessionTitle">—</div>
+          <div class="session-meta" id="sessionMeta">—</div>
+        </div>
+      </section>
+
+      <section class="kpi-grid" id="kpis"></section>
+
+      <section id="quota" class="grid quota-grid">
+        <div class="panel limit-panel">
+          <div class="panel-head">
+            <div><div class="micro">SESSION DATA LIMIT</div><h3>Context usage</h3></div>
+            <div class="source-badge">Hermes DB</div>
           </div>
+          <div class="gauge-wrap">
+            <canvas id="contextGauge" width="360" height="230"></canvas>
+            <div class="gauge-center">
+              <strong id="contextPct">—</strong>
+              <span>estimated used</span>
+            </div>
+          </div>
+          <div class="meter-legend" id="contextLegend"></div>
         </div>
-        <div class="status-card">
-          <span class="pulse"></span>
-          <h3>System status</h3>
-          <div id="systemStatus"></div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <div><div class="micro">MODEL RESETS</div><h3>Quota visibility</h3></div>
+            <div class="source-badge warn">mixed</div>
+          </div>
+          <div id="quotaCards" class="quota-cards"></div>
         </div>
       </section>
 
-      <section class="grid two">
-        <div id="missions" class="panel">
-          <div class="section-title"><p class="eyebrow">Mission Control</p><h2>Active missions</h2></div>
-          <div id="missionsList"></div>
+      <section id="charts" class="grid charts-grid">
+        <div class="panel wide">
+          <div class="panel-head">
+            <div><div class="micro">7-DAY USAGE</div><h3>Tokens, cache, and tool calls</h3></div>
+            <div class="tabs"><button class="active" data-chart="tokens">Tokens</button><button data-chart="cache">Cache</button><button data-chart="tools">Tools</button></div>
+          </div>
+          <canvas id="dailyChart" height="280"></canvas>
         </div>
-        <div id="queue" class="panel">
-          <div class="section-title"><p class="eyebrow">Queue</p><h2>Work pipeline</h2></div>
-          <div id="queueList"></div>
-        </div>
-      </section>
-
-      <section id="staff" class="panel">
-        <div class="section-title"><p class="eyebrow">Pantheon</p><h2>Agent staff map</h2></div>
-        <div class="org-chart" id="orgChart"></div>
-      </section>
-
-      <section class="grid three">
-        <div id="dream" class="panel tall">
-          <div class="section-title"><p class="eyebrow">Dream Agent</p><h2>Nightly insights</h2></div>
-          <div id="dreamList"></div>
-        </div>
-        <div id="usage" class="panel tall">
-          <div class="section-title"><p class="eyebrow">Spend</p><h2>Usage snapshot</h2></div>
-          <div id="usageList"></div>
-        </div>
-        <div id="integrations" class="panel tall">
-          <div class="section-title"><p class="eyebrow">Connections</p><h2>Integration status</h2></div>
-          <div id="integrationsList"></div>
+        <div class="panel">
+          <div class="panel-head"><div><div class="micro">LAST 24H</div><h3>Activity pulse</h3></div></div>
+          <canvas id="pulseChart" height="280"></canvas>
         </div>
       </section>
 
-      <section class="grid two">
-        <div id="artifacts" class="panel">
-          <div class="section-title"><p class="eyebrow">Artifact Library</p><h2>Saved outputs</h2></div>
-          <div id="artifactList"></div>
+      <section id="models" class="grid models-grid">
+        <div class="panel wide">
+          <div class="panel-head"><div><div class="micro">MODELS</div><h3>Provider/model usage from real sessions</h3></div></div>
+          <div id="modelTable" class="model-table"></div>
         </div>
-        <div id="cron" class="panel">
-          <div class="section-title"><p class="eyebrow">Heartbeat</p><h2>Cron registry</h2></div>
-          <div id="cronList"></div>
+        <div class="panel">
+          <div class="panel-head"><div><div class="micro">SYSTEM HEALTH</div><h3>Processes, Git, disk</h3></div></div>
+          <div id="healthList"></div>
+        </div>
+      </section>
+
+      <section id="agents" class="panel">
+        <div class="panel-head"><div><div class="micro">PANTHEON</div><h3>Agent company operating map</h3></div><div class="source-badge">blueprint + live status</div></div>
+        <div id="agentMap" class="agent-map"></div>
+      </section>
+
+      <section id="cron" class="grid models-grid">
+        <div class="panel wide">
+          <div class="panel-head"><div><div class="micro">HEARTBEAT</div><h3>Cron registry</h3></div></div>
+          <div id="cronList" class="cron-list"></div>
+        </div>
+        <div id="quality" class="panel">
+          <div class="panel-head"><div><div class="micro">TRUTH SOURCES</div><h3>What is real vs not connected</h3></div></div>
+          <div id="qualityList"></div>
         </div>
       </section>
     </main>
