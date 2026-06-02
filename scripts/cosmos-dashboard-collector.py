@@ -215,5 +215,4 @@ def build():
     return payload
 
 if __name__ == '__main__':
-    p=build()
-    print(f"live metrics written {OUT} at {p['generated_at']}")
+    build()

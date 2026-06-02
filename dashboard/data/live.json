@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-02T03:58:57.742644+00:00",
-  "generated_at_epoch": 1780372737.742644,
+  "generated_at": "2026-06-02T04:03:12.172177+00:00",
+  "generated_at_epoch": 1780372992.1721768,
   "current_session": {
     "id": "20260602_035604_faae67",
     "title": "Personal Multi-Agent Operating System #2",
@@ -9,50 +9,50 @@
     "provider": "openai-codex",
     "started_at": "2026-06-02T03:56:04.474560+00:00",
     "ended_at": null,
-    "duration_seconds": 173,
-    "input_tokens": 93614,
-    "output_tokens": 5870,
-    "reasoning_tokens": 1079,
-    "cache_read_tokens": 894464,
+    "duration_seconds": 427,
+    "input_tokens": 114916,
+    "output_tokens": 15918,
+    "reasoning_tokens": 1538,
+    "cache_read_tokens": 2584576,
     "message_count": 0,
     "tool_call_count": 0,
-    "api_call_count": 12,
-    "context_tokens_used": 100563,
+    "api_call_count": 27,
+    "context_tokens_used": 132372,
     "context_limit_estimate": 400000,
-    "context_pct_estimate": 25.1,
+    "context_pct_estimate": 33.1,
     "cost_status": "included",
     "estimated_cost_usd": 0.0
   },
   "totals": {
     "all": {
-      "input_tokens": 1097806,
-      "output_tokens": 111009,
-      "cache_read_tokens": 16931328,
+      "input_tokens": 1119108,
+      "output_tokens": 121057,
+      "cache_read_tokens": 18621440,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 16700,
+      "reasoning_tokens": 17159,
       "message_count": 655,
       "tool_call_count": 286,
-      "api_call_count": 265
+      "api_call_count": 280
     },
     "last_24h": {
-      "input_tokens": 301645,
-      "output_tokens": 44099,
-      "cache_read_tokens": 5684736,
+      "input_tokens": 322947,
+      "output_tokens": 54147,
+      "cache_read_tokens": 7374848,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 4138,
+      "reasoning_tokens": 4597,
       "message_count": 142,
       "tool_call_count": 64,
-      "api_call_count": 81
+      "api_call_count": 96
     },
     "last_7d": {
-      "input_tokens": 1097806,
-      "output_tokens": 111009,
-      "cache_read_tokens": 16931328,
+      "input_tokens": 1119108,
+      "output_tokens": 121057,
+      "cache_read_tokens": 18621440,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 16700,
+      "reasoning_tokens": 17159,
       "message_count": 655,
       "tool_call_count": 286,
-      "api_call_count": 265
+      "api_call_count": 280
     },
     "session_count": 7
   },
@@ -109,130 +109,130 @@
       {
         "date": "2026-06-02",
         "label": "Jun 02",
-        "tokens": 100563,
-        "cache": 894464,
+        "tokens": 132372,
+        "cache": 2584576,
         "tools": 0,
         "sessions": 1
       }
     ],
     "hourly_activity": [
       {
-        "hour": "03:58",
+        "hour": "04:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "04:58",
+        "hour": "05:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "05:58",
+        "hour": "06:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "06:58",
+        "hour": "07:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "07:58",
+        "hour": "08:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "08:58",
+        "hour": "09:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "09:58",
+        "hour": "10:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "10:58",
+        "hour": "11:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "11:58",
+        "hour": "12:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "12:58",
+        "hour": "13:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "13:58",
+        "hour": "14:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "14:58",
+        "hour": "15:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "15:58",
+        "hour": "16:03",
         "messages": 5,
         "tools": 1
       },
       {
-        "hour": "16:58",
+        "hour": "17:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "17:58",
+        "hour": "18:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "18:58",
+        "hour": "19:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "19:58",
+        "hour": "20:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "20:58",
+        "hour": "21:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "21:58",
+        "hour": "22:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "22:58",
+        "hour": "23:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "23:58",
+        "hour": "00:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "00:58",
+        "hour": "01:03",
         "messages": 0,
         "tools": 0
       },
       {
-        "hour": "01:58",
+        "hour": "02:03",
         "messages": 28,
         "tools": 12
       },
       {
-        "hour": "02:58",
+        "hour": "03:03",
         "messages": 109,
         "tools": 51
       }
@@ -243,9 +243,9 @@
       "provider": "openai-codex",
       "model": "gpt-5.5",
       "sessions": 7,
-      "tokens": 1225515,
-      "cache": 16931328,
-      "api_calls": 265,
+      "tokens": 1257324,
+      "cache": 18621440,
+      "api_calls": 280,
       "cost": 0
     }
   ],
@@ -253,10 +253,10 @@
     {
       "provider": "OpenAI Codex / ChatGPT",
       "model": "gpt-5.5",
-      "used": 100563,
+      "used": 132372,
       "limit": 400000,
       "unit": "context tokens",
-      "pct": 25.1,
+      "pct": 33.1,
       "reset_at": null,
       "reset_in": "not exposed by provider",
       "source": "real Hermes session tokens + heuristic context limit"
@@ -264,12 +264,12 @@
     {
       "provider": "Hermes daily local window",
       "model": "all",
-      "used": 349882,
+      "used": 381691,
       "limit": null,
       "unit": "tokens observed in last 24h",
       "pct": null,
       "reset_at": "2026-06-03T00:00:00+00:00",
-      "reset_in": "20h 1m",
+      "reset_in": "19h 56m",
       "source": "computed from local session DB"
     },
     {
@@ -280,7 +280,7 @@
       "unit": "USD budget configured by Ram",
       "pct": 0,
       "reset_at": "2026-07-01T00:00:00+00:00",
-      "reset_in": "28d 20h",
+      "reset_in": "28d 19h",
       "source": "budget known; live OpenRouter key/API not connected"
     },
     {
@@ -302,10 +302,10 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "0 * * * *",
-      "last_run_at": "2026-06-02T03:00:52.288864+00:00",
-      "next_run_at": "2026-06-02T04:00:00+00:00",
+      "last_run_at": "2026-06-02T04:00:54.019106+00:00",
+      "next_run_at": "2026-06-02T05:00:00+00:00",
       "last_status": "ok",
-      "completed": 53
+      "completed": 54
     },
     {
       "id": "ea3385f39c25",
@@ -313,35 +313,46 @@
       "enabled": true,
       "state": "scheduled",
       "schedule": "every 10m",
+      "last_run_at": "2026-06-02T04:00:53.051846+00:00",
+      "next_run_at": "2026-06-02T04:10:53.051846+00:00",
+      "last_status": "ok",
+      "completed": 1
+    },
+    {
+      "id": "9c9da76fa6f3",
+      "name": "Cosmos dashboard live metrics collector",
+      "enabled": true,
+      "state": "scheduled",
+      "schedule": "every 1m",
       "last_run_at": null,
-      "next_run_at": "2026-06-02T04:00:12.037813+00:00",
+      "next_run_at": "2026-06-02T04:03:03.167097+00:00",
       "last_status": null,
       "completed": 0
     }
   ],
   "git": {
-    "status": "## main...origin/main\n?? scripts/",
-    "last_commit": "02d3b1d docs: record free dashboard hosting",
+    "status": "## main...origin/main\n M dashboard/README.md\n M dashboard/app.js\n M dashboard/data/live.json\n M scripts/cosmos-dashboard-collector.py\n?? scripts/cosmos-dashboard-watchdog.sh",
+    "last_commit": "0e83f8f chore: nightly Cosmos sync 2026-06-02",
     "clean": false
   },
   "logs": [
     {
       "name": "gateway.log",
-      "size": 121768,
+      "size": 122287,
       "errors": 18,
       "warnings": 16
     },
     {
       "name": "agent.log",
-      "size": 695312,
-      "errors": 47,
-      "warnings": 22
+      "size": 712967,
+      "errors": 49,
+      "warnings": 24
     },
     {
       "name": "errors.log",
-      "size": 31808,
-      "errors": 110,
-      "warnings": 53
+      "size": 32353,
+      "errors": 112,
+      "warnings": 55
     }
   ],
   "providers": {
@@ -356,8 +367,8 @@
   },
   "disk": {
     "total": 102888095744,
-    "used": 18987724800,
-    "free": 83883593728,
+    "used": 19020300288,
+    "free": 83851018240,
     "pct": 18.5
   },
   "data_quality": [
