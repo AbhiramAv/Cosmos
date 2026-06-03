@@ -1,372 +1,187 @@
 {
-  "generated_at": "2026-06-03T03:59:35.675689+00:00",
-  "generated_at_epoch": 1780459175.6756887,
+  "generated_at": "2026-06-03T14:50:25.019494+00:00",
+  "generated_at_epoch": 1780498225.0194936,
   "current_session": {
-    "id": "20260602_130821_2b1b3c",
-    "title": "Personal Multi-Agent Operating System #5",
+    "id": "20260603_144615_aad7a703",
+    "title": "Friendly Greeting Exchange With Abhiram",
     "source": "telegram",
-    "model": "gpt-5.5",
-    "provider": "openai-codex",
-    "parent_session_id": "20260602_041300_c66554",
-    "started_at": "2026-06-02T13:08:21.647642+00:00",
+    "model": "stepfun/step-3.7-flash:free",
+    "provider": "nous",
+    "parent_session_id": null,
+    "started_at": "2026-06-03T14:46:16.003911+00:00",
     "ended_at": null,
-    "duration_seconds": 53474,
-    "input_tokens": 186016,
-    "output_tokens": 13824,
-    "reasoning_tokens": 2342,
-    "cache_read_tokens": 3268096,
-    "message_count": 114,
-    "tool_call_count": 56,
-    "api_call_count": 41,
-    "context_tokens_used": 202182,
+    "duration_seconds": 249,
+    "input_tokens": 71389,
+    "output_tokens": 6528,
+    "reasoning_tokens": 0,
+    "cache_read_tokens": 1250048,
+    "message_count": 3,
+    "tool_call_count": 0,
+    "api_call_count": 30,
+    "context_tokens_used": 77917,
     "context_limit_estimate": 400000,
-    "context_remaining_estimate": 197818,
-    "context_pct_estimate": 50.5,
-    "cost_status": "included",
+    "context_remaining_estimate": 322083,
+    "context_pct_estimate": 19.5,
+    "cost_status": "estimated",
     "estimated_cost_usd": 0.0
   },
   "session_timing": {
-    "current_started_at": "2026-06-02T13:08:21.647642+00:00",
-    "current_started_epoch": 1780405701.647642,
-    "current_age_seconds": 53474,
+    "current_started_at": "2026-06-03T14:46:16.003911+00:00",
+    "current_started_epoch": 1780497976.003911,
+    "current_age_seconds": 249,
     "current_ends_at": null,
     "current_end_reason": null,
-    "last_ended_at": "2026-06-02T13:08:21.646323+00:00",
-    "last_ended_epoch": 1780405701.6463227,
-    "last_end_reason": "compression",
-    "last_session_title": "Personal Multi-Agent Operating System #4",
-    "local_context_reset_status": "compression zone; context may compact before a hard reset",
+    "last_ended_at": null,
+    "last_ended_epoch": null,
+    "last_end_reason": null,
+    "last_session_title": null,
+    "local_context_reset_status": "healthy; context reset only when a new session starts",
     "local_context_reset_source": "Hermes session start/end from /opt/data/state.db; reset is local context lifecycle, separate from Codex provider quota."
   },
   "codex_reset": {
     "provider": "openai-codex",
-    "status": "last observed reset has passed; next provider reset unknown until Codex returns another limit payload",
+    "status": "no Codex limit/reset payload found in local logs yet",
     "is_rate_limited_now": false,
-    "latest_resets_at": "2026-06-02T07:41:16+00:00",
-    "latest_resets_at_epoch": 1780386076.0,
-    "seconds_until_reset": 0,
-    "last_limit_observed_at": "2026-06-02T05:01:09+00:00",
-    "last_limit_observed_epoch": 1780376469.0,
-    "recent_limit_events": [
-      {
-        "observed_at": "2026-06-02T05:01:09+00:00",
-        "observed_epoch": 1780376469.0,
-        "resets_at": "2026-06-02T07:41:16+00:00",
-        "resets_at_epoch": 1780386076.0,
-        "resets_in_seconds_reported": 9607,
-        "source": "/opt/data/logs/errors.log"
-      },
-      {
-        "observed_at": "2026-06-02T05:01:07+00:00",
-        "observed_epoch": 1780376467.0,
-        "resets_at": "2026-06-02T07:41:16+00:00",
-        "resets_at_epoch": 1780386076.0,
-        "resets_in_seconds_reported": 9610,
-        "source": "/opt/data/logs/errors.log"
-      }
-    ],
+    "latest_resets_at": null,
+    "latest_resets_at_epoch": null,
+    "seconds_until_reset": null,
+    "last_limit_observed_at": null,
+    "last_limit_observed_epoch": null,
+    "recent_limit_events": [],
     "source": "Parsed from Codex HTTP 429 usage_limit_reached errors in /opt/data/logs/errors.log. Codex quota cap/reset is not otherwise exposed locally."
   },
   "active_sessions": [
     {
-      "id": "20260602_130821_2b1b3c",
-      "title": "Personal Multi-Agent Operating System #5",
+      "id": "20260603_144615_aad7a703",
+      "title": "Friendly Greeting Exchange With Abhiram",
       "source": "telegram",
-      "model": "gpt-5.5",
-      "provider": "openai-codex",
-      "parent_session_id": "20260602_041300_c66554",
-      "started_at": "2026-06-02T13:08:21.647642+00:00",
+      "model": "stepfun/step-3.7-flash:free",
+      "provider": "nous",
+      "parent_session_id": null,
+      "started_at": "2026-06-03T14:46:16.003911+00:00",
       "ended_at": null,
-      "duration_seconds": 53474,
-      "input_tokens": 186016,
-      "output_tokens": 13824,
-      "reasoning_tokens": 2342,
-      "cache_read_tokens": 3268096,
-      "message_count": 114,
-      "tool_call_count": 56,
-      "api_call_count": 41,
-      "context_tokens_used": 202182,
+      "duration_seconds": 249,
+      "input_tokens": 71389,
+      "output_tokens": 6528,
+      "reasoning_tokens": 0,
+      "cache_read_tokens": 1250048,
+      "message_count": 3,
+      "tool_call_count": 0,
+      "api_call_count": 30,
+      "context_tokens_used": 77917,
       "context_limit_estimate": 400000,
-      "context_remaining_estimate": 197818,
-      "context_pct_estimate": 50.5,
-      "cost_status": "included",
+      "context_remaining_estimate": 322083,
+      "context_pct_estimate": 19.5,
+      "cost_status": "estimated",
+      "estimated_cost_usd": 0.0
+    },
+    {
+      "id": "20260603_142945_69e8a5",
+      "title": "Greeting and Help Offer",
+      "source": "cli",
+      "model": "stepfun/step-3.7-flash:free",
+      "provider": "nous",
+      "parent_session_id": null,
+      "started_at": "2026-06-03T14:30:03.422920+00:00",
+      "ended_at": null,
+      "duration_seconds": 1221,
+      "input_tokens": 630172,
+      "output_tokens": 14089,
+      "reasoning_tokens": 0,
+      "cache_read_tokens": 3249536,
+      "message_count": 151,
+      "tool_call_count": 79,
+      "api_call_count": 64,
+      "context_tokens_used": 644261,
+      "context_limit_estimate": 400000,
+      "context_remaining_estimate": 0,
+      "context_pct_estimate": 100,
+      "cost_status": "estimated",
       "estimated_cost_usd": 0.0
     }
   ],
   "recent_sessions": [
     {
-      "id": "20260602_130821_2b1b3c",
-      "title": "Personal Multi-Agent Operating System #5",
+      "id": "20260603_144615_aad7a703",
+      "title": "Friendly Greeting Exchange With Abhiram",
       "source": "telegram",
-      "model": "gpt-5.5",
-      "provider": "openai-codex",
-      "parent_session_id": "20260602_041300_c66554",
-      "started_at": "2026-06-02T13:08:21.647642+00:00",
+      "model": "stepfun/step-3.7-flash:free",
+      "provider": "nous",
+      "parent_session_id": null,
+      "started_at": "2026-06-03T14:46:16.003911+00:00",
       "ended_at": null,
-      "duration_seconds": 53474,
-      "input_tokens": 186016,
-      "output_tokens": 13824,
-      "reasoning_tokens": 2342,
-      "cache_read_tokens": 3268096,
-      "message_count": 114,
-      "tool_call_count": 56,
-      "api_call_count": 41,
-      "context_tokens_used": 202182,
+      "duration_seconds": 249,
+      "input_tokens": 71389,
+      "output_tokens": 6528,
+      "reasoning_tokens": 0,
+      "cache_read_tokens": 1250048,
+      "message_count": 3,
+      "tool_call_count": 0,
+      "api_call_count": 30,
+      "context_tokens_used": 77917,
       "context_limit_estimate": 400000,
-      "context_remaining_estimate": 197818,
-      "context_pct_estimate": 50.5,
-      "cost_status": "included",
+      "context_remaining_estimate": 322083,
+      "context_pct_estimate": 19.5,
+      "cost_status": "estimated",
       "estimated_cost_usd": 0.0
     },
     {
-      "id": "20260602_041300_c66554",
-      "title": "Personal Multi-Agent Operating System #4",
-      "source": "telegram",
-      "model": "gpt-5.5",
-      "provider": "openai-codex",
-      "parent_session_id": "20260602_040613_c90f6c",
-      "started_at": "2026-06-02T04:13:00.933443+00:00",
-      "ended_at": "2026-06-02T13:08:21.646323+00:00",
-      "duration_seconds": 32120,
-      "input_tokens": 561445,
-      "output_tokens": 61228,
-      "reasoning_tokens": 5461,
-      "cache_read_tokens": 12915200,
-      "message_count": 160,
-      "tool_call_count": 82,
-      "api_call_count": 153,
-      "context_tokens_used": 628134,
+      "id": "20260603_142945_69e8a5",
+      "title": "Greeting and Help Offer",
+      "source": "cli",
+      "model": "stepfun/step-3.7-flash:free",
+      "provider": "nous",
+      "parent_session_id": null,
+      "started_at": "2026-06-03T14:30:03.422920+00:00",
+      "ended_at": null,
+      "duration_seconds": 1221,
+      "input_tokens": 630172,
+      "output_tokens": 14089,
+      "reasoning_tokens": 0,
+      "cache_read_tokens": 3249536,
+      "message_count": 151,
+      "tool_call_count": 79,
+      "api_call_count": 64,
+      "context_tokens_used": 644261,
       "context_limit_estimate": 400000,
       "context_remaining_estimate": 0,
       "context_pct_estimate": 100,
-      "cost_status": "included",
-      "estimated_cost_usd": 0.0
-    },
-    {
-      "id": "20260602_040613_c90f6c",
-      "title": "Personal Multi-Agent Operating System #3",
-      "source": "telegram",
-      "model": "gpt-5.5",
-      "provider": "openai-codex",
-      "parent_session_id": "20260602_035604_faae67",
-      "started_at": "2026-06-02T04:06:13.700691+00:00",
-      "ended_at": "2026-06-02T04:13:00.931972+00:00",
-      "duration_seconds": 407,
-      "input_tokens": 85498,
-      "output_tokens": 6860,
-      "reasoning_tokens": 436,
-      "cache_read_tokens": 1693696,
-      "message_count": 228,
-      "tool_call_count": 115,
-      "api_call_count": 21,
-      "context_tokens_used": 92794,
-      "context_limit_estimate": 400000,
-      "context_remaining_estimate": 307206,
-      "context_pct_estimate": 23.2,
-      "cost_status": "included",
-      "estimated_cost_usd": 0.0
-    },
-    {
-      "id": "20260602_035604_faae67",
-      "title": "Personal Multi-Agent Operating System #2",
-      "source": "telegram",
-      "model": "gpt-5.5",
-      "provider": "openai-codex",
-      "parent_session_id": "20260601_161351_3d579d9a",
-      "started_at": "2026-06-02T03:56:04.474560+00:00",
-      "ended_at": "2026-06-02T04:06:13.699876+00:00",
-      "duration_seconds": 609,
-      "input_tokens": 120121,
-      "output_tokens": 17842,
-      "reasoning_tokens": 2106,
-      "cache_read_tokens": 3539456,
-      "message_count": 185,
-      "tool_call_count": 92,
-      "api_call_count": 35,
-      "context_tokens_used": 140069,
-      "context_limit_estimate": 400000,
-      "context_remaining_estimate": 259931,
-      "context_pct_estimate": 35.0,
-      "cost_status": "included",
-      "estimated_cost_usd": 0.0
-    },
-    {
-      "id": "20260601_161351_3d579d9a",
-      "title": "Personal Multi-Agent Operating System",
-      "source": "telegram",
-      "model": "gpt-5.5",
-      "provider": "openai-codex",
-      "parent_session_id": null,
-      "started_at": "2026-06-01T16:13:51.961471+00:00",
-      "ended_at": "2026-06-02T03:56:04.473501+00:00",
-      "duration_seconds": 42132,
-      "input_tokens": 208031,
-      "output_tokens": 38229,
-      "reasoning_tokens": 3059,
-      "cache_read_tokens": 4790272,
-      "message_count": 142,
-      "tool_call_count": 64,
-      "api_call_count": 69,
-      "context_tokens_used": 249319,
-      "context_limit_estimate": 400000,
-      "context_remaining_estimate": 150681,
-      "context_pct_estimate": 62.3,
-      "cost_status": "included",
-      "estimated_cost_usd": 0.0
-    },
-    {
-      "id": "20260531_001700_f4c002",
-      "title": "General Greeting and Assistance #3",
-      "source": "telegram",
-      "model": "gpt-5.5",
-      "provider": "openai-codex",
-      "parent_session_id": "20260530_224646_9b3121",
-      "started_at": "2026-05-31T00:17:00.181708+00:00",
-      "ended_at": "2026-06-01T16:13:51.945629+00:00",
-      "duration_seconds": 143811,
-      "input_tokens": 158628,
-      "output_tokens": 3771,
-      "reasoning_tokens": 1000,
-      "cache_read_tokens": 259584,
-      "message_count": 122,
-      "tool_call_count": 51,
-      "api_call_count": 5,
-      "context_tokens_used": 163399,
-      "context_limit_estimate": 400000,
-      "context_remaining_estimate": 236601,
-      "context_pct_estimate": 40.8,
-      "cost_status": "included",
-      "estimated_cost_usd": 0.0
-    },
-    {
-      "id": "20260530_224646_9b3121",
-      "title": "General Greeting and Assistance #2",
-      "source": "telegram",
-      "model": "gpt-5.5",
-      "provider": "openai-codex",
-      "parent_session_id": "20260530_211949_d557598f",
-      "started_at": "2026-05-30T22:46:46.060516+00:00",
-      "ended_at": "2026-05-31T00:17:00.179997+00:00",
-      "duration_seconds": 5414,
-      "input_tokens": 319812,
-      "output_tokens": 30924,
-      "reasoning_tokens": 4225,
-      "cache_read_tokens": 3972096,
-      "message_count": 122,
-      "tool_call_count": 51,
-      "api_call_count": 55,
-      "context_tokens_used": 354961,
-      "context_limit_estimate": 400000,
-      "context_remaining_estimate": 45039,
-      "context_pct_estimate": 88.7,
-      "cost_status": "included",
-      "estimated_cost_usd": 0.0
-    },
-    {
-      "id": "20260530_212827_ddb62a",
-      "title": "Greeting and Assistance",
-      "source": "cli",
-      "model": "gpt-5.5",
-      "provider": "openai-codex",
-      "parent_session_id": null,
-      "started_at": "2026-05-30T21:28:39.104347+00:00",
-      "ended_at": "2026-05-31T00:31:18.845313+00:00",
-      "duration_seconds": 10959,
-      "input_tokens": 35121,
-      "output_tokens": 2984,
-      "reasoning_tokens": 428,
-      "cache_read_tokens": 482304,
-      "message_count": 44,
-      "tool_call_count": 26,
-      "api_call_count": 16,
-      "context_tokens_used": 38533,
-      "context_limit_estimate": 400000,
-      "context_remaining_estimate": 361467,
-      "context_pct_estimate": 9.6,
-      "cost_status": "included",
-      "estimated_cost_usd": 0.0
-    },
-    {
-      "id": "20260530_211949_d557598f",
-      "title": "General Greeting and Assistance",
-      "source": "telegram",
-      "model": "gpt-5.5",
-      "provider": "openai-codex",
-      "parent_session_id": null,
-      "started_at": "2026-05-30T21:19:49.365674+00:00",
-      "ended_at": "2026-05-30T22:46:46.059191+00:00",
-      "duration_seconds": 5216,
-      "input_tokens": 190119,
-      "output_tokens": 23039,
-      "reasoning_tokens": 4568,
-      "cache_read_tokens": 4474880,
-      "message_count": 144,
-      "tool_call_count": 57,
-      "api_call_count": 69,
-      "context_tokens_used": 217726,
-      "context_limit_estimate": 400000,
-      "context_remaining_estimate": 182274,
-      "context_pct_estimate": 54.4,
-      "cost_status": "included",
-      "estimated_cost_usd": 0.0
-    },
-    {
-      "id": "20260530_211105_b3880f",
-      "title": "VPS IP and Hostname",
-      "source": "cli",
-      "model": "gpt-5.5",
-      "provider": "openai-codex",
-      "parent_session_id": null,
-      "started_at": "2026-05-30T21:11:49.072493+00:00",
-      "ended_at": "2026-05-30T21:19:07.232178+00:00",
-      "duration_seconds": 438,
-      "input_tokens": 92481,
-      "output_tokens": 6192,
-      "reasoning_tokens": 2341,
-      "cache_read_tokens": 2057728,
-      "message_count": 81,
-      "tool_call_count": 37,
-      "api_call_count": 39,
-      "context_tokens_used": 101014,
-      "context_limit_estimate": 400000,
-      "context_remaining_estimate": 298986,
-      "context_pct_estimate": 25.3,
-      "cost_status": "included",
+      "cost_status": "estimated",
       "estimated_cost_usd": 0.0
     }
   ],
   "totals": {
     "all": {
-      "input_tokens": 1957272,
-      "output_tokens": 204893,
-      "cache_read_tokens": 37453312,
+      "input_tokens": 701561,
+      "output_tokens": 20617,
+      "cache_read_tokens": 4499584,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 25966,
-      "message_count": 1342,
-      "tool_call_count": 631,
-      "api_call_count": 503
+      "reasoning_tokens": 0,
+      "message_count": 154,
+      "tool_call_count": 79,
+      "api_call_count": 94
     },
     "last_24h": {
-      "input_tokens": 832959,
-      "output_tokens": 81912,
-      "cache_read_tokens": 17876992,
+      "input_tokens": 701561,
+      "output_tokens": 20617,
+      "cache_read_tokens": 4499584,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 8239,
-      "message_count": 502,
-      "tool_call_count": 253,
-      "api_call_count": 215
+      "reasoning_tokens": 0,
+      "message_count": 154,
+      "tool_call_count": 79,
+      "api_call_count": 94
     },
     "last_7d": {
-      "input_tokens": 1957272,
-      "output_tokens": 204893,
-      "cache_read_tokens": 37453312,
+      "input_tokens": 701561,
+      "output_tokens": 20617,
+      "cache_read_tokens": 4499584,
       "cache_write_tokens": 0,
-      "reasoning_tokens": 25966,
-      "message_count": 1342,
-      "tool_call_count": 631,
-      "api_call_count": 503
+      "reasoning_tokens": 0,
+      "message_count": 154,
+      "tool_call_count": 79,
+      "api_call_count": 94
     },
-    "session_count": 10
+    "session_count": 2
   },
   "series": {
     "daily": [
@@ -389,207 +204,207 @@
       {
         "date": "2026-05-30",
         "label": "May 30",
-        "tokens": 712234,
-        "cache": 10987008,
-        "tools": 171,
-        "sessions": 4
-      },
-      {
-        "date": "2026-05-31",
-        "label": "May 31",
-        "tokens": 163399,
-        "cache": 259584,
-        "tools": 51,
-        "sessions": 1
-      },
-      {
-        "date": "2026-06-01",
-        "label": "Jun 01",
-        "tokens": 249319,
-        "cache": 4790272,
-        "tools": 64,
-        "sessions": 1
-      },
-      {
-        "date": "2026-06-02",
-        "label": "Jun 02",
-        "tokens": 1063179,
-        "cache": 21416448,
-        "tools": 345,
-        "sessions": 4
-      },
-      {
-        "date": "2026-06-03",
-        "label": "Jun 03",
         "tokens": 0,
         "cache": 0,
         "tools": 0,
         "sessions": 0
+      },
+      {
+        "date": "2026-05-31",
+        "label": "May 31",
+        "tokens": 0,
+        "cache": 0,
+        "tools": 0,
+        "sessions": 0
+      },
+      {
+        "date": "2026-06-01",
+        "label": "Jun 01",
+        "tokens": 0,
+        "cache": 0,
+        "tools": 0,
+        "sessions": 0
+      },
+      {
+        "date": "2026-06-02",
+        "label": "Jun 02",
+        "tokens": 0,
+        "cache": 0,
+        "tools": 0,
+        "sessions": 0
+      },
+      {
+        "date": "2026-06-03",
+        "label": "Jun 03",
+        "tokens": 722178,
+        "cache": 4499584,
+        "tools": 79,
+        "sessions": 2
       }
     ],
     "hourly_activity": [
       {
-        "hour": "03:59",
-        "messages": 491,
-        "tools": 246,
-        "tokens": 0
-      },
-      {
-        "hour": "04:59",
-        "messages": 40,
-        "tools": 22,
-        "tokens": 0
-      },
-      {
-        "hour": "05:59",
+        "hour": "14:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "06:59",
+        "hour": "15:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "07:59",
+        "hour": "16:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "08:59",
+        "hour": "17:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "09:59",
+        "hour": "18:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "10:59",
+        "hour": "19:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "11:59",
-        "messages": 42,
-        "tools": 24,
-        "tokens": 0
-      },
-      {
-        "hour": "12:59",
-        "messages": 66,
-        "tools": 33,
-        "tokens": 0
-      },
-      {
-        "hour": "13:59",
-        "messages": 48,
-        "tools": 23,
-        "tokens": 0
-      },
-      {
-        "hour": "14:59",
+        "hour": "20:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "15:59",
+        "hour": "21:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "16:59",
+        "hour": "22:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "17:59",
+        "hour": "23:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "18:59",
+        "hour": "00:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "19:59",
+        "hour": "01:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "20:59",
+        "hour": "02:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "21:59",
+        "hour": "03:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "22:59",
+        "hour": "04:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "23:59",
+        "hour": "05:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "00:59",
+        "hour": "06:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "01:59",
+        "hour": "07:50",
         "messages": 0,
         "tools": 0,
         "tokens": 0
       },
       {
-        "hour": "02:59",
+        "hour": "08:50",
         "messages": 0,
         "tools": 0,
+        "tokens": 0
+      },
+      {
+        "hour": "09:50",
+        "messages": 0,
+        "tools": 0,
+        "tokens": 0
+      },
+      {
+        "hour": "10:50",
+        "messages": 0,
+        "tools": 0,
+        "tokens": 0
+      },
+      {
+        "hour": "11:50",
+        "messages": 0,
+        "tools": 0,
+        "tokens": 0
+      },
+      {
+        "hour": "12:50",
+        "messages": 0,
+        "tools": 0,
+        "tokens": 0
+      },
+      {
+        "hour": "13:50",
+        "messages": 154,
+        "tools": 79,
         "tokens": 0
       }
     ]
   },
   "provider_usage": [
     {
-      "provider": "openai-codex",
-      "model": "gpt-5.5",
-      "sessions": 10,
-      "tokens": 2188131,
-      "cache": 37453312,
-      "api_calls": 503,
+      "provider": "nous",
+      "model": "stepfun/step-3.7-flash:free",
+      "sessions": 2,
+      "tokens": 722178,
+      "cache": 4499584,
+      "api_calls": 94,
       "estimated_cost_usd": 0,
-      "cost_status": "included"
+      "cost_status": "estimated"
     }
   ],
   "openai": {
-    "observed_sessions": 10,
-    "weekly_observed_sessions": 10,
-    "weekly_observed_tokens": 2188131,
+    "observed_sessions": 0,
+    "weekly_observed_sessions": 0,
+    "weekly_observed_tokens": 0,
     "weekly_limit": null,
     "reset_at": null,
     "reset_in": "OpenAI weekly/message reset is not exposed by local Hermes telemetry yet",
@@ -598,7 +413,7 @@
   "quota_panels": [
     {
       "provider": "OpenAI/Codex",
-      "used": 2188131,
+      "used": 0,
       "limit": null,
       "remaining": null,
       "pct": null,
@@ -608,10 +423,10 @@
     },
     {
       "provider": "Current session context",
-      "used": 202182,
+      "used": 77917,
       "limit": 400000,
-      "remaining": 197818,
-      "pct": 50.5,
+      "remaining": 322083,
+      "pct": 19.5,
       "unit": "context tokens",
       "reset_in": "new session resets context",
       "source": "real session token usage + estimated context window"
@@ -640,16 +455,16 @@
   "capacities": [
     {
       "label": "Current session context",
-      "used": 202182,
+      "used": 77917,
       "limit": 400000,
-      "remaining": 197818,
-      "pct": 50.5,
+      "remaining": 322083,
+      "pct": 19.5,
       "unit": "context tokens",
       "source": "real current-session tokens; context limit is a conservative estimate"
     },
     {
       "label": "All providers: last 7 days",
-      "used": 2188131,
+      "used": 722178,
       "limit": null,
       "remaining": null,
       "pct": null,
@@ -658,7 +473,7 @@
     },
     {
       "label": "OpenAI/Codex observed weekly usage",
-      "used": 2188131,
+      "used": 0,
       "limit": null,
       "remaining": null,
       "pct": null,
@@ -667,67 +482,15 @@
     },
     {
       "label": "/opt/data storage",
-      "used": 20320006144,
+      "used": 20192022528,
       "limit": 102888095744,
-      "remaining": 82568089600,
-      "pct": 19.7,
+      "remaining": 82696073216,
+      "pct": 19.6,
       "unit": "bytes",
       "source": "real OS disk usage"
     }
   ],
-  "cron": [
-    {
-      "id": "7580b716a6dc",
-      "name": "Cosmos nightly GitHub sync (midnight Eastern)",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "0 * * * *",
-      "script": "cosmos-nightly-sync.sh",
-      "no_agent": true,
-      "deliver": "origin",
-      "last_run_at": "2026-06-03T03:00:21.058557+00:00",
-      "next_run_at": "2026-06-03T04:00:00+00:00",
-      "last_status": "ok",
-      "last_error": null,
-      "completed": 77,
-      "target": "Abhiram",
-      "purpose": "Script-only watchdog for Ram's Cosmos repository. The script is silent except during the 00:00-00:59 America/New_York window, when it commits and pushes /opt/data/Cosmos to https://github.com/AbhiramAv/Cosmos. Empty stdo"
-    },
-    {
-      "id": "ea3385f39c25",
-      "name": "Cosmos dashboard localtunnel watchdog",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 10m",
-      "script": "cosmos-dashboard-watchdog.sh",
-      "no_agent": true,
-      "deliver": "origin",
-      "last_run_at": "2026-06-03T03:51:34.311090+00:00",
-      "next_run_at": "2026-06-03T04:01:34.311090+00:00",
-      "last_status": "ok",
-      "last_error": null,
-      "completed": 144,
-      "target": "Abhiram",
-      "purpose": "Script-only watchdog for Ram's Cosmos dashboard. Builds the React dashboard if needed, refreshes live metrics, starts/keeps the local HTTP server on port 8787, and starts/keeps the localtunnel public URL https://ram-cosm"
-    },
-    {
-      "id": "9c9da76fa6f3",
-      "name": "Cosmos dashboard live metrics collector",
-      "enabled": true,
-      "state": "scheduled",
-      "schedule": "every 1m",
-      "script": "cosmos-dashboard-collector.py",
-      "no_agent": true,
-      "deliver": "origin",
-      "last_run_at": "2026-06-03T03:58:35.602549+00:00",
-      "next_run_at": "2026-06-03T04:00:35.608917+00:00",
-      "last_status": "ok",
-      "last_error": null,
-      "completed": 1430,
-      "target": "Abhiram",
-      "purpose": ""
-    }
-  ],
+  "cron": [],
   "kanban": {
     "columns": {
       "todo": [],
@@ -749,10 +512,10 @@
     {
       "name": "CEO Orchestrator",
       "responsibility": "Routes Ram requests, owns final answer, starts/monitors specialists",
-      "status": "idle",
-      "assigned_work": "No active work assigned",
-      "session_id": null,
-      "model": null
+      "status": "assigned",
+      "assigned_work": "Friendly Greeting Exchange With Abhiram",
+      "session_id": "20260603_144615_aad7a703",
+      "model": "stepfun/step-3.7-flash:free"
     },
     {
       "name": "Coding Agent",
@@ -785,189 +548,91 @@
       "assigned_work": "No active work assigned",
       "session_id": null,
       "model": null
-    },
-    {
-      "name": "Sub-agent session",
-      "responsibility": "Delegated specialist work",
-      "status": "active",
-      "assigned_work": "Personal Multi-Agent Operating System #5",
-      "session_id": "20260602_130821_2b1b3c",
-      "model": "gpt-5.5",
-      "parent_session_id": "20260602_041300_c66554"
     }
   ],
   "git": {
-    "status": "## main...origin/main\n M dashboard/data/live.json",
-    "last_commit": "42a341f Add session timing and Codex reset telemetry",
+    "status": "## main...origin/main\n M dashboard/package.json",
+    "last_commit": "48f6c0b chore: nightly Cosmos sync 2026-06-03",
     "clean": false
   },
   "processes": {
-    "dashboard_server": 1,
-    "cloudflared": 1,
-    "localtunnel": 1,
-    "public_url": "https://ent-tool-especially-based.trycloudflare.com"
+    "dashboard_server": 0,
+    "cloudflared": 0,
+    "localtunnel": 0,
+    "public_url": null
   },
   "logs": {
     "logs": [
       {
         "name": "errors.log",
         "path": "/opt/data/logs/errors.log",
-        "size": 45687,
-        "updated_at": "2026-06-02T14:56:25.256004+00:00",
-        "age_seconds": 46990,
-        "errors": 243,
-        "warnings": 105,
-        "lines": 449,
-        "tail": "urrent_entries\": [\"User goes by Ram.\", \"Us\n2026-06-02 14:56:25,257 WARNING [20260602_130821_2b1b3c] agent.tool_executor: Tool terminal returned error (6.00s): {\"output\": \"phone {\\\"hasTimeline\\\":true,\\\"hasStarted\\\":false,\\\"hasCodexReset\\\":false,\\\"panels\\\":16,\\\"scrollWidth\\\":390,\\\"clientWidth\\\":390,\\\"overflow\\\":false,\\\"errors\\\":[]}\\nipad {\\\"hasTimeline\\\":true\n"
-      },
-      {
-        "name": "gateway.log",
-        "path": "/opt/data/logs/gateway.log",
-        "size": 162282,
-        "updated_at": "2026-06-03T03:55:31.871208+00:00",
-        "age_seconds": 243,
-        "errors": 7,
-        "warnings": 4,
-        "lines": 1395,
-        "tail": "uptime=281400s\n2026-06-03 03:45:31,870 INFO gateway.memory_monitor: [MEMORY] rss=1159MB gc=(798, 9, 9) threads=15 uptime=281700s\n2026-06-03 03:50:31,871 INFO gateway.memory_monitor: [MEMORY] rss=1159MB gc=(259, 10, 9) threads=15 uptime=282000s\n2026-06-03 03:55:31,871 INFO gateway.memory_monitor: [MEMORY] rss=1159MB gc=(1353, 10, 9) threads=15 uptime=282300s\n"
-      },
-      {
-        "name": "cosmos-dashboard/cloudflared.log",
-        "path": "/opt/data/logs/cosmos-dashboard/cloudflared.log",
-        "size": 6533,
-        "updated_at": "2026-06-02T04:40:17.544028+00:00",
-        "age_seconds": 83958,
-        "errors": 7,
-        "warnings": 0,
-        "lines": 51,
-        "tail": "e serving\" connIndex=0 event=0 ip=198.41.200.73\n2026-06-02T04:40:17Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.73\n2026-06-02T04:40:17Z ERR Connection terminated connIndex=0\n2026-06-02T04:40:17Z ERR no more connections active and exiting\n2026-06-02T04:40:17Z INF Tunnel server stopped\n2026-06-02T04:40:17Z INF Metrics server stopped\n"
+        "size": 8500,
+        "updated_at": "2026-06-03T14:50:17.655379+00:00",
+        "age_seconds": 7,
+        "errors": 57,
+        "warnings": 32,
+        "lines": 32,
+        "tail": "ess (health endpoint/log signal), then e\n2026-06-03 14:50:17,655 WARNING [20260603_144615_aad7a703] agent.tool_executor: Tool terminal returned error (0.15s): {\"output\": \"Traceback (most recent call last):\\n  File \\\"<string>\\\", line 1, in <module>\\n    import sys; sys.path.insert(0, 'scripts'); import cosmos_dashboard_collector as m; import json; out=m.buil\n"
       },
       {
         "name": "agent.log",
         "path": "/opt/data/logs/agent.log",
-        "size": 1406459,
-        "updated_at": "2026-06-03T03:58:35.601649+00:00",
-        "age_seconds": 60,
-        "errors": 0,
-        "warnings": 0,
-        "lines": 9873,
-        "tail": "' (no_agent): empty stdout \u2014 silent run\n2026-06-03 03:57:35,405 INFO cron.scheduler: Job '9c9da76fa6f3': agent returned [SILENT] \u2014 skipping delivery\n2026-06-03 03:58:35,594 INFO cron.scheduler: Job '9c9da76fa6f3' (no_agent): empty stdout \u2014 silent run\n2026-06-03 03:58:35,602 INFO cron.scheduler: Job '9c9da76fa6f3': agent returned [SILENT] \u2014 skipping delivery\n"
+        "size": 150569,
+        "updated_at": "2026-06-03T14:50:24.861353+00:00",
+        "age_seconds": 0,
+        "errors": 43,
+        "warnings": 24,
+        "lines": 844,
+        "tail": "closed=1) thread=Thread-150 (_call):134162623227584 provider=nous base_url=https://inference-api.nousresearch.com/v1 model=stepfun/step-3.7-flash:free\n2026-06-03 14:50:24,862 INFO [20260603_144615_aad7a703] agent.conversation_loop: API call #30: model=stepfun/step-3.7-flash:free provider=nous in=64082 out=229 total=64311 latency=7.2s cache=63360/64082 (99%)\n"
       },
       {
-        "name": "cosmos-dashboard/collector.log",
-        "path": "/opt/data/logs/cosmos-dashboard/collector.log",
-        "size": 0,
-        "updated_at": "2026-06-02T12:58:12.329728+00:00",
-        "age_seconds": 54083,
+        "name": "gateway.log",
+        "path": "/opt/data/logs/gateway.log",
+        "size": 11050,
+        "updated_at": "2026-06-03T14:47:11.035096+00:00",
+        "age_seconds": 193,
         "errors": 0,
-        "warnings": 0,
-        "lines": 0,
-        "tail": ""
-      },
-      {
-        "name": "cosmos-dashboard/localtunnel.log",
-        "path": "/opt/data/logs/cosmos-dashboard/localtunnel.log",
-        "size": 45,
-        "updated_at": "2026-06-02T04:00:55.082592+00:00",
-        "age_seconds": 86320,
-        "errors": 0,
-        "warnings": 0,
-        "lines": 1,
-        "tail": "your url is: https://breezy-liger-10.loca.lt\n"
+        "warnings": 3,
+        "lines": 102,
+        "tail": "4s api_calls=1 response=28 chars\n2026-06-03 14:47:11,034 INFO gateway.platforms.telegram: [Telegram] Flushing text batch agent:main:telegram:dm:5926910174 (105 chars)\n2026-06-03 14:47:11,035 INFO gateway.run: inbound message: platform=telegram user=Abhiram chat=5926910174 msg='https://github.com/AbhiramAv/Cosmos.git build an ai like this get all the skills'\n"
       },
       {
         "name": "gateway-exit-diag.log",
         "path": "/opt/data/logs/gateway-exit-diag.log",
-        "size": 3946,
-        "updated_at": "2026-05-30T21:30:30.802841+00:00",
-        "age_seconds": 282544,
+        "size": 1600,
+        "updated_at": "2026-06-03T14:39:40.342775+00:00",
+        "age_seconds": 644,
         "errors": 0,
         "warnings": 0,
-        "lines": 22,
-        "tail": "xit.hook\", \"pid\": 603, \"python\": \"3.13.5\", \"platform\": \"linux\", \"sys_exc\": \"(None, None, None)\"}\n{\"ts\": \"2026-05-30T21:30:30.804110+00:00\", \"tag\": \"gateway.start\", \"pid\": 776, \"python\": \"3.13.5\", \"platform\": \"linux\", \"replace\": false, \"argv\": [\"/opt/hermes/.venv/bin/hermes\", \"gateway\", \"run\"], \"stdin_is_tty\": false, \"absorb_windows_console_controls\": false}\n"
+        "lines": 9,
+        "tail": "tag\": \"atexit.hook\", \"pid\": 497, \"python\": \"3.13.5\", \"platform\": \"linux\", \"sys_exc\": \"(None, None, None)\"}\n{\"ts\": \"2026-06-03T14:39:40.343592+00:00\", \"tag\": \"gateway.start\", \"pid\": 622, \"python\": \"3.13.5\", \"platform\": \"linux\", \"replace\": false, \"argv\": [\"/opt/hermes/hermes\", \"gateway\", \"run\"], \"stdin_is_tty\": false, \"absorb_windows_console_controls\": false}\n"
+      },
+      {
+        "name": "gateway-stdout.log",
+        "path": "/opt/data/logs/gateway-stdout.log",
+        "size": 32,
+        "updated_at": "2026-06-03T14:38:20.515588+00:00",
+        "age_seconds": 724,
+        "errors": 0,
+        "warnings": 0,
+        "lines": 1,
+        "tail": "bash: hermes: command not found\n"
       },
       {
         "name": "gateway-shutdown-diag.log",
         "path": "/opt/data/logs/gateway-shutdown-diag.log",
-        "size": 6806,
-        "updated_at": "2026-05-30T21:20:07.179437+00:00",
-        "age_seconds": 283168,
+        "size": 3311,
+        "updated_at": "2026-06-03T14:37:36.909115+00:00",
+        "age_seconds": 768,
         "errors": 0,
         "warnings": 0,
-        "lines": 58,
-        "tail": " 0.0   2976  1892 ?        S    21:20   0:00              \\_ head -60\nhermes       514  0.0  0.0      0     0 ?        ZNs  21:19   0:00 [timeout] <defunct>\nhermes       531  0.0  0.0      0     0 ?        Zs   21:19   0:00 [timeout] <defunct>\n--- pstree of self ---\n--- /proc/loadavg ---\n0.11 0.08 0.05 1/318 567\n--- recent dmesg (oom/killed) ---\n=== end ===\n"
+        "lines": 32,
+        "tail": "ager 2>/dev/null | tail -20 || true; echo '=== end ==='\nhermes       517  0.0  0.0   6792  4096 ?        R    14:37   0:00          \\_ ps auxf --sort=-pcpu\nhermes       518  0.0  0.0   2976  1792 ?        S    14:37   0:00          \\_ head -60\n--- pstree of self ---\n--- /proc/loadavg ---\n0.07 0.13 0.17 1/318 521\n--- recent dmesg (oom/killed) ---\n=== end ===\n"
       }
     ],
-    "error_total": 257,
-    "warning_total": 109,
-    "stale": [
-      {
-        "name": "errors.log",
-        "path": "/opt/data/logs/errors.log",
-        "size": 45687,
-        "updated_at": "2026-06-02T14:56:25.256004+00:00",
-        "age_seconds": 46990,
-        "errors": 243,
-        "warnings": 105,
-        "lines": 449,
-        "tail": "urrent_entries\": [\"User goes by Ram.\", \"Us\n2026-06-02 14:56:25,257 WARNING [20260602_130821_2b1b3c] agent.tool_executor: Tool terminal returned error (6.00s): {\"output\": \"phone {\\\"hasTimeline\\\":true,\\\"hasStarted\\\":false,\\\"hasCodexReset\\\":false,\\\"panels\\\":16,\\\"scrollWidth\\\":390,\\\"clientWidth\\\":390,\\\"overflow\\\":false,\\\"errors\\\":[]}\\nipad {\\\"hasTimeline\\\":true\n"
-      },
-      {
-        "name": "cosmos-dashboard/cloudflared.log",
-        "path": "/opt/data/logs/cosmos-dashboard/cloudflared.log",
-        "size": 6533,
-        "updated_at": "2026-06-02T04:40:17.544028+00:00",
-        "age_seconds": 83958,
-        "errors": 7,
-        "warnings": 0,
-        "lines": 51,
-        "tail": "e serving\" connIndex=0 event=0 ip=198.41.200.73\n2026-06-02T04:40:17Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.200.73\n2026-06-02T04:40:17Z ERR Connection terminated connIndex=0\n2026-06-02T04:40:17Z ERR no more connections active and exiting\n2026-06-02T04:40:17Z INF Tunnel server stopped\n2026-06-02T04:40:17Z INF Metrics server stopped\n"
-      },
-      {
-        "name": "cosmos-dashboard/collector.log",
-        "path": "/opt/data/logs/cosmos-dashboard/collector.log",
-        "size": 0,
-        "updated_at": "2026-06-02T12:58:12.329728+00:00",
-        "age_seconds": 54083,
-        "errors": 0,
-        "warnings": 0,
-        "lines": 0,
-        "tail": ""
-      },
-      {
-        "name": "cosmos-dashboard/localtunnel.log",
-        "path": "/opt/data/logs/cosmos-dashboard/localtunnel.log",
-        "size": 45,
-        "updated_at": "2026-06-02T04:00:55.082592+00:00",
-        "age_seconds": 86320,
-        "errors": 0,
-        "warnings": 0,
-        "lines": 1,
-        "tail": "your url is: https://breezy-liger-10.loca.lt\n"
-      },
-      {
-        "name": "gateway-exit-diag.log",
-        "path": "/opt/data/logs/gateway-exit-diag.log",
-        "size": 3946,
-        "updated_at": "2026-05-30T21:30:30.802841+00:00",
-        "age_seconds": 282544,
-        "errors": 0,
-        "warnings": 0,
-        "lines": 22,
-        "tail": "xit.hook\", \"pid\": 603, \"python\": \"3.13.5\", \"platform\": \"linux\", \"sys_exc\": \"(None, None, None)\"}\n{\"ts\": \"2026-05-30T21:30:30.804110+00:00\", \"tag\": \"gateway.start\", \"pid\": 776, \"python\": \"3.13.5\", \"platform\": \"linux\", \"replace\": false, \"argv\": [\"/opt/hermes/.venv/bin/hermes\", \"gateway\", \"run\"], \"stdin_is_tty\": false, \"absorb_windows_console_controls\": false}\n"
-      },
-      {
-        "name": "gateway-shutdown-diag.log",
-        "path": "/opt/data/logs/gateway-shutdown-diag.log",
-        "size": 6806,
-        "updated_at": "2026-05-30T21:20:07.179437+00:00",
-        "age_seconds": 283168,
-        "errors": 0,
-        "warnings": 0,
-        "lines": 58,
-        "tail": " 0.0   2976  1892 ?        S    21:20   0:00              \\_ head -60\nhermes       514  0.0  0.0      0     0 ?        ZNs  21:19   0:00 [timeout] <defunct>\nhermes       531  0.0  0.0      0     0 ?        Zs   21:19   0:00 [timeout] <defunct>\n--- pstree of self ---\n--- /proc/loadavg ---\n0.11 0.08 0.05 1/318 567\n--- recent dmesg (oom/killed) ---\n=== end ===\n"
-      }
-    ]
+    "error_total": 100,
+    "warning_total": 59,
+    "stale": []
   },
   "connections": [
     {
@@ -1041,121 +706,97 @@
   },
   "repo_activity": {
     "branch": "main",
-    "remote": "git@github.com:AbhiramAv/Cosmos.git",
+    "remote": "https://github.com/AbhiramAv/Cosmos.git",
     "changed_files": [
-      "M dashboard/data/live.json"
+      "M dashboard/package.json"
     ],
     "dirty_count": 1,
     "recent_commits": [
       {
+        "sha": "48f6c0b",
+        "timestamp": "2026-06-03T04:00:35+00:00",
+        "age_seconds": 38990,
+        "subject": "chore: nightly Cosmos sync 2026-06-03"
+      },
+      {
         "sha": "42a341f",
         "timestamp": "2026-06-02T14:56:45+00:00",
-        "age_seconds": 46970,
+        "age_seconds": 86020,
         "subject": "Add session timing and Codex reset telemetry"
       },
       {
         "sha": "b0cdc29",
         "timestamp": "2026-06-02T13:11:00+00:00",
-        "age_seconds": 53315,
+        "age_seconds": 92365,
         "subject": "Refresh dashboard live telemetry"
       },
       {
         "sha": "26bd344",
         "timestamp": "2026-06-02T13:10:37+00:00",
-        "age_seconds": 53338,
+        "age_seconds": 92388,
         "subject": "Enhance Cosmos dashboard telemetry"
       },
       {
         "sha": "94e120d",
         "timestamp": "2026-06-02T12:57:48+00:00",
-        "age_seconds": 54107,
+        "age_seconds": 93157,
         "subject": "fix: make dashboard collector concurrency-safe"
       },
       {
         "sha": "bbf0e20",
         "timestamp": "2026-06-02T05:00:45+00:00",
-        "age_seconds": 82730,
+        "age_seconds": 121780,
         "subject": "feat: make dashboard operational and data-driven"
       },
       {
         "sha": "3cbe6ae",
         "timestamp": "2026-06-02T04:48:32+00:00",
-        "age_seconds": 83463,
+        "age_seconds": 122513,
         "subject": "fix: stabilize dashboard rendering and add command mode"
       },
       {
         "sha": "f57c20d",
         "timestamp": "2026-06-02T04:20:20+00:00",
-        "age_seconds": 85155,
+        "age_seconds": 124205,
         "subject": "feat: rebuild dashboard with React mission control"
-      },
-      {
-        "sha": "0fbc45d",
-        "timestamp": "2026-06-02T04:09:06+00:00",
-        "age_seconds": 85829,
-        "subject": "docs: integrate multi-agent workflow reference"
       }
     ]
   },
   "tool_usage": [
     {
       "tool": "terminal",
-      "count": 158
-    },
-    {
-      "tool": "todo",
-      "count": 63
-    },
-    {
-      "tool": "execute_code",
-      "count": 48
+      "count": 66
     },
     {
       "tool": "read_file",
-      "count": 40
+      "count": 4
     },
     {
       "tool": "skill_view",
-      "count": 36
+      "count": 2
     },
     {
-      "tool": "search_files",
-      "count": 29
-    },
-    {
-      "tool": "write_file",
-      "count": 29
-    },
-    {
-      "tool": "patch",
-      "count": 22
-    },
-    {
-      "tool": "skill_manage",
-      "count": 19
-    },
-    {
-      "tool": "memory",
-      "count": 13
-    },
-    {
-      "tool": "cronjob",
-      "count": 13
+      "tool": "skills_list",
+      "count": 2
     },
     {
       "tool": "process",
-      "count": 12
+      "count": 2
     },
     {
-      "tool": "browser_navigate",
-      "count": 4
+      "tool": "write_file",
+      "count": 2
+    },
+    {
+      "tool": "web_extract",
+      "count": 1
     }
   ],
   "disk": {
     "total": 102888095744,
-    "used": 20320006144,
-    "free": 82551312384,
-    "pct": 19.7
+    "used": 20192022528,
+    "free": 82679296000,
+    "pct": 19.6
   },
   "data_quality": [
     "Static workflow placeholders removed; dashboard now renders cron, agent, provider, kanban, storage, and session data from live local sources.",
