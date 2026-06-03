@@ -4,8 +4,8 @@ department: research
 agent: Price Tracker Agent
 
 watchlist:
-  - name: "example product"
-    url: "https://example.com/product/slug"
+  - name: "HGLRC Rekon35 V2 FPV Drone Analog 2S"
+    url: "https://www.getfpv.com/hglrc-rekon35-v2-fpv-drone-analog-2s.html?vid=21613"
     selector_hint: ".price, [data-price], .product-price, .current-price"
     max_price: null
     min_price: null
