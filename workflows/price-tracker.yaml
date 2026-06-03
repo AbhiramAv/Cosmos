@@ -1,0 +1,28 @@
+name: price-tracker
+description: Track prices/specs for specific products and alert on movement.
+department: research
+agent: Price Tracker Agent
+
+watchlist:
+  - name: "example product"
+    url: "https://example.com/product/slug"
+    selector_hint: ".price, [data-price], .product-price, .current-price"
+    max_price: null
+    min_price: null
+    currency: "USD"
+    check_every_minutes: 60
+
+rules:
+  alert_threshold_pct: 5
+  ignore_missing_selector: true
+  fallback_source: "search"
+  max_price_change_usd: 50
+
+output:
+  channel: telegram
+  format: |
+    Price Alert: {title}
+    Current: {current_price} ({currency})
+    Change: {change_pct}% ({change_usd})
+    URL: {url}
+  store_to: /opt/data/Cosmos/logs/price-tracker/{slug}.jsonl
