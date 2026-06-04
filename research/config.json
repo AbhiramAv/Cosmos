@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "domains": [
+    "Claude",
+    "Anthropic",
+    "AI coding assistants",
+    "MCP",
+    "cloud-native AI",
+    "quantum ML"
+  ],
+  "exclude_keywords": [
+    "meme",
+    "shitpost",
+    "airdrop",
+    "token launch"
+  ],
+  "sources": {
+    "github": true,
+    "hn": true,
+    "reddit": true,
+    "anthropic_news": true
+  },
+  "output": {
+    "telegram": true,
+    "markdown_daily": "/opt/data/Cosmos/research/daily",
+    "markdown_weekly": "/opt/data/Cosmos/research/weekly"
+  }
+}
