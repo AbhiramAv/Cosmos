@@ -1,0 +1,618 @@
+date,bank,account,description,amount,category,resolved,review_category,my_share,notes,id,assigned_category
+2021-08-30,BofA,bofa_6420,CHECKCARD 0828 ODU RECREATION AND WELL 757-683-3384 VA 24431061241207088500104 RECURRING,50.00,other,no,,,,2021-08-30|bofa_6420|-50|CHECKCARD 0828 ODU RECREATION AND WELL 757-683-3384 VA 24431061241207088500104 RECURRING,personal_purchases
+2021-09-01,BofA,bofa_6420,Zelle Transfer Conf# oshe6aqyl; Manish ODU,478.17,zelle_sent,yes,,,,2021-09-01|bofa_6420|-478.17|Zelle Transfer Conf# oshe6aqyl; Manish ODU,transfers_to_others
+2021-09-01,BofA,bofa_6420,Zelle Transfer Conf# nlu3uol4n; Vineeth ODU,22.51,zelle_sent,yes,,,,2021-09-01|bofa_6420|-22.51|Zelle Transfer Conf# nlu3uol4n; Vineeth ODU,transfers_to_others
+2021-09-07,BofA,bofa_6420,Zelle Transfer Conf# o4p1mplqd; DHEERAJ REDDY,963.00,zelle_sent,yes,,,,2021-09-07|bofa_6420|-963|Zelle Transfer Conf# o4p1mplqd; DHEERAJ REDDY,transfers_to_others
+2021-09-07,BofA,bofa_6420,MOBILE PURCHASE 0907 7-ELEVEN NORFOLK VA,60.00,other,yes,split,20.00,,2021-09-07|bofa_6420|-60|MOBILE PURCHASE 0907 7-ELEVEN NORFOLK VA,personal_purchases
+2021-09-08,BofA,bofa_6420,THE FRESH MARK 09/08 #000014242 MOBILE PURCHASE 924 WEST 21ST STR NORFOLK VA,28.31,other,yes,,,,2021-09-08|bofa_6420|-28.31|THE FRESH MARK 09/08 #000014242 MOBILE PURCHASE 924 WEST 21ST STR NORFOLK VA,personal_purchases
+2021-09-09,BofA,bofa_6420,CHECKCARD 0908 THE VAULT NORFOLK VA 24431061252091621000228,56.66,other,no,,,,2021-09-09|bofa_6420|-56.66|CHECKCARD 0908 THE VAULT NORFOLK VA 24431061252091621000228,personal_purchases
+2021-09-13,BofA,bofa_6420,Zelle Transfer Conf# u7rwd7vkc; Anirudh,670.00,zelle_sent,yes,,,,2021-09-13|bofa_6420|-670|Zelle Transfer Conf# u7rwd7vkc; Anirudh,transfers_to_others
+2021-09-13,BofA,bofa_6420,Zelle Transfer Conf# zt0pgdddp; Anirudh,30.00,zelle_sent,yes,,,,2021-09-13|bofa_6420|-30|Zelle Transfer Conf# zt0pgdddp; Anirudh,transfers_to_others
+2021-09-14,BofA,bofa_6420,CHECKCARD 0912 DEL VECCHIOS NORFOLK VA 24733091256091675002953,23.61,other,no,,,,2021-09-14|bofa_6420|-23.61|CHECKCARD 0912 DEL VECCHIOS NORFOLK VA 24733091256091675002953,personal_purchases
+2021-09-14,BofA,bofa_6420,Zelle Transfer Conf# xdhhpvh4v; Manish ODU,233.29,zelle_sent,yes,,,,2021-09-14|bofa_6420|-233.29|Zelle Transfer Conf# xdhhpvh4v; Manish ODU,transfers_to_others
+2021-09-20,BofA,bofa_6420,CHECKCARD 0917 BIERGARTEN HAUS 202-3884053 DC 24000971262260302255117,33.00,other,no,,,,2021-09-20|bofa_6420|-33|CHECKCARD 0917 BIERGARTEN HAUS 202-3884053 DC 24000971262260302255117,alcohol_or_parties
+2021-09-24,BofA,bofa_6420,Zelle Transfer Conf# zw1zzz3f3; Manish ODU,34.89,zelle_sent,yes,,,,2021-09-24|bofa_6420|-34.89|Zelle Transfer Conf# zw1zzz3f3; Manish ODU,transfers_to_others
+2021-09-28,BofA,bofa_6420,CHECKCARD 0926 DEL VECCHIOS NORFOLK VA 24733091270091678002598,26.12,other,no,,,,2021-09-28|bofa_6420|-26.12|CHECKCARD 0926 DEL VECCHIOS NORFOLK VA 24733091270091678002598,personal_purchases
+2021-09-29,BofA,bofa_6420,Zelle Transfer Conf# k3y4yuh1c; Manish ODU,276.77,zelle_sent,yes,,,,2021-09-29|bofa_6420|-276.77|Zelle Transfer Conf# k3y4yuh1c; Manish ODU,transfers_to_others
+2021-10-01,BofA,bofa_6420,OLD DOMINION UN DES:WEB PAYMNT ID:556618 INDN:VENKATA SAI ABHIRAM AD CO ID:2546000884 WEB,75.00,other,no,,,,2021-10-01|bofa_6420|-75|OLD DOMINION UN DES:WEB PAYMNT ID:556618 INDN:VENKATA SAI ABHIRAM AD CO ID:2546000884 WEB,rent_housing
+2021-10-06,BofA,bofa_6420,CHECKCARD 1005 HUND`S RECYCLE FACTORY NORFOLK VA 24412901278027012706205,80.60,other,no,,,,2021-10-06|bofa_6420|-80.6|CHECKCARD 1005 HUND`S RECYCLE FACTORY NORFOLK VA 24412901278027012706205,personal_purchases
+2021-10-07,BofA,bofa_6420,Zelle Transfer Conf# iaotzk8kj; Manish ODU,23.36,zelle_sent,yes,,,,2021-10-07|bofa_6420|-23.36|Zelle Transfer Conf# iaotzk8kj; Manish ODU,transfers_to_others
+2021-10-12,BofA,bofa_6420,MOBILE PURCHASE 1007 ARAMARK MONARCH DINING NORFOLK VA,37.31,other,yes,split,18.66,,2021-10-12|bofa_6420|-37.31|MOBILE PURCHASE 1007 ARAMARK MONARCH DINING NORFOLK VA,personal_purchases
+2021-10-13,BofA,bofa_6420,Zelle Transfer Conf# l7enaavom; Anirudh,3500.00,zelle_sent,yes,,,,2021-10-13|bofa_6420|-3500|Zelle Transfer Conf# l7enaavom; Anirudh,transfers_to_others
+2021-10-14,BofA,bofa_6420,MOBILE PURCHASE 1012 CHICK-FIL-A #01151 CHRISTIANSBRGVA,33.79,food_dining,yes,split,16.89,,2021-10-14|bofa_6420|-33.79|MOBILE PURCHASE 1012 CHICK-FIL-A #01151 CHRISTIANSBRGVA,personal_purchases
+2021-10-15,BofA,bofa_6420,Zelle Transfer Conf# whfryj816; Anirudh,2175.00,zelle_sent,yes,,,,2021-10-15|bofa_6420|-2175|Zelle Transfer Conf# whfryj816; Anirudh,transfers_to_others
+2021-10-15,BofA,bofa_6420,Zelle Transfer Conf# i4xdqkbou; Manish ODU,50.00,zelle_sent,yes,,,,2021-10-15|bofa_6420|-50|Zelle Transfer Conf# i4xdqkbou; Manish ODU,transfers_to_others
+2021-10-25,BofA,bofa_6420,Zelle Transfer Conf# sy4j9e5ei; Manish ODU,29.61,zelle_sent,yes,,,,2021-10-25|bofa_6420|-29.61|Zelle Transfer Conf# sy4j9e5ei; Manish ODU,transfers_to_others
+2021-10-25,BofA,bofa_6420,Zelle Transfer Conf# x3fzs76tj; Manish ODU,233.33,zelle_sent,yes,,,,2021-10-25|bofa_6420|-233.33|Zelle Transfer Conf# x3fzs76tj; Manish ODU,transfers_to_others
+2021-10-29,BofA,bofa_6420,ROYAL BAZAAR 10/29 #000002653 MOBILE PURCHASE 415 NORTH MILITAR NORFOLK VA,50.28,other,yes,split,16.76,,2021-10-29|bofa_6420|-50.28|ROYAL BAZAAR 10/29 #000002653 MOBILE PURCHASE 415 NORTH MILITAR NORFOLK VA,groceries
+2021-10-29,BofA,bofa_6420,COSTCO WHSE #0 10/29 #000823780 PURCHASE COSTCO WHSE #0202 NORFOLK VA,303.35,groceries,yes,split,101.12,,2021-10-29|bofa_6420|-303.35|COSTCO WHSE #0 10/29 #000823780 PURCHASE COSTCO WHSE #0202 NORFOLK VA,groceries
+2021-11-15,BofA,bofa_6420,MOBILE PURCHASE 1112 THE DIRTY BUFFALO COL 757-9373975 VA,47.55,other,yes,split,15.85,,2021-11-15|bofa_6420|-47.55|MOBILE PURCHASE 1112 THE DIRTY BUFFALO COL 757-9373975 VA,personal_purchases
+2021-11-22,BofA,bofa_6420,Zelle Transfer Conf# unjdv3gjz; Manish ODU,343.74,zelle_sent,yes,,,,2021-11-22|bofa_6420|-343.74|Zelle Transfer Conf# unjdv3gjz; Manish ODU,transfers_to_others
+2021-11-26,BofA,bofa_6420,Zelle Transfer Conf# tut0n8vup; Manish ODU,50.53,zelle_sent,yes,,,,2021-11-26|bofa_6420|-50.53|Zelle Transfer Conf# tut0n8vup; Manish ODU,transfers_to_others
+2021-11-29,BofA,bofa_6420,MOBILE PURCHASE 1125 COUNTRY OVEN HERNDON VA,34.73,food_dining,yes,split,17.36,,2021-11-29|bofa_6420|-34.73|MOBILE PURCHASE 1125 COUNTRY OVEN HERNDON VA,personal_purchases
+2021-12-06,BofA,bofa_6420,CHECKCARD 1204 WANDERU*WANDACOACH HTTPSWWW.ILIKMD 24011341339000002250378,46.99,other,no,,,,2021-12-06|bofa_6420|-46.99|CHECKCARD 1204 WANDERU*WANDACOACH HTTPSWWW.ILIKMD 24011341339000002250378,personal_purchases
+2021-12-09,BofA,bofa_6420,MOBILE PURCHASE 1207 DOMINO'S 4231 NORFOLK VA,26.96,food_dining,yes,split,13.48,,2021-12-09|bofa_6420|-26.96|MOBILE PURCHASE 1207 DOMINO'S 4231 NORFOLK VA,personal_purchases
+2021-12-15,BofA,bofa_6420,Zelle Transfer Conf# n4uj7j4qi; Vineeth ODU,32.05,zelle_sent,yes,,,,2021-12-15|bofa_6420|-32.05|Zelle Transfer Conf# n4uj7j4qi; Vineeth ODU,transfers_to_others
+2021-12-20,BofA,bofa_6420,Zelle Transfer Conf# hh9f9dcq8; sai krishna,110.74,zelle_sent,yes,,,,2021-12-20|bofa_6420|-110.74|Zelle Transfer Conf# hh9f9dcq8; sai krishna,transfers_to_others
+2021-12-20,BofA,bofa_6420,Zelle Transfer Conf# nu2om95kh; Pavani ODU,26.93,zelle_sent,yes,,,,2021-12-20|bofa_6420|-26.93|Zelle Transfer Conf# nu2om95kh; Pavani ODU,transfers_to_others
+2021-12-21,BofA,bofa_6420,CHECKCARD 1219 SMOKE CITY CONVENIENCE NEW YORK NY 24551941354030026770450,26.00,other,no,,,,2021-12-21|bofa_6420|-26|CHECKCARD 1219 SMOKE CITY CONVENIENCE NEW YORK NY 24551941354030026770450,personal_purchases
+2021-12-21,BofA,bofa_6420,CHECKCARD 1219 MTA*METROCARD MACHINE NEW YORK NY 24692161354100071280435,34.00,other,no,,,,2021-12-21|bofa_6420|-34|CHECKCARD 1219 MTA*METROCARD MACHINE NEW YORK NY 24692161354100071280435,alcohol_or_parties
+2021-12-21,BofA,bofa_6420,Zelle Transfer Conf# jy3bx97c1; Manish ODU,54.85,zelle_sent,yes,,,,2021-12-21|bofa_6420|-54.85|Zelle Transfer Conf# jy3bx97c1; Manish ODU,transfers_to_others
+2021-12-22,BofA,bofa_6420,CHECKCARD 1222 HCW TIMES SQUARE NEW YORK NY 24692161356100664170975,40.28,other,no,,,,2021-12-22|bofa_6420|-40.28|CHECKCARD 1222 HCW TIMES SQUARE NEW YORK NY 24692161356100664170975,personal_purchases
+2021-12-22,BofA,bofa_6420,CHECKCARD 1221 BURGER MAN INC MANHATTAN NY,20.85,food_dining,no,,,,2021-12-22|bofa_6420|-20.85|CHECKCARD 1221 BURGER MAN INC MANHATTAN NY,personal_purchases
+2021-12-22,BofA,bofa_6420,CHECKCARD 1221 MCDONALD'S M2008 OF NY NEW YORK NY 24427331355720235419254,57.74,food_dining,no,,,,2021-12-22|bofa_6420|-57.74|CHECKCARD 1221 MCDONALD'S M2008 OF NY NEW YORK NY 24427331355720235419254,personal_purchases
+2021-12-22,BofA,bofa_6420,Zelle Transfer Conf# p1coms298; Pavani ODU,30.94,zelle_sent,yes,,,,2021-12-22|bofa_6420|-30.94|Zelle Transfer Conf# p1coms298; Pavani ODU,transfers_to_others
+2021-12-22,BofA,bofa_6420,Zelle Transfer Conf# ocreulcd0; Vineeth ODU,233.33,zelle_sent,yes,,,,2021-12-22|bofa_6420|-233.33|Zelle Transfer Conf# ocreulcd0; Vineeth ODU,transfers_to_others
+2021-12-23,BofA,bofa_6420,CHECKCARD 1221 NEW YORK GIFTS - NZ0 NEW YORK NY 24426291356030041578574,29.39,other,no,,,,2021-12-23|bofa_6420|-29.39|CHECKCARD 1221 NEW YORK GIFTS - NZ0 NEW YORK NY 24426291356030041578574,personal_purchases
+2021-12-24,BofA,bofa_6420,CHECKCARD 1224 BLARNEY STONE NEW YORK NY 24767251358000000619387,50.00,other,no,,,,2021-12-24|bofa_6420|-50|CHECKCARD 1224 BLARNEY STONE NEW YORK NY 24767251358000000619387,alcohol_or_parties
+2021-12-27,BofA,bofa_6420,CHECKCARD 1223 MAD FOR CHICKEN 718-5946130 NY 24246661358900014900080,65.11,other,no,,,,2021-12-27|bofa_6420|-65.11|CHECKCARD 1223 MAD FOR CHICKEN 718-5946130 NY 24246661358900014900080,personal_purchases
+2021-12-27,BofA,bofa_6420,CHECKCARD 1224 LOLAVIE LLC HTTPSWWW.LOLAFL 24011341358000037004069,61.48,other,no,,,,2021-12-27|bofa_6420|-61.48|CHECKCARD 1224 LOLAVIE LLC HTTPSWWW.LOLAFL 24011341358000037004069,personal_purchases
+2021-12-28,BofA,bofa_6420,PURCHASE 1227 TARGET.COM * 800-591-3869 MN,21.89,groceries,yes,,,,2021-12-28|bofa_6420|-21.89|PURCHASE 1227 TARGET.COM * 800-591-3869 MN,groceries
+2022-01-03,BofA,bofa_6420,MOBILE PURCHASE 1231 COUNTRY OVEN HERNDON VA,72.91,food_dining,yes,,,,2022-01-03|bofa_6420|-72.91|MOBILE PURCHASE 1231 COUNTRY OVEN HERNDON VA,personal_purchases
+2022-01-03,BofA,bofa_6420,Zelle Transfer Conf# ktdxuxl4e; Anirudh,1500.00,zelle_sent,yes,,,,2022-01-03|bofa_6420|-1500|Zelle Transfer Conf# ktdxuxl4e; Anirudh,transfers_to_others
+2022-01-03,BofA,bofa_6420,Zelle Transfer Conf# jlbn6qlu1; Anirudh,1500.00,zelle_sent,yes,,,,2022-01-03|bofa_6420|-1500|Zelle Transfer Conf# jlbn6qlu1; Anirudh,transfers_to_others
+2022-01-03,BofA,bofa_6420,Zelle Transfer Conf# xkpph8od7; Anirudh,2000.00,zelle_sent,yes,,,,2022-01-03|bofa_6420|-2000|Zelle Transfer Conf# xkpph8od7; Anirudh,transfers_to_others
+2022-01-10,BofA,bofa_6420,CHECKCARD 0108 ODU RECREATION AND WELL 757-683-3384 VA 24431062009207088500070 RECURRING,30.00,other,no,,,,2022-01-10|bofa_6420|-30|CHECKCARD 0108 ODU RECREATION AND WELL 757-683-3384 VA 24431062009207088500070 RECURRING,personal_purchases
+2022-01-10,BofA,bofa_6420,CHECKCARD 0108 ODU RECREATION AND WELL 757-683-3384 VA 24431062009207088500013 RECURRING,30.00,other,no,,,,2022-01-10|bofa_6420|-30|CHECKCARD 0108 ODU RECREATION AND WELL 757-683-3384 VA 24431062009207088500013 RECURRING,personal_purchases
+2022-01-10,BofA,bofa_6420,CHECKCARD 0108 ODU RECREATION AND WELL 757-683-3384 VA 24431062009207088500096 RECURRING,50.00,other,no,,,,2022-01-10|bofa_6420|-50|CHECKCARD 0108 ODU RECREATION AND WELL 757-683-3384 VA 24431062009207088500096 RECURRING,personal_purchases
+2022-01-10,BofA,bofa_6420,CHECKCARD 0108 ODU RECREATION AND WELL 757-683-3384 VA 24431062009207088500195 RECURRING,250.00,other,no,,,,2022-01-10|bofa_6420|-250|CHECKCARD 0108 ODU RECREATION AND WELL 757-683-3384 VA 24431062009207088500195 RECURRING,personal_purchases
+2022-01-11,BofA,bofa_6420,MOBILE PURCHASE 0109 STERLING SMOKE STERLING VA,25.63,other,yes,,,,2022-01-11|bofa_6420|-25.63|MOBILE PURCHASE 0109 STERLING SMOKE STERLING VA,personal_purchases
+2022-01-11,BofA,bofa_6420,Zelle Transfer Conf# tg0huqk36; Anirudh,1500.00,zelle_sent,yes,,,,2022-01-11|bofa_6420|-1500|Zelle Transfer Conf# tg0huqk36; Anirudh,transfers_to_others
+2022-01-12,BofA,bofa_6420,CHECKCARD 0112 GENEPACE SOLUTIONS 317-517-7000 IN 24692162012100363493086,75.00,other,no,,,,2022-01-12|bofa_6420|-75|CHECKCARD 0112 GENEPACE SOLUTIONS 317-517-7000 IN 24692162012100363493086,personal_purchases
+2022-01-12,BofA,bofa_6420,Zelle Transfer Conf# nqoccxxur; Anirudh,1000.00,zelle_sent,yes,,,,2022-01-12|bofa_6420|-1000|Zelle Transfer Conf# nqoccxxur; Anirudh,transfers_to_others
+2022-01-18,BofA,bofa_6420,Zelle Transfer Conf# jx4hjm1x9; Anirudh,300.00,zelle_sent,yes,,,,2022-01-18|bofa_6420|-300|Zelle Transfer Conf# jx4hjm1x9; Anirudh,transfers_to_others
+2022-01-24,BofA,bofa_6420,Zelle Transfer Conf# idq4re1jo; Manish ODU,246.25,zelle_sent,yes,,,,2022-01-24|bofa_6420|-246.25|Zelle Transfer Conf# idq4re1jo; Manish ODU,transfers_to_others
+2022-01-26,BofA,bofa_6420,MOBILE PURCHASE 0125 THE VAULT NORFOLK VA,20.60,other,yes,,,,2022-01-26|bofa_6420|-20.6|MOBILE PURCHASE 0125 THE VAULT NORFOLK VA,personal_purchases
+2022-01-31,BofA,bofa_6420,MOBILE PURCHASE 0127 DOMINO'S 4231 NORFOLK VA,35.96,food_dining,yes,split,11.99,,2022-01-31|bofa_6420|-35.96|MOBILE PURCHASE 0127 DOMINO'S 4231 NORFOLK VA,personal_purchases
+2022-02-01,BofA,bofa_6420,MOBILE PURCHASE 0131 ARAMARK ODU CHICK FIL A NORFOLK VA,20.14,other,yes,split,10.07,,2022-02-01|bofa_6420|-20.14|MOBILE PURCHASE 0131 ARAMARK ODU CHICK FIL A NORFOLK VA,personal_purchases
+2022-02-02,BofA,bofa_6420,CHECKCARD 0202 ALKARAK INC NORFOLK VA,22.25,other,no,,,,2022-02-02|bofa_6420|-22.25|CHECKCARD 0202 ALKARAK INC NORFOLK VA,personal_purchases
+2022-02-07,BofA,bofa_6420,CHECKCARD 0203 COGAN'S NORTH NORFOLK VA 24145722035900016061017,168.73,other,no,,,,2022-02-07|bofa_6420|-168.73|CHECKCARD 0203 COGAN'S NORTH NORFOLK VA 24145722035900016061017,personal_purchases
+2022-02-08,BofA,bofa_6420,OLD DOMINION UN DES:WEB PAYMNT ID:591061 INDN:VENKATA SAI ABHIRAM AD CO ID:2546000884 WEB,75.00,other,no,,,,2022-02-08|bofa_6420|-75|OLD DOMINION UN DES:WEB PAYMNT ID:591061 INDN:VENKATA SAI ABHIRAM AD CO ID:2546000884 WEB,rent_housing
+2022-02-10,BofA,bofa_6420,Zelle Transfer Conf# k6rtyk9hn; Manish ODU,150.00,zelle_sent,yes,,,,2022-02-10|bofa_6420|-150|Zelle Transfer Conf# k6rtyk9hn; Manish ODU,transfers_to_others
+2022-02-11,BofA,bofa_6420,Zelle Transfer Conf# spx9wp5kw; Manish ODU,1009.99,zelle_sent,yes,,,,2022-02-11|bofa_6420|-1009.99|Zelle Transfer Conf# spx9wp5kw; Manish ODU,transfers_to_others
+2022-02-14,BofA,bofa_6420,CHECKCARD 0210 ETIHAD AIRW 60721424671 877-6900767 IA 24648592043368001102015,1133.83,other,no,,,,2022-02-14|bofa_6420|-1133.83|CHECKCARD 0210 ETIHAD AIRW 60721424671 877-6900767 IA 24648592043368001102015,personal_purchases
+2022-02-14,BofA,bofa_6420,CHECKCARD 0212 ALKARAK INC NORFOLK VA,22.25,other,no,,,,2022-02-14|bofa_6420|-22.25|CHECKCARD 0212 ALKARAK INC NORFOLK VA,personal_purchases
+2022-02-17,BofA,bofa_6420,ROYAL BAZAAR 02/17 #000017683 PURCHASE 415 NORTH MILITAR NORFOLK VA,94.71,other,yes,split,31.57,,2022-02-17|bofa_6420|-94.71|ROYAL BAZAAR 02/17 #000017683 PURCHASE 415 NORTH MILITAR NORFOLK VA,groceries
+2022-02-17,BofA,bofa_6420,CHECKCARD 0217 ANAS MJL INC NORFOLK VA,20.31,other,no,,,,2022-02-17|bofa_6420|-20.31|CHECKCARD 0217 ANAS MJL INC NORFOLK VA,personal_purchases
+2022-02-17,BofA,bofa_6420,Zelle Transfer Conf# tzcbmq5y3; Vineeth ODU,271.29,zelle_sent,yes,,,,2022-02-17|bofa_6420|-271.29|Zelle Transfer Conf# tzcbmq5y3; Vineeth ODU,transfers_to_others
+2022-02-25,BofA,bofa_6420,MOBILE PURCHASE 0225 ALKARAK INC NORFOLK VA,22.25,other,yes,,,,2022-02-25|bofa_6420|-22.25|MOBILE PURCHASE 0225 ALKARAK INC NORFOLK VA,personal_purchases
+2022-02-28,BofA,bofa_6420,MOBILE PURCHASE 0226 CHICK-FIL-A #01857 WILLIAMSBURG VA,24.79,food_dining,yes,,,,2022-02-28|bofa_6420|-24.79|MOBILE PURCHASE 0226 CHICK-FIL-A #01857 WILLIAMSBURG VA,personal_purchases
+2022-02-28,BofA,bofa_6420,Zelle Transfer Conf# kswf2dpvk; Manish ODU,86.89,zelle_sent,yes,,,,2022-02-28|bofa_6420|-86.89|Zelle Transfer Conf# kswf2dpvk; Manish ODU,transfers_to_others
+2022-03-07,BofA,bofa_6420,Zelle Transfer Conf# tmhojtqwf; Vineeth ODU,47.34,zelle_sent,yes,,,,2022-03-07|bofa_6420|-47.34|Zelle Transfer Conf# tmhojtqwf; Vineeth ODU,transfers_to_others
+2022-03-14,BofA,bofa_6420,Zelle Transfer Conf# hqa39q1gc; Sai Vikram ODU,47.25,zelle_sent,yes,,,,2022-03-14|bofa_6420|-47.25|Zelle Transfer Conf# hqa39q1gc; Sai Vikram ODU,transfers_to_others
+2022-03-21,BofA,bofa_6420,Zelle Transfer Conf# ot30nnd3l; Robin,42.00,zelle_sent,yes,,,,2022-03-21|bofa_6420|-42|Zelle Transfer Conf# ot30nnd3l; Robin,transfers_to_others
+2022-03-23,BofA,bofa_6420,Zelle Transfer Conf# kgdt5mqkr; Divya ODU,29.79,zelle_sent,yes,,,,2022-03-23|bofa_6420|-29.79|Zelle Transfer Conf# kgdt5mqkr; Divya ODU,transfers_to_others
+2022-03-31,BofA,bofa_6420,Zelle Transfer Conf# sxhmo7ttw; Vineeth ODU,200.54,zelle_sent,yes,,,,2022-03-31|bofa_6420|-200.54|Zelle Transfer Conf# sxhmo7ttw; Vineeth ODU,transfers_to_others
+2022-04-11,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,1352.67,other,yes,credit_card_payment,,,2022-04-11|bofa_6420|-1352.67|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-04-13,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,229.06,other,yes,credit_card_payment,,,2022-04-13|bofa_6420|-229.06|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-04-26,BofA,bofa_6420,Zelle Transfer Conf# katymrthx; Sai Vikram ODU,38.44,zelle_sent,yes,,,,2022-04-26|bofa_6420|-38.44|Zelle Transfer Conf# katymrthx; Sai Vikram ODU,transfers_to_others
+2022-04-26,BofA,bofa_6420,Zelle Transfer Conf# lk6fahjm7; Sanjana ODU,49.66,zelle_sent,yes,,,,2022-04-26|bofa_6420|-49.66|Zelle Transfer Conf# lk6fahjm7; Sanjana ODU,transfers_to_others
+2022-04-26,BofA,bofa_6420,Zelle Transfer Conf# k68763xpw; Vineeth ODU,233.33,zelle_sent,yes,,,,2022-04-26|bofa_6420|-233.33|Zelle Transfer Conf# k68763xpw; Vineeth ODU,transfers_to_others
+2022-04-29,BofA,bofa_6420,Zelle Transfer Conf# gjv17riyw; Manish ODU,132.79,zelle_sent,yes,,,,2022-04-29|bofa_6420|-132.79|Zelle Transfer Conf# gjv17riyw; Manish ODU,transfers_to_others
+2022-05-06,BofA,bofa_6420,Zelle Transfer Conf# lznnes6uk; sai krishna,47.24,zelle_sent,yes,,,,2022-05-06|bofa_6420|-47.24|Zelle Transfer Conf# lznnes6uk; sai krishna,transfers_to_others
+2022-05-09,BofA,bofa_6420,CHECKCARD 0507 CHICK-FIL-A #03185 DUMFRIES VA 24427332128710020662279,28.91,food_dining,no,,,,2022-05-09|bofa_6420|-28.91|CHECKCARD 0507 CHICK-FIL-A #03185 DUMFRIES VA 24427332128710020662279,personal_purchases
+2022-05-10,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,555.77,other,yes,credit_card_payment,,,2022-05-10|bofa_6420|-555.77|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-05-18,BofA,bofa_6420,Zelle Transfer Conf# m6g9jy6hg; Vineeth ODU,700.00,zelle_sent,yes,,,,2022-05-18|bofa_6420|-700|Zelle Transfer Conf# m6g9jy6hg; Vineeth ODU,transfers_to_others
+2022-08-15,BofA,bofa_6420,Zelle Transfer Conf# hfr3y7dnm; Promod Bhayya,400.00,zelle_sent,yes,,,,2022-08-15|bofa_6420|-400|Zelle Transfer Conf# hfr3y7dnm; Promod Bhayya,transfers_to_others
+2022-08-22,BofA,bofa_6420,USPS PO 516518 08/22 #000330346 PURCHASE USPS PO 51651800 NORFOLK VA,38.17,other,yes,,,,2022-08-22|bofa_6420|-38.17|USPS PO 516518 08/22 #000330346 PURCHASE USPS PO 51651800 NORFOLK VA,personal_purchases
+2022-08-29,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,396.82,other,yes,credit_card_payment,,,2022-08-29|bofa_6420|-396.82|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-08-31,BofA,bofa_6420,"Rose and Womble, DES:WEB PMTS ID:Q2YDB6 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",845.00,rent_housing,no,,,,"2022-08-31|bofa_6420|-845|Rose and Womble, DES:WEB PMTS ID:Q2YDB6 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",rent_housing
+2022-09-07,BofA,bofa_6420,Zelle Transfer Conf# kq7sxrgf4; Bhanu Boga,36.77,zelle_sent,yes,,,,2022-09-07|bofa_6420|-36.77|Zelle Transfer Conf# kq7sxrgf4; Bhanu Boga,transfers_to_others
+2022-09-08,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,216.65,other,yes,credit_card_payment,,,2022-09-08|bofa_6420|-216.65|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-09-09,BofA,bofa_6420,MOBILE PURCHASE 0908 7-ELEVEN 19345 NORFOLK VA,22.77,other,yes,,,,2022-09-09|bofa_6420|-22.77|MOBILE PURCHASE 0908 7-ELEVEN 19345 NORFOLK VA,personal_purchases
+2022-09-14,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,136.90,other,yes,credit_card_payment,,,2022-09-14|bofa_6420|-136.9|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-09-15,BofA,bofa_6420,CHECKCARD 0914 AMTRAK NRTHEAST CAFE Q1 WASHINGTON DC 24941442257081509001620,22.00,food_dining,no,,,,2022-09-15|bofa_6420|-22|CHECKCARD 0914 AMTRAK NRTHEAST CAFE Q1 WASHINGTON DC 24941442257081509001620,personal_purchases
+2022-09-16,BofA,bofa_6420,Zelle Transfer Conf# iz9q6fn4m; Anirudh,300.00,zelle_sent,yes,,,,2022-09-16|bofa_6420|-300|Zelle Transfer Conf# iz9q6fn4m; Anirudh,transfers_to_others
+2022-09-16,BofA,bofa_6420,Zelle Transfer Conf# hh5biebow; RAHUL REDDY,70.00,zelle_sent,yes,,,,2022-09-16|bofa_6420|-70|Zelle Transfer Conf# hh5biebow; RAHUL REDDY,transfers_to_others
+2022-09-21,BofA,bofa_6420,Zelle Transfer Conf# i4mmf5zz5; Divya ODU,35.75,zelle_sent,yes,,,,2022-09-21|bofa_6420|-35.75|Zelle Transfer Conf# i4mmf5zz5; Divya ODU,transfers_to_others
+2022-09-26,BofA,bofa_6420,Zelle Transfer Conf# ir6nj97nn; RAHUL REDDY,36.00,zelle_sent,yes,,,,2022-09-26|bofa_6420|-36|Zelle Transfer Conf# ir6nj97nn; RAHUL REDDY,transfers_to_others
+2022-09-28,BofA,bofa_6420,"Rose and Womble, DES:WEB PMTS ID:H6Y9G6 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",845.00,rent_housing,no,,,,"2022-09-28|bofa_6420|-845|Rose and Womble, DES:WEB PMTS ID:H6Y9G6 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",rent_housing
+2022-10-12,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,693.63,other,yes,credit_card_payment,,,2022-10-12|bofa_6420|-693.63|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-10-13,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,24.44,other,yes,credit_card_payment,,,2022-10-13|bofa_6420|-24.44|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-10-14,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,41.13,other,yes,credit_card_payment,,,2022-10-14|bofa_6420|-41.13|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-10-25,BofA,bofa_6420,OLD DOMINION UN DES:WEB PAYMNT ID:636508 INDN:VENKATA SAI ABHIRAM AD CO ID:2546000884 WEB,60.00,other,no,,,,2022-10-25|bofa_6420|-60|OLD DOMINION UN DES:WEB PAYMNT ID:636508 INDN:VENKATA SAI ABHIRAM AD CO ID:2546000884 WEB,rent_housing
+2022-10-26,BofA,bofa_6420,Zelle Transfer Conf# jpjowhu1c; RAHUL REDDY,30.00,zelle_sent,yes,,,,2022-10-26|bofa_6420|-30|Zelle Transfer Conf# jpjowhu1c; RAHUL REDDY,transfers_to_others
+2022-10-26,BofA,bofa_6420,Zelle Transfer Conf# nnuoepn7a; Bhanu Boga,57.32,zelle_sent,yes,,,,2022-10-26|bofa_6420|-57.32|Zelle Transfer Conf# nnuoepn7a; Bhanu Boga,transfers_to_others
+2022-10-27,BofA,bofa_6420,"Rose and Womble, DES:WEB PMTS ID:ZXDML6 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",845.00,rent_housing,no,,,,"2022-10-27|bofa_6420|-845|Rose and Womble, DES:WEB PMTS ID:ZXDML6 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",rent_housing
+2022-11-01,BofA,bofa_6420,Zelle Transfer Conf# b98ak8mlh; Sanjana ODU,31.30,zelle_sent,yes,,,,2022-11-01|bofa_6420|-31.3|Zelle Transfer Conf# b98ak8mlh; Sanjana ODU,transfers_to_others
+2022-11-02,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,1920.52,other,yes,credit_card_payment,,,2022-11-02|bofa_6420|-1920.52|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-11-03,BofA,bofa_6420,Zelle Transfer Conf# rv989nn3d; RAHUL REDDY,60.00,zelle_sent,yes,,,,2022-11-03|bofa_6420|-60|Zelle Transfer Conf# rv989nn3d; RAHUL REDDY,transfers_to_others
+2022-11-10,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,1315.59,other,yes,credit_card_payment,,,2022-11-10|bofa_6420|-1315.59|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-11-14,BofA,bofa_6420,Zelle Transfer Conf# mt66f1a9h; RAHUL REDDY,60.00,zelle_sent,yes,,,,2022-11-14|bofa_6420|-60|Zelle Transfer Conf# mt66f1a9h; RAHUL REDDY,transfers_to_others
+2022-11-15,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,98.88,other,yes,credit_card_payment,,,2022-11-15|bofa_6420|-98.88|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-11-18,BofA,bofa_6420,Zelle Transfer Conf# ktsaxq5en; RAHUL REDDY,150.00,zelle_sent,yes,,,,2022-11-18|bofa_6420|-150|Zelle Transfer Conf# ktsaxq5en; RAHUL REDDY,transfers_to_others
+2022-11-28,BofA,bofa_6420,Zelle Transfer Conf# b3n6oq3o2; Bhanu Boga,91.22,zelle_sent,yes,,,,2022-11-28|bofa_6420|-91.22|Zelle Transfer Conf# b3n6oq3o2; Bhanu Boga,transfers_to_others
+2022-11-28,BofA,bofa_6420,Zelle Transfer Conf# dy8bt1qk6; Bhanu Boga,32.16,zelle_sent,yes,,,,2022-11-28|bofa_6420|-32.16|Zelle Transfer Conf# dy8bt1qk6; Bhanu Boga,transfers_to_others
+2022-11-29,BofA,bofa_6420,"Rose and Womble, DES:WEB PMTS ID:BNW6R6 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",845.00,rent_housing,no,,,,"2022-11-29|bofa_6420|-845|Rose and Womble, DES:WEB PMTS ID:BNW6R6 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",rent_housing
+2022-12-02,BofA,bofa_6420,Zelle Transfer Conf# fb408i3d7; RAHUL REDDY,46.00,zelle_sent,yes,,,,2022-12-02|bofa_6420|-46|Zelle Transfer Conf# fb408i3d7; RAHUL REDDY,transfers_to_others
+2022-12-06,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,1848.22,other,yes,credit_card_payment,,,2022-12-06|bofa_6420|-1848.22|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2022-12-12,BofA,bofa_6420,CHECKCARD 1211 Meta Store FBPAY * Meta 650-5434800 CA 24204292345000232728163 RECURRING,51.94,other,no,,,,2022-12-12|bofa_6420|-51.94|CHECKCARD 1211 Meta Store FBPAY * Meta 650-5434800 CA 24204292345000232728163 RECURRING,personal_purchases
+2022-12-12,BofA,bofa_6420,CHECKCARD 1211 Meta Store FBPAY * Meta 650-5434800 CA 24204292345000247698161 RECURRING,103.88,other,no,,,,2022-12-12|bofa_6420|-103.88|CHECKCARD 1211 Meta Store FBPAY * Meta 650-5434800 CA 24204292345000247698161 RECURRING,personal_purchases
+2022-12-12,BofA,bofa_6420,HARRIS TE 3600 12/11 #000005557 PURCHASE HARRIS TE 3600 S. ARLINGTON VA,43.33,other,yes,,,,2022-12-12|bofa_6420|-43.33|HARRIS TE 3600 12/11 #000005557 PURCHASE HARRIS TE 3600 S. ARLINGTON VA,groceries
+2022-12-13,BofA,bofa_6420,HARRIS TE 3600 12/13 #000021830 PURCHASE HARRIS TE 3600 S. ARLINGTON VA,56.46,other,yes,,,,2022-12-13|bofa_6420|-56.46|HARRIS TE 3600 12/13 #000021830 PURCHASE HARRIS TE 3600 S. ARLINGTON VA,groceries
+2022-12-22,BofA,bofa_6420,Zelle Transfer Conf# bv80gi76c; Vineeth ODU,172.39,zelle_sent,yes,,,,2022-12-22|bofa_6420|-172.39|Zelle Transfer Conf# bv80gi76c; Vineeth ODU,transfers_to_others
+2022-12-22,BofA,bofa_6420,Zelle Transfer Conf# glqdchkcf; Sai Vikram ODU,300.00,zelle_sent,yes,,,,2022-12-22|bofa_6420|-300|Zelle Transfer Conf# glqdchkcf; Sai Vikram ODU,transfers_to_others
+2022-12-28,BofA,bofa_6420,"Rose and Womble, DES:WEB PMTS ID:93YDW6 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",845.00,rent_housing,no,,,,"2022-12-28|bofa_6420|-845|Rose and Womble, DES:WEB PMTS ID:93YDW6 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",rent_housing
+2023-01-11,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,935.64,other,yes,credit_card_payment,,,2023-01-11|bofa_6420|-935.64|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-01-18,BofA,bofa_6420,Zelle Transfer Conf# dz2ly6m2j; Pavani ODU,26.84,zelle_sent,yes,,,,2023-01-18|bofa_6420|-26.84|Zelle Transfer Conf# dz2ly6m2j; Pavani ODU,transfers_to_others
+2023-01-18,BofA,bofa_6420,Zelle Transfer Conf# b1evx11er; Manish ODU,44.10,zelle_sent,yes,,,,2023-01-18|bofa_6420|-44.1|Zelle Transfer Conf# b1evx11er; Manish ODU,transfers_to_others
+2023-01-18,BofA,bofa_6420,Zelle Transfer Conf# hfa1himmf; RAHUL REDDY,45.00,zelle_sent,yes,,,,2023-01-18|bofa_6420|-45|Zelle Transfer Conf# hfa1himmf; RAHUL REDDY,transfers_to_others
+2023-01-23,BofA,bofa_6420,Zelle Transfer Conf# c9xjzu0qt; RAHUL REDDY,40.00,zelle_sent,yes,,,,2023-01-23|bofa_6420|-40|Zelle Transfer Conf# c9xjzu0qt; RAHUL REDDY,transfers_to_others
+2023-02-01,BofA,bofa_6420,Zelle Transfer Conf# iavapph7j; RAHUL REDDY,30.00,zelle_sent,yes,,,,2023-02-01|bofa_6420|-30|Zelle Transfer Conf# iavapph7j; RAHUL REDDY,transfers_to_others
+2023-02-01,BofA,bofa_6420,Zelle Transfer Conf# ebhnj2tc0; Anirudh,110.00,zelle_sent,yes,,,,2023-02-01|bofa_6420|-110|Zelle Transfer Conf# ebhnj2tc0; Anirudh,transfers_to_others
+2023-02-02,BofA,bofa_6420,"Rose and Womble, DES:WEB PMTS ID:DGK037 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",845.00,rent_housing,no,,,,"2023-02-02|bofa_6420|-845|Rose and Womble, DES:WEB PMTS ID:DGK037 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",rent_housing
+2023-02-07,BofA,bofa_6420,COSTCO WHSE #0 02/07 #000250712 PURCHASE COSTCO WHSE #0233 ARLINGTON VA,83.34,groceries,yes,,,,2023-02-07|bofa_6420|-83.34|COSTCO WHSE #0 02/07 #000250712 PURCHASE COSTCO WHSE #0233 ARLINGTON VA,groceries
+2023-02-07,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,803.98,other,yes,credit_card_payment,,,2023-02-07|bofa_6420|-803.98|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-02-08,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,29.65,other,yes,credit_card_payment,,,2023-02-08|bofa_6420|-29.65|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-02-14,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,139.00,other,yes,credit_card_payment,,,2023-02-14|bofa_6420|-139|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-02-21,BofA,bofa_6420,Zelle Transfer Conf# mxjxn9j66; Sai Vikram ODU,289.61,zelle_sent,yes,,,,2023-02-21|bofa_6420|-289.61|Zelle Transfer Conf# mxjxn9j66; Sai Vikram ODU,transfers_to_others
+2023-02-27,BofA,bofa_6420,Zelle payment to Sanjana ODU Conf# ljddaoepr,270.00,zelle_sent,yes,,,,2023-02-27|bofa_6420|-270|Zelle payment to Sanjana ODU Conf# ljddaoepr,transfers_to_others
+2023-02-27,BofA,bofa_6420,Zelle payment to Sai Vikram ODU Conf# jhe8e1flk,23.22,zelle_sent,yes,,,,2023-02-27|bofa_6420|-23.22|Zelle payment to Sai Vikram ODU Conf# jhe8e1flk,transfers_to_others
+2023-02-27,BofA,bofa_6420,Zelle payment to Sai Krishna ODU Conf# j5x6uw0a7,285.82,zelle_sent,yes,,,,2023-02-27|bofa_6420|-285.82|Zelle payment to Sai Krishna ODU Conf# j5x6uw0a7,transfers_to_others
+2023-02-28,BofA,bofa_6420,"Rose and Womble, DES:WEB PMTS ID:X0M267 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",845.00,rent_housing,no,,,,"2023-02-28|bofa_6420|-845|Rose and Womble, DES:WEB PMTS ID:X0M267 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",rent_housing
+2023-03-06,BofA,bofa_6420,CHECKCARD 0306 1420WASHINGTONAVE MIAMI BEACH FL 24193043065000018004076,40.00,other,no,,,,2023-03-06|bofa_6420|-40|CHECKCARD 0306 1420WASHINGTONAVE MIAMI BEACH FL 24193043065000018004076,personal_purchases
+2023-03-10,BofA,bofa_6420,COSTCO WHSE #0 03/10 #000064292 PURCHASE COSTCO WHSE #0202 NORFOLK VA,142.16,groceries,yes,split,47.39,,2023-03-10|bofa_6420|-142.16|COSTCO WHSE #0 03/10 #000064292 PURCHASE COSTCO WHSE #0202 NORFOLK VA,groceries
+2023-03-13,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,2545.04,other,yes,credit_card_payment,,,2023-03-13|bofa_6420|-2545.04|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-03-16,BofA,bofa_6420,Zelle Transfer Conf# ozcuxpf5f; RAHUL REDDY,30.00,zelle_sent,yes,,,,2023-03-16|bofa_6420|-30|Zelle Transfer Conf# ozcuxpf5f; RAHUL REDDY,transfers_to_others
+2023-03-16,BofA,bofa_6420,Zelle payment to Anirudh Conf# nktoyep5o,203.00,zelle_sent,yes,,,,2023-03-16|bofa_6420|-203|Zelle payment to Anirudh Conf# nktoyep5o,transfers_to_others
+2023-03-17,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,454.29,other,yes,credit_card_payment,,,2023-03-17|bofa_6420|-454.29|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-03-28,BofA,bofa_6420,Zelle Transfer Conf# kbgwjor2g; RAHUL REDDY,30.00,zelle_sent,yes,,,,2023-03-28|bofa_6420|-30|Zelle Transfer Conf# kbgwjor2g; RAHUL REDDY,transfers_to_others
+2023-03-28,BofA,bofa_6420,"Rose and Womble, DES:WEB PMTS ID:PMJDB7 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",845.00,rent_housing,no,,,,"2023-03-28|bofa_6420|-845|Rose and Womble, DES:WEB PMTS ID:PMJDB7 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB",rent_housing
+2023-03-29,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,462.70,other,yes,credit_card_payment,,,2023-03-29|bofa_6420|-462.7|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-04-04,BofA,bofa_6420,Zelle payment to Soujanya ODU Conf# nnfk1ap13,60.39,zelle_sent,yes,,,,2023-04-04|bofa_6420|-60.39|Zelle payment to Soujanya ODU Conf# nnfk1ap13,transfers_to_others
+2023-04-04,BofA,bofa_6420,Zelle Transfer Conf# k36y0rbjw; Bhanu Boga,31.38,zelle_sent,yes,,,,2023-04-04|bofa_6420|-31.38|Zelle Transfer Conf# k36y0rbjw; Bhanu Boga,transfers_to_others
+2023-04-10,BofA,bofa_6420,BKOFAMERICA ATM 04/08 #000003108 WITHDRWL STONE RIDGE ALDIE VA,1000.00,groceries,no,,,,2023-04-10|bofa_6420|-1000|BKOFAMERICA ATM 04/08 #000003108 WITHDRWL STONE RIDGE ALDIE VA,groceries
+2023-04-12,BofA,bofa_6420,PURCHASE 0411 DOMINO'S 4346 ARLINGTON VA,20.11,food_dining,yes,,,,2023-04-12|bofa_6420|-20.11|PURCHASE 0411 DOMINO'S 4346 ARLINGTON VA,personal_purchases
+2023-04-12,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,542.62,other,yes,credit_card_payment,,,2023-04-12|bofa_6420|-542.62|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-04-27,BofA,bofa_6420,BHHS RW TOWNE PR DES:WEB PMTS ID:PWQ6H7 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB,845.00,rent_housing,no,,,,2023-04-27|bofa_6420|-845|BHHS RW TOWNE PR DES:WEB PMTS ID:PWQ6H7 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB,rent_housing
+2023-05-08,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,970.18,other,yes,credit_card_payment,,,2023-05-08|bofa_6420|-970.18|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-05-15,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,58.43,other,yes,credit_card_payment,,,2023-05-15|bofa_6420|-58.43|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-05-23,BofA,bofa_6420,Zelle Transfer Conf# ka67e26l1; Bhanu Boga,155.05,zelle_sent,yes,,,,2023-05-23|bofa_6420|-155.05|Zelle Transfer Conf# ka67e26l1; Bhanu Boga,transfers_to_others
+2023-05-23,BofA,bofa_6420,Zelle payment to Sai Krishna ODU Conf# rmz5viua9,93.68,zelle_sent,yes,,,,2023-05-23|bofa_6420|-93.68|Zelle payment to Sai Krishna ODU Conf# rmz5viua9,transfers_to_others
+2023-05-24,BofA,bofa_6420,BHHS RW TOWNE PR DES:WEB PMTS ID:GSXPM7 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB,845.00,rent_housing,no,,,,2023-05-24|bofa_6420|-845|BHHS RW TOWNE PR DES:WEB PMTS ID:GSXPM7 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB,rent_housing
+2023-06-05,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,1166.17,other,yes,credit_card_payment,,,2023-06-05|bofa_6420|-1166.17|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-06-09,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,232.58,other,yes,credit_card_payment,,,2023-06-09|bofa_6420|-232.58|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-06-12,BofA,bofa_6420,CHECKCARD 0610 GLOBAL - 4902 HAMPTON NORFOLK VA 24427333162710002770483,27.02,other,no,,,,2023-06-12|bofa_6420|-27.02|CHECKCARD 0610 GLOBAL - 4902 HAMPTON NORFOLK VA 24427333162710002770483,personal_purchases
+2023-06-12,BofA,bofa_6420,Zelle payment to Manish ODU Conf# n8fe9tfcm,100.00,zelle_sent,yes,,,,2023-06-12|bofa_6420|-100|Zelle payment to Manish ODU Conf# n8fe9tfcm,transfers_to_others
+2023-06-12,BofA,bofa_6420,PURCHASE 0611 DOMINO'S 4231 NORFOLK VA,26.98,food_dining,yes,split,13.49,,2023-06-12|bofa_6420|-26.98|PURCHASE 0611 DOMINO'S 4231 NORFOLK VA,personal_purchases
+2023-06-21,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,79.72,other,yes,credit_card_payment,,,2023-06-21|bofa_6420|-79.72|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-06-29,BofA,bofa_6420,BHHS RW TOWNE PR DES:WEB PMTS ID:4400T7 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB,845.00,rent_housing,no,,,,2023-06-29|bofa_6420|-845|BHHS RW TOWNE PR DES:WEB PMTS ID:4400T7 INDN:Venkata Sai Abhiram Ad CO ID:9000669961 WEB,rent_housing
+2023-06-29,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,27.73,other,yes,credit_card_payment,,,2023-06-29|bofa_6420|-27.73|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-07-11,BofA,bofa_6420,CHECKCARD 0711 ALEXANDRIA PASTRY ALEXANDRIA VA 24801973192091840001271,41.33,other,no,,,,2023-07-11|bofa_6420|-41.33|CHECKCARD 0711 ALEXANDRIA PASTRY ALEXANDRIA VA 24801973192091840001271,personal_purchases
+2023-07-11,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,84.61,other,yes,credit_card_payment,,,2023-07-11|bofa_6420|-84.61|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-07-17,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,81.86,other,yes,credit_card_payment,,,2023-07-17|bofa_6420|-81.86|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-08-01,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,121.62,other,yes,credit_card_payment,,,2023-08-01|bofa_6420|-121.62|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-08-11,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,339.78,other,yes,credit_card_payment,,,2023-08-11|bofa_6420|-339.78|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-08-16,BofA,bofa_6420,NNT BURN & BRE 08/16 #000784048 PURCHASE 566 23RD ST S ARLINGTON VA,26.49,other,yes,,,,2023-08-16|bofa_6420|-26.49|NNT BURN & BRE 08/16 #000784048 PURCHASE 566 23RD ST S ARLINGTON VA,personal_purchases
+2023-08-25,BofA,bofa_6420,NNT BURN & BRE 08/25 #000789556 PURCHASE 566 23RD ST S ARLINGTON VA,26.49,other,yes,,,,2023-08-25|bofa_6420|-26.49|NNT BURN & BRE 08/25 #000789556 PURCHASE 566 23RD ST S ARLINGTON VA,personal_purchases
+2023-09-12,BofA,bofa_6420,MOBILE PURCHASE 0912 NNT BURN & BRE ARLINGTON VA,26.49,other,yes,,,,2023-09-12|bofa_6420|-26.49|MOBILE PURCHASE 0912 NNT BURN & BRE ARLINGTON VA,personal_purchases
+2023-09-18,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,35.00,other,yes,credit_card_payment,,,2023-09-18|bofa_6420|-35|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-09-25,BofA,bofa_6420,WIRE TYPE:INTL IN DATE:230925 TIME:1304 ET TRN:2023092500501278 SEQ:P53268051167/685060 ORIG:BANK OF AMERICA CORPORATE ID:6550305831 PMT DET:FXINR10000.00 80.43600 RETURN OF REF 45625 0786 IFAC NOT PER REG GUIDELINES /CORPTRAD/,124.32,food_dining,no,,,,2023-09-25|bofa_6420|124.32|WIRE TYPE:INTL IN DATE:230925 TIME:1304 ET TRN:2023092500501278 SEQ:P53268051167/685060 ORIG:BANK OF AMERICA CORPORATE ID:6550305831 PMT DET:FXINR10000.00 80.43600 RETURN OF REF 45625 0786 IFAC NOT PER REG GUIDELINES /CORPTRAD/,personal_purchases
+2023-10-19,BofA,bofa_6420,NNT BURN & BRE 10/19 #000823862 PURCHASE 566 23RD ST S ARLINGTON VA,36.02,other,yes,,,,2023-10-19|bofa_6420|-36.02|NNT BURN & BRE 10/19 #000823862 PURCHASE 566 23RD ST S ARLINGTON VA,personal_purchases
+2023-10-19,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,35.00,other,yes,credit_card_payment,,,2023-10-19|bofa_6420|-35|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2023-11-13,BofA,bofa_6420,NNT BURN & BRE 11/13 #000838686 PURCHASE 566 23RD ST S ARLINGTON VA,36.02,other,yes,,,,2023-11-13|bofa_6420|-36.02|NNT BURN & BRE 11/13 #000838686 PURCHASE 566 23RD ST S ARLINGTON VA,personal_purchases
+2023-12-01,BofA,bofa_6420,Zelle payment to Rasagna Reddy Conf# mos78ssqr,800.00,zelle_sent,yes,,,,2023-12-01|bofa_6420|-800|Zelle payment to Rasagna Reddy Conf# mos78ssqr,transfers_to_others
+2024-01-02,BofA,bofa_6420,CHECKCARD 1230 LEVY@1WASHINGTONNATIONA CHICAGO IL 24445003365100518332170,35.18,other,no,,,,2024-01-02|bofa_6420|-35.18|CHECKCARD 1230 LEVY@1WASHINGTONNATIONA CHICAGO IL 24445003365100518332170,personal_purchases
+2024-01-17,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,37.00,other,yes,credit_card_payment,,,2024-01-17|bofa_6420|-37|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2024-02-22,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,2146.05,other,yes,credit_card_payment,,,2024-02-22|bofa_6420|-2146.05|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2024-03-11,BofA,bofa_6420,Zelle payment to PARESH MOHAPATRA Conf# upql47qje,120.00,zelle_sent,yes,,,,2024-03-11|bofa_6420|-120|Zelle payment to PARESH MOHAPATRA Conf# upql47qje,transfers_to_others
+2024-03-15,BofA,bofa_6420,CHECKCARD 0314 SPRINTAX NR TAX HTTPSWWW.SPRIIL 24011344074000063870638,44.95,other,no,,,,2024-03-15|bofa_6420|-44.95|CHECKCARD 0314 SPRINTAX NR TAX HTTPSWWW.SPRIIL 24011344074000063870638,personal_purchases
+2024-04-12,BofA,bofa_6420,BURN & BREW 04/12 #000000767 PURCHASE BURN & BREW ARLINGTON VA,76.28,other,yes,,,,2024-04-12|bofa_6420|-76.28|BURN & BREW 04/12 #000000767 PURCHASE BURN & BREW ARLINGTON VA,alcohol_or_parties
+2024-04-29,BofA,bofa_6420,"TYSONS CORNER, 04/27 #000352659 PURCHASE TYSONS CORNER, V MCLEAN VA",40.28,other,yes,,,,"2024-04-29|bofa_6420|-40.28|TYSONS CORNER, 04/27 #000352659 PURCHASE TYSONS CORNER, V MCLEAN VA",personal_purchases
+2024-05-02,BofA,bofa_6420,Zelle payment to Yashwanth ODU Conf# tvjmhelx9,35.00,zelle_sent,yes,,,,2024-05-02|bofa_6420|-35|Zelle payment to Yashwanth ODU Conf# tvjmhelx9,transfers_to_others
+2024-05-03,BofA,bofa_6420,FOOD LION #118 05/03 #000015655 PURCHASE FOOD LION #1188 2 NORFOLK VA,21.35,groceries,yes,,,,2024-05-03|bofa_6420|-21.35|FOOD LION #118 05/03 #000015655 PURCHASE FOOD LION #1188 2 NORFOLK VA,groceries
+2024-05-06,BofA,bofa_6420,CHECKCARD 0504 7-ELEVEN Norfolk VA,29.72,other,no,,,,2024-05-06|bofa_6420|-29.72|CHECKCARD 0504 7-ELEVEN Norfolk VA,personal_purchases
+2024-05-17,BofA,bofa_6420,CHECKCARD 0516 USCIS I-765 800-375-5283 DC 24240984138600206821875,470.00,other,no,,,,2024-05-17|bofa_6420|-470|CHECKCARD 0516 USCIS I-765 800-375-5283 DC 24240984138600206821875,personal_purchases
+2024-06-04,BofA,bofa_6420,BURN & BREW 06/04 #000001240 PURCHASE BURN & BREW ARLINGTON VA,57.21,other,yes,,,,2024-06-04|bofa_6420|-57.21|BURN & BREW 06/04 #000001240 PURCHASE BURN & BREW ARLINGTON VA,alcohol_or_parties
+2024-06-11,BofA,bofa_6420,Zelle payment to Bhanu Boga Conf# yl0w6s0e7,402.00,zelle_sent,yes,,,,2024-06-11|bofa_6420|-402|Zelle payment to Bhanu Boga Conf# yl0w6s0e7,transfers_to_others
+2024-06-28,BofA,bofa_6420,Zelle payment to Divya ODU Conf# znbrscshm,474.34,zelle_sent,yes,,,,2024-06-28|bofa_6420|-474.34|Zelle payment to Divya ODU Conf# znbrscshm,transfers_to_others
+2024-06-30,Discover,discover_1263,7-ELEVEN 10684 MCLEAN VA,36.89,other,no,,,,2024-06-30|discover_1263|36.89|7-ELEVEN 10684 MCLEAN VA,personal_purchases
+2024-07-01,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,74.55,other,yes,credit_card_payment,,,2024-07-01|bofa_6420|-74.55|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2024-07-11,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,57.15,other,yes,credit_card_payment,,,2024-07-11|bofa_6420|-57.15|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2024-07-11,Chase,chase_4303,CHICK-FIL-A #02673 ARLINGTON VA,23.40,food_dining,no,,,,2024-07-11|chase_4303|23.4|CHICK-FIL-A #02673 ARLINGTON VA,personal_purchases
+2024-07-12,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:7654528859 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,40.00,other,yes,credit_card_payment,,,2024-07-12|bofa_6420|-40|CHASE CREDIT CRD DES:EPAY ID:7654528859 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2024-07-14,Chase,chase_4303,TST* INCHIN'S BAMBOO GARD HERNDON VA,86.70,food_dining,no,,,,2024-07-14|chase_4303|86.7|TST* INCHIN'S BAMBOO GARD HERNDON VA,personal_purchases
+2024-07-21,Chase,chase_4303,ARLINGTON GROCERY & HALAL ARLINGTON VA,25.47,food_dining,no,,,,2024-07-21|chase_4303|25.47|ARLINGTON GROCERY & HALAL ARLINGTON VA,personal_purchases
+2024-07-25,Chase,chase_4303,FANDANGO FANDANGO.COM CA,62.04,other,no,,,,2024-07-25|chase_4303|62.04|FANDANGO FANDANGO.COM CA,personal_purchases
+2024-08-06,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:7715157025 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,61.66,other,yes,credit_card_payment,,,2024-08-06|bofa_6420|-61.66|CHASE CREDIT CRD DES:EPAY ID:7715157025 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2024-08-16,BofA,bofa_6420,Zelle payment to Vineeth ODU Conf# wcn2kvzkq,107.86,zelle_sent,yes,,,,2024-08-16|bofa_6420|-107.86|Zelle payment to Vineeth ODU Conf# wcn2kvzkq,transfers_to_others
+2024-08-16,BofA,bofa_6420,Zelle payment to Divya Sree ODU Conf# x0jf79irb,21.43,zelle_sent,yes,,,,2024-08-16|bofa_6420|-21.43|Zelle payment to Divya Sree ODU Conf# x0jf79irb,transfers_to_others
+2024-08-16,BofA,bofa_6420,Zelle payment to Pavani ODU Conf# xg4kt76t3,32.85,zelle_sent,yes,,,,2024-08-16|bofa_6420|-32.85|Zelle payment to Pavani ODU Conf# xg4kt76t3,transfers_to_others
+2024-08-17,Chase,chase_4303,"K1 SPEED- DULLES, VA STERLING VA",76.01,other,no,,,,"2024-08-17|chase_4303|76.01|K1 SPEED- DULLES, VA STERLING VA",personal_purchases
+2024-08-17,Chase,chase_4303,TST*CLOVE Sterling VA,34.96,food_dining,no,,,,2024-08-17|chase_4303|34.96|TST*CLOVE Sterling VA,personal_purchases
+2024-08-18,Chase,chase_4303,TST*DESI CHOWRASTHA - HE Herndon VA,36.18,food_dining,no,,,,2024-08-18|chase_4303|36.18|TST*DESI CHOWRASTHA - HE Herndon VA,personal_purchases
+2024-08-22,Chase,chase_4303,TJMAXX #0575 ALEXANDRIA VA,155.71,other,no,,,,2024-08-22|chase_4303|155.71|TJMAXX #0575 ALEXANDRIA VA,personal_purchases
+2024-08-23,Chase,chase_4303,BWW LOS ANGELES 349 678-514-4100 CA,66.10,other,no,,,,2024-08-23|chase_4303|66.1|BWW LOS ANGELES 349 678-514-4100 CA,personal_purchases
+2024-08-24,Chase,chase_4303,UBER *TRIP HELP.UBER.COM CA,40.96,other,no,,,,2024-08-24|chase_4303|40.96|UBER *TRIP HELP.UBER.COM CA,personal_purchases
+2024-08-25,Chase,chase_4303,APEX BY SGH 4869 SAN YSIDRO CA,115.30,other,no,,,,2024-08-25|chase_4303|115.3|APEX BY SGH 4869 SAN YSIDRO CA,personal_purchases
+2024-08-27,Chase,chase_4303,HOLLYWOOD SOUVENIRS LOS ANGELES CA,20.78,other,no,,,,2024-08-27|chase_4303|20.78|HOLLYWOOD SOUVENIRS LOS ANGELES CA,personal_purchases
+2024-08-28,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:7765012706 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,1208.35,other,yes,credit_card_payment,,,2024-08-28|bofa_6420|-1208.35|CHASE CREDIT CRD DES:EPAY ID:7765012706 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2024-08-29,Chase,chase_4303,STARBUCKS STORE 14535 SUFFOLK VA,24.75,food_dining,no,,,,2024-08-29|chase_4303|24.75|STARBUCKS STORE 14535 SUFFOLK VA,personal_purchases
+2024-08-31,Chase,chase_4303,SkyWheel Myrtle Beach St. Louis MO,138.77,other,no,,,,2024-08-31|chase_4303|138.77|SkyWheel Myrtle Beach St. Louis MO,personal_purchases
+2024-08-31,Chase,chase_4303,BREEZA BEACHWEAR 002 MYRTLE BEACH SC,27.25,other,no,,,,2024-08-31|chase_4303|27.25|BREEZA BEACHWEAR 002 MYRTLE BEACH SC,personal_purchases
+2024-08-31,Chase,chase_4303,TIN ROOF ACQUISITION CO MYRTLE BEACH SC,110.00,other,no,,,,2024-08-31|chase_4303|110|TIN ROOF ACQUISITION CO MYRTLE BEACH SC,personal_purchases
+2024-08-31,Chase,chase_4303,TIN ROOF ACQUISITION CO MYRTLE BEACH SC,81.00,other,no,,,,2024-08-31|chase_4303|81|TIN ROOF ACQUISITION CO MYRTLE BEACH SC,personal_purchases
+2024-09-01,Chase,chase_4303,WORLD OF COCA COLA ATLANTA GA,156.82,other,no,,,,2024-09-01|chase_4303|156.82|WORLD OF COCA COLA ATLANTA GA,personal_purchases
+2024-09-01,Chase,chase_4303,CIRCLE K 05134 COLUMBIA SC,40.14,other,no,,,,2024-09-01|chase_4303|40.14|CIRCLE K 05134 COLUMBIA SC,personal_purchases
+2024-09-01,Chase,chase_4303,THE PERI PERI GRILL ATLANTA GA,131.08,food_dining,no,,,,2024-09-01|chase_4303|131.08|THE PERI PERI GRILL ATLANTA GA,personal_purchases
+2024-09-02,Chase,chase_4303,HARRIS TEETER FUEL #63 ROCKY MOUNT NC,38.69,groceries,no,,,,2024-09-02|chase_4303|38.69|HARRIS TEETER FUEL #63 ROCKY MOUNT NC,groceries
+2024-09-02,Chase,chase_4303,MURPHY7057ATWALMART COLUMBIA SC,27.76,groceries,no,,,,2024-09-02|chase_4303|27.76|MURPHY7057ATWALMART COLUMBIA SC,groceries
+2024-09-02,Chase,chase_4303,MURPHY7460ATWALMART COLUMBIA SC,32.61,groceries,no,,,,2024-09-02|chase_4303|32.61|MURPHY7460ATWALMART COLUMBIA SC,groceries
+2024-09-09,Chase,chase_4303,ZG * RENTAPPLICATION 206-516-2265 WA,35.00,rent_housing,no,,,,2024-09-09|chase_4303|35|ZG * RENTAPPLICATION 206-516-2265 WA,rent_housing
+2024-09-18,Chase,chase_4303,WF* WAYFAIR4310656831 HTTPSWWW.WAYF MA,311.63,other,no,,,,2024-09-18|chase_4303|311.63|WF* WAYFAIR4310656831 HTTPSWWW.WAYF MA,personal_purchases
+2024-09-21,Chase,chase_4303,LUCKY'S FOOD & DELI ELKRIDGE MD,31.30,food_dining,no,,,,2024-09-21|chase_4303|31.3|LUCKY'S FOOD & DELI ELKRIDGE MD,personal_purchases
+2024-09-21,Discover,discover_1263,LOTTE PLAZA CATONSVILLE CATONSVILLE MD,78.09,other,yes,split,19.52,,2024-09-21|discover_1263|78.09|LOTTE PLAZA CATONSVILLE CATONSVILLE MD,personal_purchases
+2024-09-21,Discover,discover_1263,MACYS COLUMBIA (MD) COLUMBIA MD,43.25,other,no,,,,2024-09-21|discover_1263|43.25|MACYS COLUMBIA (MD) COLUMBIA MD,personal_purchases
+2024-09-22,Chase,chase_4303,COSTCO WHSE #1000 ELKRIDGE MD,41.82,groceries,no,,,,2024-09-22|chase_4303|41.82|COSTCO WHSE #1000 ELKRIDGE MD,groceries
+2024-09-22,Chase,chase_4303,COSTCO WHSE #1000 ELKRIDGE MD,130.00,groceries,no,,,,2024-09-22|chase_4303|130|COSTCO WHSE #1000 ELKRIDGE MD,groceries
+2024-09-22,Discover,discover_1263,ULTA #1582 PASADENA MD,25.01,other,no,,,,2024-09-22|discover_1263|25.01|ULTA #1582 PASADENA MD,personal_purchases
+2024-09-22,Discover,discover_1263,WALMART STORE 01875 SEVERN MD,40.04,groceries,no,,,,2024-09-22|discover_1263|40.04|WALMART STORE 01875 SEVERN MD,groceries
+2024-09-22,Discover,discover_1263,WALMART STORE 01875 SEVERN MD,127.00,groceries,no,,,,2024-09-22|discover_1263|127|WALMART STORE 01875 SEVERN MD,groceries
+2024-09-23,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:7823467586 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,1000.00,other,yes,credit_card_payment,,,2024-09-23|bofa_6420|-1000|CHASE CREDIT CRD DES:EPAY ID:7823467586 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2024-09-24,Discover,discover_1263,SP INKED GAMING 8777223581 OR,87.12,other,no,,,,2024-09-24|discover_1263|87.12|SP INKED GAMING 8777223581 OR,personal_purchases
+2024-09-26,Chase,chase_4303,SP BRIO PRODUCTS HTTPSWWW.BRIO MI,153.55,other,no,,,,2024-09-26|chase_4303|153.55|SP BRIO PRODUCTS HTTPSWWW.BRIO MI,personal_purchases
+2024-09-27,Chase,chase_4303,SQ *BLACK FLAG BREWING CO Columbia MD,54.06,food_dining,no,,,,2024-09-27|chase_4303|54.06|SQ *BLACK FLAG BREWING CO Columbia MD,personal_purchases
+2024-09-28,Chase,chase_4303,COSTCO WHSE #1000 ELKRIDGE MD,173.68,groceries,no,,,,2024-09-28|chase_4303|173.68|COSTCO WHSE #1000 ELKRIDGE MD,groceries
+2024-09-28,Chase,chase_4303,BIG BAZAAR LAUREL MD,115.44,other,no,,,,2024-09-28|chase_4303|115.44|BIG BAZAAR LAUREL MD,personal_purchases
+2024-09-28,Discover,discover_1263,WALMART STORE 05228 COLUMBIA MD,24.30,groceries,no,,,,2024-09-28|discover_1263|24.3|WALMART STORE 05228 COLUMBIA MD,groceries
+2024-09-28,Discover,discover_1263,WALMART STORE 05228 COLUMBIA MD,26.22,groceries,no,,,,2024-09-28|discover_1263|26.22|WALMART STORE 05228 COLUMBIA MD,groceries
+2024-10-01,BofA,bofa_6420,Zelle payment to Sai Krishna ODU Conf# sj7dk6dhu,850.00,zelle_sent,yes,rent,,,2024-10-01|bofa_6420|-850|Zelle payment to Sai Krishna ODU Conf# sj7dk6dhu,transfers_to_others
+2024-10-02,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:7847289930 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,500.00,other,yes,credit_card_payment,,,2024-10-02|bofa_6420|-500|CHASE CREDIT CRD DES:EPAY ID:7847289930 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2024-10-02,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,400.00,other,yes,credit_card_payment,,,2024-10-02|bofa_6420|-400|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2024-10-04,Chase,chase_4303,TST*DESI CHOWRASTHA - HE Herndon VA,88.28,food_dining,no,,,,2024-10-04|chase_4303|88.28|TST*DESI CHOWRASTHA - HE Herndon VA,personal_purchases
+2024-10-05,Chase,chase_4303,TST*THE TAPROOM AT OGB 443-474-9026 MD,116.86,food_dining,no,,,,2024-10-05|chase_4303|116.86|TST*THE TAPROOM AT OGB 443-474-9026 MD,personal_purchases
+2024-10-05,Chase,chase_4303,EB *BOLLYWOOD DHAMAKA 8014137200 CA,115.90,other,no,,,,2024-10-05|chase_4303|115.9|EB *BOLLYWOOD DHAMAKA 8014137200 CA,personal_purchases
+2024-10-06,Chase,chase_4303,PY *SRI SIVA VISHNU TEMPL LANHAM MD,31.00,other,no,,,,2024-10-06|chase_4303|31|PY *SRI SIVA VISHNU TEMPL LANHAM MD,personal_purchases
+2024-10-12,Chase,chase_4303,CHICK-FIL-A #03474 STERLING VA,27.99,food_dining,no,,,,2024-10-12|chase_4303|27.99|CHICK-FIL-A #03474 STERLING VA,personal_purchases
+2024-10-14,Discover,discover_1263,BESTBUY.COM 888-237-8289 MN,105.99,other,no,,,,2024-10-14|discover_1263|105.99|BESTBUY.COM 888-237-8289 MN,personal_purchases
+2024-10-17,Chase,chase_4303,COSTCO WHSE #1000 ELKRIDGE MD,215.07,groceries,no,,,,2024-10-17|chase_4303|215.07|COSTCO WHSE #1000 ELKRIDGE MD,groceries
+2024-10-18,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,1000.00,other,yes,credit_card_payment,,,2024-10-18|bofa_6420|-1000|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2024-10-18,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:7888638722 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,1000.00,other,yes,credit_card_payment,,,2024-10-18|bofa_6420|-1000|CHASE CREDIT CRD DES:EPAY ID:7888638722 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2024-10-20,Chase,chase_4303,TARGET 00026310 GAMBRILLS MD,44.56,groceries,no,,,,2024-10-20|chase_4303|44.56|TARGET 00026310 GAMBRILLS MD,groceries
+2024-10-20,Chase,chase_4303,DESI BAZAAR COLUMBIA MD,116.49,other,no,,,,2024-10-20|chase_4303|116.49|DESI BAZAAR COLUMBIA MD,personal_purchases
+2024-10-20,Chase,chase_4303,ULTA #602 GAMBRILLS MD,67.82,other,no,,,,2024-10-20|chase_4303|67.82|ULTA #602 GAMBRILLS MD,personal_purchases
+2024-10-26,Chase,chase_4303,LOTTE PLAZA CATONSVILLE CATONSVILLE MD,154.69,other,yes,split,38.67,,2024-10-26|chase_4303|154.69|LOTTE PLAZA CATONSVILLE CATONSVILLE MD,personal_purchases
+2024-10-30,Chase,chase_4303,AVIS.COM PREPAY 8003527900 VA,119.66,other,no,,,,2024-10-30|chase_4303|119.66|AVIS.COM PREPAY 8003527900 VA,personal_purchases
+2024-11-01,BofA,bofa_6420,Zelle payment to Sai Krishna ODU Conf# x8edl1l1t,850.00,zelle_sent,yes,rent,,,2024-11-01|bofa_6420|-850|Zelle payment to Sai Krishna ODU Conf# x8edl1l1t,transfers_to_others
+2024-11-01,Chase,chase_4303,PUREFITNESS LLC 344-4770005 VA,67.99,other,no,,,,2024-11-01|chase_4303|67.99|PUREFITNESS LLC 344-4770005 VA,personal_purchases
+2024-11-02,Chase,chase_4303,PRIMARK ARUNDEL MILLS 124 HANOVER MD,65.82,other,no,,,,2024-11-02|chase_4303|65.82|PRIMARK ARUNDEL MILLS 124 HANOVER MD,personal_purchases
+2024-11-04,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:7921686539 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,947.93,other,yes,credit_card_payment,,,2024-11-04|bofa_6420|-947.93|CHASE CREDIT CRD DES:EPAY ID:7921686539 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2024-11-07,Chase,chase_4303,SQ *DANILOVEHAIR GWYNN OAK MD,40.00,other,no,,,,2024-11-07|chase_4303|40|SQ *DANILOVEHAIR GWYNN OAK MD,personal_purchases
+2024-11-12,BofA,bofa_6420,Zelle payment to Priyaja ODU Conf# u4p06uer7,50.00,zelle_sent,yes,,,,2024-11-12|bofa_6420|-50|Zelle payment to Priyaja ODU Conf# u4p06uer7,transfers_to_others
+2024-11-18,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:7955914959 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,1000.00,other,yes,credit_card_payment,,,2024-11-18|bofa_6420|-1000|CHASE CREDIT CRD DES:EPAY ID:7955914959 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2024-11-29,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:7987063431 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,1000.00,other,yes,credit_card_payment,,,2024-11-29|bofa_6420|-1000|CHASE CREDIT CRD DES:EPAY ID:7987063431 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2024-12-02,BofA,bofa_6420,Zelle payment to Sai Krishna ODU Conf# zaqiwypso,850.00,zelle_sent,yes,rent,,,2024-12-02|bofa_6420|-850|Zelle payment to Sai Krishna ODU Conf# zaqiwypso,transfers_to_others
+2024-12-10,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,600.00,other,yes,credit_card_payment,,,2024-12-10|bofa_6420|-600|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2024-12-12,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8020390308 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,1063.30,other,yes,credit_card_payment,,,2024-12-12|bofa_6420|-1063.3|CHASE CREDIT CRD DES:EPAY ID:8020390308 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2024-12-26,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8054719047 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,1000.00,other,yes,credit_card_payment,,,2024-12-26|bofa_6420|-1000|CHASE CREDIT CRD DES:EPAY ID:8054719047 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2024-12-27,BofA,bofa_6420,Zelle payment to Vineeth ODU Conf# t1ek4lbdi,34.79,zelle_sent,yes,,,,2024-12-27|bofa_6420|-34.79|Zelle payment to Vineeth ODU Conf# t1ek4lbdi,transfers_to_others
+2024-12-31,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,500.00,other,yes,credit_card_payment,,,2024-12-31|bofa_6420|-500|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2025-01-01,Chase,chase_9200,PUREFITNESS LLC,33.99,other,no,,,,2025-01-01|chase_9200|33.99|PUREFITNESS LLC,personal_purchases
+2025-01-02,BofA,bofa_6420,Zelle payment to Sai Krishna ODU Conf# ydewm4j4m,850.00,zelle_sent,yes,rent,,,2025-01-02|bofa_6420|-850|Zelle payment to Sai Krishna ODU Conf# ydewm4j4m,transfers_to_others
+2025-01-06,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8079015739 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,800.00,other,yes,credit_card_payment,,,2025-01-06|bofa_6420|-800|CHASE CREDIT CRD DES:EPAY ID:8079015739 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-01-07,BofA,bofa_6420,Zelle payment to Sai Krishna ODU Conf# vxhqvnjmu,500.00,zelle_sent,yes,,,,2025-01-07|bofa_6420|-500|Zelle payment to Sai Krishna ODU Conf# vxhqvnjmu,transfers_to_others
+2025-01-08,BofA,bofa_6420,DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,3500.00,other,yes,credit_card_payment,,,2025-01-08|bofa_6420|-3500|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-01-10,Chase,chase_9200,WAL-MART #5228,68.19,other,no,,,,2025-01-10|chase_9200|68.19|WAL-MART #5228,personal_purchases
+2025-01-13,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8096603302 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,40.00,other,yes,credit_card_payment,,,2025-01-13|bofa_6420|-40|CHASE CREDIT CRD DES:EPAY ID:8096603302 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-01-14,Chase,chase_9200,COSTCO GAS #1000,31.13,groceries,no,,,,2025-01-14|chase_9200|31.13|COSTCO GAS #1000,groceries
+2025-01-15,Chase,chase_9200,TRIVENI SUPERMARKET,169.26,groceries,yes,split,42.31,,2025-01-15|chase_9200|169.26|TRIVENI SUPERMARKET,groceries
+2025-01-15,Chase,chase_9200,COSTCO WHSE #1000,158.42,groceries,no,,,,2025-01-15|chase_9200|158.42|COSTCO WHSE #1000,groceries
+2025-01-16,BofA,bofa_6420,"DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB Tips to help protect yourself from trending scams: - Do not be pressured to act quickly - it could be an imposter trying to steal your money. - If asked to transfer money unexpectedly, use caution - it could be a scam. - Never grant remote access or download apps at the request of someone you do not know. Learn more about trending scams. Scan the code or visit bofa.com/HelpProtectYourself. When you use the QRC feature, certain information is collected from your mobile device for business purposes.",250.00,other,yes,credit_card_payment,,,"2025-01-16|bofa_6420|-250|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB Tips to help protect yourself from trending scams: - Do not be pressured to act quickly - it could be an imposter trying to steal your money. - If asked to transfer money unexpectedly, use caution - it could be a scam. - Never grant remote access or download apps at the request of someone you do not know. Learn more about trending scams. Scan the code or visit bofa.com/HelpProtectYourself. When you use the QRC feature, certain information is collected from your mobile device for business purposes.",debit_to_cc_payments
+2025-01-18,Chase,chase_9200,ERACTOLL 784027060,71.30,other,no,,,,2025-01-18|chase_9200|71.3|ERACTOLL 784027060,personal_purchases
+2025-01-22,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8120769652 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,285.00,other,yes,credit_card_payment,,,2025-01-22|bofa_6420|-285|CHASE CREDIT CRD DES:EPAY ID:8120769652 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-01-23,Chase,chase_9200,PLANET OF THE...,40.98,other,no,,,,2025-01-23|chase_9200|40.98|PLANET OF THE...,personal_purchases
+2025-01-25,Chase,chase_9200,HOWARD WINE AND SPIRITS,54.39,other,no,,,,2025-01-25|chase_9200|54.39|HOWARD WINE AND SPIRITS,alcohol_or_parties
+2025-01-26,Chase,chase_9200,BASSFORGE,39.99,other,no,,,,2025-01-26|chase_9200|39.99|BASSFORGE,personal_purchases
+2025-01-28,Chase,chase_9200,PP*LOVING HAIR,44.00,other,no,,,,2025-01-28|chase_9200|44|PP*LOVING HAIR,personal_purchases
+2025-01-30,BofA,bofa_6420,DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,250.00,other,yes,credit_card_payment,,,2025-01-30|bofa_6420|-250|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-01-31,BofA,bofa_6420,Zelle payment to Manish ODU Conf# xmk1hov0s,288.97,zelle_sent,yes,,,,2025-01-31|bofa_6420|-288.97|Zelle payment to Manish ODU Conf# xmk1hov0s,transfers_to_others
+2025-02-01,Chase,chase_9200,SQ *CHOPATHI INDIA KITCHE,28.59,other,no,,,,2025-02-01|chase_9200|28.59|SQ *CHOPATHI INDIA KITCHE,personal_purchases
+2025-02-01,Chase,chase_9200,PUREFITNESS LLC,33.99,other,no,,,,2025-02-01|chase_9200|33.99|PUREFITNESS LLC,personal_purchases
+2025-02-02,Chase,chase_9200,SQ *DOLCI GELATI LLC,38.21,other,no,,,,2025-02-02|chase_9200|38.21|SQ *DOLCI GELATI LLC,personal_purchases
+2025-02-02,Chase,chase_9200,SQ *VINTAGE VIEWS BAR,28.60,other,no,,,,2025-02-02|chase_9200|28.6|SQ *VINTAGE VIEWS BAR,personal_purchases
+2025-02-02,Chase,chase_9200,COSTCO GAS #1000,36.21,groceries,no,,,,2025-02-02|chase_9200|36.21|COSTCO GAS #1000,groceries
+2025-02-03,BofA,bofa_6420,"Zelle Recurring payment to Sai Krishna ODU for ""rent""; Conf# tawr8jdhb",850.00,rent_housing,yes,rent,,,"2025-02-03|bofa_6420|-850|Zelle Recurring payment to Sai Krishna ODU for ""rent""; Conf# tawr8jdhb",rent_housing
+2025-02-03,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8141979686 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,500.00,other,yes,credit_card_payment,,,2025-02-03|bofa_6420|-500|CHASE CREDIT CRD DES:EPAY ID:8141979686 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-02-03,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,200.00,other,yes,credit_card_payment,,,2025-02-03|bofa_6420|-200|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2025-02-04,BofA,bofa_6420,DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,1000.00,other,yes,credit_card_payment,,,2025-02-04|bofa_6420|-1000|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-02-07,Chase,chase_9200,COSTCO WHSE #1000,172.59,groceries,no,,,,2025-02-07|chase_9200|172.59|COSTCO WHSE #1000,groceries
+2025-02-18,BofA,bofa_6420,Zelle payment to Soujanya ODU Conf# q4fx48z4s,709.22,zelle_sent,yes,,,,2025-02-18|bofa_6420|-709.22|Zelle payment to Soujanya ODU Conf# q4fx48z4s,transfers_to_others
+2025-02-18,BofA,bofa_6420,DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,400.00,other,yes,credit_card_payment,,,2025-02-18|bofa_6420|-400|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-02-19,BofA,bofa_6420,DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,300.00,other,yes,credit_card_payment,,,2025-02-19|bofa_6420|-300|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-02-23,Chase,chase_9200,SNOW.COM/VAIL RESORTS SKI,196.00,other,no,,,,2025-02-23|chase_9200|196|SNOW.COM/VAIL RESORTS SKI,personal_purchases
+2025-02-23,Chase,chase_9200,LOTTE PLAZA CATONSVILLE,181.70,other,yes,split,45.42,,2025-02-23|chase_9200|181.7|LOTTE PLAZA CATONSVILLE,personal_purchases
+2025-02-23,Chase,chase_9200,COSTCO WHSE #1000,298.97,groceries,no,,,,2025-02-23|chase_9200|298.97|COSTCO WHSE #1000,groceries
+2025-02-23,Chase,chase_9200,ULTA #235,27.76,other,no,,,,2025-02-23|chase_9200|27.76|ULTA #235,personal_purchases
+2025-02-26,Discover,discover_1263,USCIS ELIS I907 WASHINGTON DC,1685.00,other,no,,,,2025-02-26|discover_1263|1685|USCIS ELIS I907 WASHINGTON DC,personal_purchases
+2025-02-28,Chase,chase_9200,HOWARD WINE AND SPIRITS,25.05,other,no,,,,2025-02-28|chase_9200|25.05|HOWARD WINE AND SPIRITS,alcohol_or_parties
+2025-03-01,Chase,chase_9200,PUREFITNESS LLC,33.99,other,no,,,,2025-03-01|chase_9200|33.99|PUREFITNESS LLC,personal_purchases
+2025-03-03,BofA,bofa_6420,Zelle payment to Anirudh Conf# vr8se1hou,2000.00,zelle_sent,yes,,,,2025-03-03|bofa_6420|-2000|Zelle payment to Anirudh Conf# vr8se1hou,transfers_to_others
+2025-03-03,BofA,bofa_6420,Zelle payment to Sai Krishna ODU Conf# wwmdwpmfv,850.00,zelle_sent,yes,rent,,,2025-03-03|bofa_6420|-850|Zelle payment to Sai Krishna ODU Conf# wwmdwpmfv,transfers_to_others
+2025-03-04,Chase,chase_9200,BATH AND BODY WORKS 5760,28.62,other,no,,,,2025-03-04|chase_9200|28.62|BATH AND BODY WORKS 5760,personal_purchases
+2025-03-06,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8229234629 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,600.00,other,yes,credit_card_payment,,,2025-03-06|bofa_6420|-600|CHASE CREDIT CRD DES:EPAY ID:8229234629 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-03-07,BofA,bofa_6420,DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,800.00,other,yes,credit_card_payment,,,2025-03-07|bofa_6420|-800|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-03-07,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,300.00,other,yes,credit_card_payment,,,2025-03-07|bofa_6420|-300|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2025-03-09,Chase,chase_9200,LOTTE PLAZA CATONSVILLE,181.19,other,yes,split,45.30,,2025-03-09|chase_9200|181.19|LOTTE PLAZA CATONSVILLE,personal_purchases
+2025-03-09,Chase,chase_9200,WAL-MART #2248,28.85,other,no,,,,2025-03-09|chase_9200|28.85|WAL-MART #2248,personal_purchases
+2025-03-09,Chase,chase_9200,COSTCO WHSE #1000,80.79,groceries,no,,,,2025-03-09|chase_9200|80.79|COSTCO WHSE #1000,groceries
+2025-03-09,Chase,chase_9200,WAL-MART #2248,35.79,other,no,,,,2025-03-09|chase_9200|35.79|WAL-MART #2248,personal_purchases
+2025-03-11,Discover,discover_1263,DWARAKAS BAWARCHI INDIAN COLUMBIA MD,33.90,food_dining,no,,,,2025-03-11|discover_1263|33.9|DWARAKAS BAWARCHI INDIAN COLUMBIA MD,personal_purchases
+2025-03-17,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8251431009 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,453.80,other,yes,credit_card_payment,,,2025-03-17|bofa_6420|-453.8|CHASE CREDIT CRD DES:EPAY ID:8251431009 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-03-18,BofA,bofa_6420,"DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB How are we doing? Your opinion is important to us. You are invited to join the Bank of America® Advisory Panel and share what you think we are doing right and what we need to do better. Enter code CADD at bankofamerica.com/AdvisoryPanel to learn more and join. When you use the QRC feature, certain information is collected from your mobile device for business purposes. Inclusion on the Advisory Panel is subject to qualifications.",400.00,other,yes,credit_card_payment,,,"2025-03-18|bofa_6420|-400|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB How are we doing? Your opinion is important to us. You are invited to join the Bank of America® Advisory Panel and share what you think we are doing right and what we need to do better. Enter code CADD at bankofamerica.com/AdvisoryPanel to learn more and join. When you use the QRC feature, certain information is collected from your mobile device for business purposes. Inclusion on the Advisory Panel is subject to qualifications.",debit_to_cc_payments
+2025-03-22,Chase,chase_9200,LOTTE PLAZA CATONSVILLE,285.59,other,yes,split,71.40,,2025-03-22|chase_9200|285.59|LOTTE PLAZA CATONSVILLE,personal_purchases
+2025-03-23,Chase,chase_9200,BWW HANOVER 770,90.00,other,no,,,,2025-03-23|chase_9200|90|BWW HANOVER 770,personal_purchases
+2025-03-25,Chase,chase_9200,AIRBNB * HMTMMJEA8S,1445.87,other,no,,,,2025-03-25|chase_9200|1445.87|AIRBNB * HMTMMJEA8S,personal_purchases
+2025-03-27,Chase,chase_9200,HOWARD WINE AND SPIRITS,29.41,other,no,,,,2025-03-27|chase_9200|29.41|HOWARD WINE AND SPIRITS,alcohol_or_parties
+2025-03-28,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8284275412 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,569.00,other,yes,credit_card_payment,,,2025-03-28|bofa_6420|-569|CHASE CREDIT CRD DES:EPAY ID:8284275412 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-03-31,BofA,bofa_6420,DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,1500.00,other,yes,credit_card_payment,,,2025-03-31|bofa_6420|-1500|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-03-31,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,367.10,other,yes,credit_card_payment,,,2025-03-31|bofa_6420|-367.1|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2025-03-31,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8288269608 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,302.41,other,yes,credit_card_payment,,,2025-03-31|bofa_6420|-302.41|CHASE CREDIT CRD DES:EPAY ID:8288269608 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-04-01,BofA,bofa_6420,Zelle Recurring payment to Sai Krishna ODU Conf# suptvy9ln,850.00,zelle_sent,yes,rent,,,2025-04-01|bofa_6420|-850|Zelle Recurring payment to Sai Krishna ODU Conf# suptvy9ln,transfers_to_others
+2025-04-01,Chase,chase_9200,PUREFITNESS LLC,33.99,other,no,,,,2025-04-01|chase_9200|33.99|PUREFITNESS LLC,personal_purchases
+2025-04-05,Chase,chase_9200,PAYPAL *BESTTAX,71.99,other,no,,,,2025-04-05|chase_9200|71.99|PAYPAL *BESTTAX,personal_purchases
+2025-04-14,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8324681817 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,800.00,other,yes,credit_card_payment,,,2025-04-14|bofa_6420|-800|CHASE CREDIT CRD DES:EPAY ID:8324681817 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-04-14,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,200.00,other,yes,credit_card_payment,,,2025-04-14|bofa_6420|-200|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2025-04-15,Chase,chase_9200,COSTCO GAS #1000,33.47,groceries,no,,,,2025-04-15|chase_9200|33.47|COSTCO GAS #1000,groceries
+2025-04-17,BofA,bofa_6420,DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,400.00,other,yes,credit_card_payment,,,2025-04-17|bofa_6420|-400|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-04-17,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8333825936 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,300.00,other,yes,credit_card_payment,,,2025-04-17|bofa_6420|-300|CHASE CREDIT CRD DES:EPAY ID:8333825936 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-04-18,Chase,chase_9200,TST*GAMEON BAR & ARCADE,23.00,food_dining,no,,,,2025-04-18|chase_9200|23|TST*GAMEON BAR & ARCADE,personal_purchases
+2025-04-19,Chase,chase_9200,DWARAKAS BAWARCHI INDIAN,57.20,food_dining,no,,,,2025-04-19|chase_9200|57.2|DWARAKAS BAWARCHI INDIAN,personal_purchases
+2025-04-25,Discover,discover_1263,SQ *CHOPATHI INDIA KIT ELKRIDGE MD,34.95,other,no,,,,2025-04-25|discover_1263|34.95|SQ *CHOPATHI INDIA KIT ELKRIDGE MD,personal_purchases
+2025-04-26,Discover,discover_1263,DAVES HOT CHICKEN 1174 COLUMBIA MD,29.65,other,no,,,,2025-04-26|discover_1263|29.65|DAVES HOT CHICKEN 1174 COLUMBIA MD,personal_purchases
+2025-04-28,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8359205935 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,1000.00,other,yes,credit_card_payment,,,2025-04-28|bofa_6420|-1000|CHASE CREDIT CRD DES:EPAY ID:8359205935 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-04-28,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,1000.00,other,yes,credit_card_payment,,,2025-04-28|bofa_6420|-1000|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2025-04-29,BofA,bofa_6420,DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,800.00,other,yes,credit_card_payment,,,2025-04-29|bofa_6420|-800|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-04-30,Chase,chase_9200,DWARAKAS BAWARCHI INDIAN,56.15,food_dining,no,,,,2025-04-30|chase_9200|56.15|DWARAKAS BAWARCHI INDIAN,personal_purchases
+2025-04-30,Discover,discover_1263,TST*GAMEON BAR & ARCAD COLUMBIA MD,21.80,food_dining,no,,,,2025-04-30|discover_1263|21.8|TST*GAMEON BAR & ARCAD COLUMBIA MD,personal_purchases
+2025-05-01,BofA,bofa_6420,Zelle Recurring payment to Sai Krishna ODU Conf# tajuyyv0w,850.00,zelle_sent,yes,rent,,,2025-05-01|bofa_6420|-850|Zelle Recurring payment to Sai Krishna ODU Conf# tajuyyv0w,transfers_to_others
+2025-05-01,BofA,bofa_6420,Zelle payment to Sai Krishna ODU Conf# xtt74d44g,337.24,zelle_sent,yes,,,,2025-05-01|bofa_6420|-337.24|Zelle payment to Sai Krishna ODU Conf# xtt74d44g,transfers_to_others
+2025-05-01,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,500.00,other,yes,credit_card_payment,,,2025-05-01|bofa_6420|-500|DISCOVER DES:E-PAYMENT ID:4039 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2025-05-01,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8368034297 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,500.00,other,yes,credit_card_payment,,,2025-05-01|bofa_6420|-500|CHASE CREDIT CRD DES:EPAY ID:8368034297 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-05-01,BofA,bofa_6420,DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,400.00,other,yes,credit_card_payment,,,2025-05-01|bofa_6420|-400|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-05-01,Chase,chase_9200,PUREFITNESS LLC,33.99,other,no,,,,2025-05-01|chase_9200|33.99|PUREFITNESS LLC,personal_purchases
+2025-05-03,Chase,chase_9200,PP*S &AMP C BOUTIQUE,45.00,other,no,,,,2025-05-03|chase_9200|45|PP*S &AMP C BOUTIQUE,personal_purchases
+2025-05-07,Chase,chase_9200,TST*HOT LOLAS - ROSSLYN,51.48,food_dining,no,,,,2025-05-07|chase_9200|51.48|TST*HOT LOLAS - ROSSLYN,personal_purchases
+2025-05-09,Chase,chase_9200,TST*411 MANAGEMENT COMPA,38.53,food_dining,no,,,,2025-05-09|chase_9200|38.53|TST*411 MANAGEMENT COMPA,personal_purchases
+2025-05-09,Chase,chase_9200,MUNFORDVILLE VALERO,23.00,other,no,,,,2025-05-09|chase_9200|23|MUNFORDVILLE VALERO,personal_purchases
+2025-05-10,Chase,chase_9200,SQ *APNA BAZAAR,74.04,other,no,,,,2025-05-10|chase_9200|74.04|SQ *APNA BAZAAR,personal_purchases
+2025-05-10,Chase,chase_9200,WHISKEY ROW NASHVILLE,47.05,other,no,,,,2025-05-10|chase_9200|47.05|WHISKEY ROW NASHVILLE,personal_purchases
+2025-05-15,BofA,bofa_6420,DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,400.00,other,yes,credit_card_payment,,,2025-05-15|bofa_6420|-400|DISCOVER BANK DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-05-16,Chase,chase_9200,SQ *GROUNDED - LIVERMORE,24.82,other,no,,,,2025-05-16|chase_9200|24.82|SQ *GROUNDED - LIVERMORE,personal_purchases
+2025-05-16,Chase,chase_9200,PLAYLAND BAR,27.12,other,no,,,,2025-05-16|chase_9200|27.12|PLAYLAND BAR,personal_purchases
+2025-05-17,Chase,chase_9200,SQ *THE COMMENCEMENT GROU,62.96,other,no,,,,2025-05-17|chase_9200|62.96|SQ *THE COMMENCEMENT GROU,personal_purchases
+2025-05-18,Chase,chase_9200,TST* CHAAT CORNER SF,69.63,food_dining,no,,,,2025-05-18|chase_9200|69.63|TST* CHAAT CORNER SF,personal_purchases
+2025-05-19,Chase,chase_9200,NEW THAI ELEPHANT 2 INC,155.37,food_dining,no,,,,2025-05-19|chase_9200|155.37|NEW THAI ELEPHANT 2 INC,personal_purchases
+2025-05-21,BofA,bofa_6420,Zelle payment to Manish ODU Conf# xfuz6pfds,203.00,zelle_sent,yes,,,,2025-05-21|bofa_6420|-203|Zelle payment to Manish ODU Conf# xfuz6pfds,transfers_to_others
+2025-05-21,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8421779279 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,800.00,other,yes,credit_card_payment,,,2025-05-21|bofa_6420|-800|CHASE CREDIT CRD DES:EPAY ID:8421779279 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-05-21,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,35.00,other,yes,credit_card_payment,,,2025-05-21|bofa_6420|-35|DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2025-05-22,BofA,bofa_6420,Zelle payment to Giri Conf# wo82kyekr,61.71,zelle_sent,yes,,,,2025-05-22|bofa_6420|-61.71|Zelle payment to Giri Conf# wo82kyekr,transfers_to_others
+2025-05-23,BofA,bofa_6420,Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,300.00,other,yes,credit_card_payment,,,2025-05-23|bofa_6420|-300|Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-05-23,Chase,chase_9200,QATAR AIR 0002125413730,1523.07,other,no,,,,2025-05-23|chase_9200|1523.07|QATAR AIR 0002125413730,personal_purchases
+2025-05-25,Chase,chase_9200,DOMINO'S 4620,25.42,food_dining,yes,split,12.71,,2025-05-25|chase_9200|25.42|DOMINO'S 4620,personal_purchases
+2025-05-25,Chase,chase_9200,PMUSA 758062 OCEAN CIT,25.35,other,no,,,,2025-05-25|chase_9200|25.35|PMUSA 758062 OCEAN CIT,personal_purchases
+2025-05-29,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8440230474 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,500.00,other,yes,credit_card_payment,,,2025-05-29|bofa_6420|-500|CHASE CREDIT CRD DES:EPAY ID:8440230474 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-05-29,BofA,bofa_6420,Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,400.00,other,yes,credit_card_payment,,,2025-05-29|bofa_6420|-400|Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-05-31,Chase,chase_9200,HOWARD WINE AND SPIRITS,22.87,other,no,,,,2025-05-31|chase_9200|22.87|HOWARD WINE AND SPIRITS,alcohol_or_parties
+2025-06-01,Chase,chase_9200,PUREFITNESS LLC,33.99,other,no,,,,2025-06-01|chase_9200|33.99|PUREFITNESS LLC,personal_purchases
+2025-06-01,Chase,chase_9200,RUE21 6655,22.26,other,no,,,,2025-06-01|chase_9200|22.26|RUE21 6655,personal_purchases
+2025-06-02,BofA,bofa_6420,Zelle Recurring payment to Sai Krishna ODU Conf# y1jya62o9,850.00,zelle_sent,yes,rent,,,2025-06-02|bofa_6420|-850|Zelle Recurring payment to Sai Krishna ODU Conf# y1jya62o9,transfers_to_others
+2025-06-03,BofA,bofa_6420,Zelle payment to Giri Conf# y44j1fgcu,49.42,zelle_sent,yes,,,,2025-06-03|bofa_6420|-49.42|Zelle payment to Giri Conf# y44j1fgcu,transfers_to_others
+2025-06-04,Chase,chase_9200,CHICK-FIL-A TERMINAL D,49.05,food_dining,no,,,,2025-06-04|chase_9200|49.05|CHICK-FIL-A TERMINAL D,personal_purchases
+2025-06-04,Chase,chase_9200,WAY.COM* WAY.COM*AIRPO,43.66,other,no,,,,2025-06-04|chase_9200|43.66|WAY.COM* WAY.COM*AIRPO,personal_purchases
+2025-06-05,Chase,chase_9200,SCORES LAS VEGAS,230.00,other,no,,,,2025-06-05|chase_9200|230|SCORES LAS VEGAS,personal_purchases
+2025-06-05,Chase,chase_9200,NOODLE ASIA,127.88,food_dining,no,,,,2025-06-05|chase_9200|127.88|NOODLE ASIA,personal_purchases
+2025-06-05,Chase,chase_9200,D?J? VU SHOWGIRLS OF LV,200.00,other,no,,,,2025-06-05|chase_9200|200|D?J? VU SHOWGIRLS OF LV,personal_purchases
+2025-06-06,Chase,chase_9200,TST*WSKY BAR AND GRILL -,160.00,food_dining,no,,,,2025-06-06|chase_9200|160|TST*WSKY BAR AND GRILL -,personal_purchases
+2025-06-07,Chase,chase_9200,EINSTEIN BAGELS - LAS VEG,37.39,other,no,,,,2025-06-07|chase_9200|37.39|EINSTEIN BAGELS - LAS VEG,personal_purchases
+2025-06-08,Chase,chase_9200,CALIFORNIA PIZZA LAS,78.45,food_dining,no,,,,2025-06-08|chase_9200|78.45|CALIFORNIA PIZZA LAS,personal_purchases
+2025-06-08,Chase,chase_9200,DAVES HOT CHICKEN 1174,54.21,other,no,,,,2025-06-08|chase_9200|54.21|DAVES HOT CHICKEN 1174,personal_purchases
+2025-06-08,Chase,chase_9200,UBER *TRIP HELP.UBER.COM,22.00,other,no,,,,2025-06-08|chase_9200|22|UBER *TRIP HELP.UBER.COM,personal_purchases
+2025-06-09,Chase,chase_9200,BEST TAX FILER,150.00,other,no,,,,2025-06-09|chase_9200|150|BEST TAX FILER,personal_purchases
+2025-06-11,Chase,chase_9200,TOUS LES JOURS ARUNDEL M,42.93,other,no,,,,2025-06-11|chase_9200|42.93|TOUS LES JOURS ARUNDEL M,personal_purchases
+2025-06-11,Chase,chase_9200,LOTTE PLAZA CATONSVILLE,241.09,other,yes,split,60.27,,2025-06-11|chase_9200|241.09|LOTTE PLAZA CATONSVILLE,personal_purchases
+2025-06-12,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8475970716 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,400.00,other,yes,credit_card_payment,,,2025-06-12|bofa_6420|-400|CHASE CREDIT CRD DES:EPAY ID:8475970716 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-06-15,Chase,chase_9200,DOMINO'S 4620,21.18,food_dining,yes,split,10.59,,2025-06-15|chase_9200|21.18|DOMINO'S 4620,personal_purchases
+2025-06-15,Chase,chase_9200,ROYAL FARMS #230,27.50,other,no,,,,2025-06-15|chase_9200|27.5|ROYAL FARMS #230,personal_purchases
+2025-06-16,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8483453824 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,1600.00,other,yes,credit_card_payment,,,2025-06-16|bofa_6420|-1600|CHASE CREDIT CRD DES:EPAY ID:8483453824 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-06-17,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,35.00,other,yes,credit_card_payment,,,2025-06-17|bofa_6420|-35|DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2025-06-18,Chase,chase_9200,HOWARD WINE AND SPIRITS,37.03,other,no,,,,2025-06-18|chase_9200|37.03|HOWARD WINE AND SPIRITS,alcohol_or_parties
+2025-06-19,Chase,chase_9200,SQ *ASHBURN BIRYANI GRILL,147.48,food_dining,no,,,,2025-06-19|chase_9200|147.48|SQ *ASHBURN BIRYANI GRILL,personal_purchases
+2025-06-20,Chase,chase_9200,HOWARD WINE AND SPIRITS,21.83,other,no,,,,2025-06-20|chase_9200|21.83|HOWARD WINE AND SPIRITS,alcohol_or_parties
+2025-06-21,Chase,chase_9200,PUNJAB SUPERMARKET,89.66,groceries,no,,,,2025-06-21|chase_9200|89.66|PUNJAB SUPERMARKET,groceries
+2025-06-21,Chase,chase_9200,DAVES HOT CHICKEN 1174,40.24,other,no,,,,2025-06-21|chase_9200|40.24|DAVES HOT CHICKEN 1174,personal_purchases
+2025-06-29,Chase,chase_9200,SQ *CHOPATHI INDIA KITCHE,28.59,other,no,,,,2025-06-29|chase_9200|28.59|SQ *CHOPATHI INDIA KITCHE,personal_purchases
+2025-07-01,BofA,bofa_6420,Zelle Recurring payment to Sai Krishna ODU Conf# ydt36x45z,850.00,zelle_sent,yes,rent,,,2025-07-01|bofa_6420|-850|Zelle Recurring payment to Sai Krishna ODU Conf# ydt36x45z,transfers_to_others
+2025-07-01,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8523543436 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,200.00,other,yes,credit_card_payment,,,2025-07-01|bofa_6420|-200|CHASE CREDIT CRD DES:EPAY ID:8523543436 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-07-01,Chase,chase_9200,PUREFITNESS LLC,33.99,other,no,,,,2025-07-01|chase_9200|33.99|PUREFITNESS LLC,personal_purchases
+2025-07-03,Chase,chase_9200,ME-COLUMBIA-ECOMM,71.02,other,no,,,,2025-07-03|chase_9200|71.02|ME-COLUMBIA-ECOMM,personal_purchases
+2025-07-03,Chase,chase_9200,SQ *SENECA SHADOWS CAMPGR,25.00,other,no,,,,2025-07-03|chase_9200|25|SQ *SENECA SHADOWS CAMPGR,personal_purchases
+2025-07-04,Chase,chase_9200,YOKUM'S GROCERY,22.56,groceries,no,,,,2025-07-04|chase_9200|22.56|YOKUM'S GROCERY,groceries
+2025-07-09,Chase,chase_9200,LOTTE PLAZA CATONSVILLE,159.98,other,yes,split,39.99,,2025-07-09|chase_9200|159.98|LOTTE PLAZA CATONSVILLE,personal_purchases
+2025-07-09,Chase,chase_9200,COSTCO WHSE #1000,296.20,groceries,no,,,,2025-07-09|chase_9200|296.2|COSTCO WHSE #1000,groceries
+2025-07-10,Chase,chase_9200,HOWARD WINE AND SPIRITS,21.78,other,no,,,,2025-07-10|chase_9200|21.78|HOWARD WINE AND SPIRITS,alcohol_or_parties
+2025-07-13,Chase,chase_9200,TST* COUNTRY OVEN,27.48,food_dining,no,,,,2025-07-13|chase_9200|27.48|TST* COUNTRY OVEN,personal_purchases
+2025-07-14,BofA,bofa_6420,"Zelle payment to Vineeth p for ""Vegas""; Conf# y7hvh16o0",402.39,zelle_sent,yes,,,,"2025-07-14|bofa_6420|-402.39|Zelle payment to Vineeth p for ""Vegas""; Conf# y7hvh16o0",transfers_to_others
+2025-07-15,BofA,bofa_6420,"CHASE CREDIT CRD DES:EPAY ID:8561478667 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB Better Money Habits® What are your financial goals? Better Money Habits® helps you make sense of your money and take charge of your financial life. You have the power to pursue your savings, credit and general money goals with education, tools - and confidence. Scan this code to get started today at BetterMoneyHabits.com. When you use the QRC feature, certain information is collected from your mobile device for business purposes. Bank of America, N.A., Member FDIC. Equal Housing Lender ©2025 Bank of America Corporation. Terms and conditions apply. This is not a commitment to lend. Programs, rates, terms and conditions are subject to change without notice.",1600.00,other,yes,credit_card_payment,,,"2025-07-15|bofa_6420|-1600|CHASE CREDIT CRD DES:EPAY ID:8561478667 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB Better Money Habits® What are your financial goals? Better Money Habits® helps you make sense of your money and take charge of your financial life. You have the power to pursue your savings, credit and general money goals with education, tools - and confidence. Scan this code to get started today at BetterMoneyHabits.com. When you use the QRC feature, certain information is collected from your mobile device for business purposes. Bank of America, N.A., Member FDIC. Equal Housing Lender ©2025 Bank of America Corporation. Terms and conditions apply. This is not a commitment to lend. Programs, rates, terms and conditions are subject to change without notice.",debit_to_cc_payments
+2025-07-15,BofA,bofa_6420,Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,1000.00,other,yes,credit_card_payment,,,2025-07-15|bofa_6420|-1000|Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-07-16,BofA,bofa_6420,"Zelle payment from PRIYANKA AYYAGARI for ""top golf + country oven""; Conf# a6f2bv8vg",50.31,food_dining,yes,,,,"2025-07-16|bofa_6420|50.31|Zelle payment from PRIYANKA AYYAGARI for ""top golf + country oven""; Conf# a6f2bv8vg",transfers_to_others
+2025-07-19,Chase,chase_9200,SEPHORA NATIONAL HARBO,116.70,food_dining,no,,,,2025-07-19|chase_9200|116.7|SEPHORA NATIONAL HARBO,personal_purchases
+2025-07-21,Chase,chase_9200,PUNJAB SUPERMARKET,21.26,groceries,no,,,,2025-07-21|chase_9200|21.26|PUNJAB SUPERMARKET,groceries
+2025-07-21,Chase,chase_9200,SQ *CAKEWALA,36.03,other,no,,,,2025-07-21|chase_9200|36.03|SQ *CAKEWALA,personal_purchases
+2025-07-21,Chase,chase_9200,WAL-MART #2412,37.40,other,no,,,,2025-07-21|chase_9200|37.4|WAL-MART #2412,personal_purchases
+2025-07-28,BofA,bofa_6420,Zelle payment to Anirudh Conf# wcxljr5cv,1500.00,zelle_sent,yes,,,,2025-07-28|bofa_6420|-1500|Zelle payment to Anirudh Conf# wcxljr5cv,transfers_to_others
+2025-07-28,BofA,bofa_6420,Zelle payment to Anirudh Conf# y9o3gnfy1,150.00,zelle_sent,yes,,,,2025-07-28|bofa_6420|-150|Zelle payment to Anirudh Conf# y9o3gnfy1,transfers_to_others
+2025-08-01,BofA,bofa_6420,Zelle Recurring payment to Sai Krishna ODU Conf# xiddggotq,850.00,zelle_sent,yes,rent,,,2025-08-01|bofa_6420|-850|Zelle Recurring payment to Sai Krishna ODU Conf# xiddggotq,transfers_to_others
+2025-08-01,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8604023695 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,1542.27,other,yes,credit_card_payment,,,2025-08-01|bofa_6420|-1542.27|CHASE CREDIT CRD DES:EPAY ID:8604023695 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-08-01,Chase,chase_9200,PUREFITNESS LLC,33.99,other,no,,,,2025-08-01|chase_9200|33.99|PUREFITNESS LLC,personal_purchases
+2025-08-03,Discover,discover_1263,ZYTHUM BREWING CO HYDERABAD IND,29.48,food_dining,no,,,,2025-08-03|discover_1263|29.48|ZYTHUM BREWING CO HYDERABAD IND,personal_purchases
+2025-08-04,BofA,bofa_6420,IRS DES:USATAXPYMT ID:240561603364014 INDN:VENKATA SAI ABHIRAM AD CO ID:3387702000 WEB,1400.00,other,no,,,,2025-08-04|bofa_6420|-1400|IRS DES:USATAXPYMT ID:240561603364014 INDN:VENKATA SAI ABHIRAM AD CO ID:3387702000 WEB,rent_housing
+2025-08-12,Chase,chase_9200,UBER *TRIP,65.98,other,no,,,,2025-08-12|chase_9200|65.98|UBER *TRIP,personal_purchases
+2025-08-14,Chase,chase_9200,DAVESHOTCHICKEN,33.92,other,no,,,,2025-08-14|chase_9200|33.92|DAVESHOTCHICKEN,personal_purchases
+2025-08-26,Chase,chase_9200,Hotel at Booking.com,607.93,other,no,,,,2025-08-26|chase_9200|607.93|Hotel at Booking.com,personal_purchases
+2025-08-26,Chase,chase_9200,wanderu.com,62.00,other,no,,,,2025-08-26|chase_9200|62|wanderu.com,personal_purchases
+2025-08-28,Chase,chase_9200,WWW.OGXPRO* THE ONE IN,108.00,other,no,,,,2025-08-28|chase_9200|108|WWW.OGXPRO* THE ONE IN,personal_purchases
+2025-08-30,Chase,chase_9200,BAR/CODE,21.78,other,no,,,,2025-08-30|chase_9200|21.78|BAR/CODE,personal_purchases
+2025-08-30,Chase,chase_9200,TST*ROWDY ROOSTER MIDTOW,44.64,food_dining,no,,,,2025-08-30|chase_9200|44.64|TST*ROWDY ROOSTER MIDTOW,personal_purchases
+2025-08-30,Chase,chase_9200,NYC ICE CREAM INC,21.13,other,no,,,,2025-08-30|chase_9200|21.13|NYC ICE CREAM INC,personal_purchases
+2025-08-31,Chase,chase_9200,UBER *TRIP,28.68,other,no,,,,2025-08-31|chase_9200|28.68|UBER *TRIP,personal_purchases
+2025-09-01,Chase,chase_9200,ROTI ROLL-SUITE BAR,29.94,other,no,,,,2025-09-01|chase_9200|29.94|ROTI ROLL-SUITE BAR,personal_purchases
+2025-09-01,Chase,chase_9200,TST*ROWDY ROOSTER MIDTOW,20.41,food_dining,no,,,,2025-09-01|chase_9200|20.41|TST*ROWDY ROOSTER MIDTOW,personal_purchases
+2025-09-01,Chase,chase_9200,PUREFITNESS LLC,33.99,other,no,,,,2025-09-01|chase_9200|33.99|PUREFITNESS LLC,personal_purchases
+2025-09-02,BofA,bofa_6420,Zelle Recurring payment to Sai Krishna ODU Conf# zsbgqoqvg,850.00,zelle_sent,yes,rent,,,2025-09-02|bofa_6420|-850|Zelle Recurring payment to Sai Krishna ODU Conf# zsbgqoqvg,transfers_to_others
+2025-09-02,Chase,chase_9200,The Tippler,24.00,other,no,,,,2025-09-02|chase_9200|24|The Tippler,personal_purchases
+2025-09-02,Chase,chase_9200,STATUE CRUISES,51.00,other,no,,,,2025-09-02|chase_9200|51|STATUE CRUISES,personal_purchases
+2025-09-02,Chase,chase_9200,UBER *TRIP,20.91,other,no,,,,2025-09-02|chase_9200|20.91|UBER *TRIP,personal_purchases
+2025-09-08,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8699968308 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,1483.39,other,yes,credit_card_payment,,,2025-09-08|bofa_6420|-1483.39|CHASE CREDIT CRD DES:EPAY ID:8699968308 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-09-12,BofA,bofa_6420,Zelle payment to Manish ODU Conf# u0raf7x5j,1500.00,zelle_sent,yes,,,,2025-09-12|bofa_6420|-1500|Zelle payment to Manish ODU Conf# u0raf7x5j,transfers_to_others
+2025-09-18,Chase,chase_9200,DOMINO'S 4620,25.41,food_dining,yes,split,12.71,,2025-09-18|chase_9200|25.41|DOMINO'S 4620,personal_purchases
+2025-09-21,Chase,chase_9200,UBER *TRIP,38.74,other,no,,,,2025-09-21|chase_9200|38.74|UBER *TRIP,personal_purchases
+2025-09-22,BofA,bofa_6420,Zelle payment to Manish ODU Conf# wtdldbf2s,3500.00,zelle_sent,yes,,,,2025-09-22|bofa_6420|-3500|Zelle payment to Manish ODU Conf# wtdldbf2s,transfers_to_others
+2025-09-25,Chase,chase_9200,Roosters,52.00,other,no,,,,2025-09-25|chase_9200|52|Roosters,personal_purchases
+2025-09-25,Chase,chase_9200,AIO SMOKE AND VAPE CHANTI,26.49,other,no,,,,2025-09-25|chase_9200|26.49|AIO SMOKE AND VAPE CHANTI,personal_purchases
+2025-09-30,Chase,chase_9200,COSTCO WHSE #0218,144.78,groceries,no,,,,2025-09-30|chase_9200|144.78|COSTCO WHSE #0218,groceries
+2025-10-01,BofA,bofa_6420,Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,2000.00,other,yes,credit_card_payment,,,2025-10-01|bofa_6420|-2000|Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-10-05,Chase,chase_9200,SQ *TIFFIN HUT,91.08,other,no,,,,2025-10-05|chase_9200|91.08|SQ *TIFFIN HUT,personal_purchases
+2025-10-06,Discover,discover_1263,SHELL12659468008 LEESBURG VA,30.72,other,no,,,,2025-10-06|discover_1263|30.72|SHELL12659468008 LEESBURG VA,personal_purchases
+2025-10-10,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8787212277 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,700.00,other,yes,credit_card_payment,,,2025-10-10|bofa_6420|-700|CHASE CREDIT CRD DES:EPAY ID:8787212277 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-10-14,BofA,bofa_6420,Zelle payment to TECH TREK STAFFING LLC Conf# t0rocigzf,100.00,zelle_sent,yes,,,,2025-10-14|bofa_6420|-100|Zelle payment to TECH TREK STAFFING LLC Conf# t0rocigzf,transfers_to_others
+2025-10-15,Chase,chase_9200,PATEL BROTHERS ASHBURN,50.61,other,no,,,,2025-10-15|chase_9200|50.61|PATEL BROTHERS ASHBURN,personal_purchases
+2025-10-17,BofA,bofa_6420,Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,750.00,other,yes,credit_card_payment,,,2025-10-17|bofa_6420|-750|Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2025-10-17,Chase,chase_9200,IN AND OUT MARKET,34.97,other,no,,,,2025-10-17|chase_9200|34.97|IN AND OUT MARKET,personal_purchases
+2025-10-30,Chase,chase_9200,TST*HASHTAG INDIA - ASHB,74.15,food_dining,yes,split,18.54,,2025-10-30|chase_9200|74.15|TST*HASHTAG INDIA - ASHB,personal_purchases
+2025-10-30,Discover,discover_1263,HARRIS TEETER #284 BROADLANDS VA,49.05,groceries,no,,,,2025-10-30|discover_1263|49.05|HARRIS TEETER #284 BROADLANDS VA,groceries
+2025-11-02,Chase,chase_9200,HARRIS TEETER #0230,33.33,groceries,no,,,,2025-11-02|chase_9200|33.33|HARRIS TEETER #0230,groceries
+2025-11-03,BofA,bofa_6420,"Zelle payment from SAI KRISHNA MAHANKALI for ""Rent""; Conf# hgp9u7fo6",750.00,rent_housing,yes,rent,,,"2025-11-03|bofa_6420|750|Zelle payment from SAI KRISHNA MAHANKALI for ""Rent""; Conf# hgp9u7fo6",rent_housing
+2025-11-03,BofA,bofa_6420,"Zelle payment to Shaukat MD for ""November Rent""; Conf# tk9dm6bo6",1000.00,rent_housing,yes,rent,,,"2025-11-03|bofa_6420|-1000|Zelle payment to Shaukat MD for ""November Rent""; Conf# tk9dm6bo6",rent_housing
+2025-11-03,BofA,bofa_6420,Zelle payment to SIMPLE GLOBAL INC Conf# x7b0lh7qt,1000.00,rent_housing,yes,rent,,,2025-11-03|bofa_6420|-1000|Zelle payment to SIMPLE GLOBAL INC Conf# x7b0lh7qt,rent_housing
+2025-11-03,Chase,chase_9200,SMOKE N VAPE OF ASHBURN,34.97,other,no,,,,2025-11-03|chase_9200|34.97|SMOKE N VAPE OF ASHBURN,personal_purchases
+2025-11-04,Chase,chase_9200,HARRIS TEETER #0230,40.29,groceries,no,,,,2025-11-04|chase_9200|40.29|HARRIS TEETER #0230,groceries
+2025-11-05,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,56.19,other,yes,credit_card_payment,,,2025-11-05|bofa_6420|-56.19|DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2025-11-07,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8860232219 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,500.00,other,yes,credit_card_payment,,,2025-11-07|bofa_6420|-500|CHASE CREDIT CRD DES:EPAY ID:8860232219 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-11-09,Chase,chase_4303,SQ *CHOPATHI INDIA KITCHE Elkridge MD,34.95,other,no,,,,2025-11-09|chase_4303|34.95|SQ *CHOPATHI INDIA KITCHE Elkridge MD,personal_purchases
+2025-11-10,Chase,chase_4303,WAL-MART #5228 COLUMBIA MD,23.82,other,no,,,,2025-11-10|chase_4303|23.82|WAL-MART #5228 COLUMBIA MD,personal_purchases
+2025-11-11,Chase,chase_4303,LOTTE PLAZA CATONSVILLE BALTIMORE MD,166.13,other,yes,split,33.23,,2025-11-11|chase_4303|166.13|LOTTE PLAZA CATONSVILLE BALTIMORE MD,personal_purchases
+2025-11-11,Chase,chase_4303,VFS Services USA Inc. Washington DC DC,146.86,other,no,,,,2025-11-11|chase_4303|146.86|VFS Services USA Inc. Washington DC DC,personal_purchases
+2025-11-11,Chase,chase_4303,COSTCO WHSE #1000 ELKRIDGE MD,82.03,groceries,no,,,,2025-11-11|chase_4303|82.03|COSTCO WHSE #1000 ELKRIDGE MD,groceries
+2025-11-11,Chase,chase_9200,IN AND OUT MARKET,31.79,other,no,,,,2025-11-11|chase_9200|31.79|IN AND OUT MARKET,personal_purchases
+2025-11-11,Chase,chase_9200,COSTCO WHSE #0334,28.91,groceries,no,,,,2025-11-11|chase_9200|28.91|COSTCO WHSE #0334,groceries
+2025-11-13,Chase,chase_4303,PLANET OF THE... 512-8889385 TX,175.81,other,no,,,,2025-11-13|chase_4303|175.81|PLANET OF THE... 512-8889385 TX,personal_purchases
+2025-11-15,Chase,chase_4303,HOWARD WINE AND SPIRITS ELKRIDGE MD,20.69,other,no,,,,2025-11-15|chase_4303|20.69|HOWARD WINE AND SPIRITS ELKRIDGE MD,alcohol_or_parties
+2025-11-15,Chase,chase_9200,HARRIS TEETER #0230,20.66,groceries,no,,,,2025-11-15|chase_9200|20.66|HARRIS TEETER #0230,groceries
+2025-11-17,Chase,chase_4303,American Eagle 2039 Hanover MD,57.16,other,no,,,,2025-11-17|chase_4303|57.16|American Eagle 2039 Hanover MD,personal_purchases
+2025-11-17,Chase,chase_4303,RUE21 6655 HANOVER MD,43.44,other,no,,,,2025-11-17|chase_4303|43.44|RUE21 6655 HANOVER MD,personal_purchases
+2025-11-18,BofA,bofa_6420,Zelle payment to SIVAKRISHNA MEDA Conf# t8quphsn6,1000.00,zelle_sent,yes,,,,2025-11-18|bofa_6420|-1000|Zelle payment to SIVAKRISHNA MEDA Conf# t8quphsn6,transfers_to_others
+2025-11-18,BofA,bofa_6420,Zelle payment to VISWESWARA MEDA Conf# y0e70nf4d,1000.00,zelle_sent,yes,,,,2025-11-18|bofa_6420|-1000|Zelle payment to VISWESWARA MEDA Conf# y0e70nf4d,transfers_to_others
+2025-11-18,Chase,chase_4303,VFS Services USA Inc. Washington DC DC,146.86,other,no,,,,2025-11-18|chase_4303|146.86|VFS Services USA Inc. Washington DC DC,personal_purchases
+2025-11-19,Chase,chase_9200,WALMART.COM,83.20,groceries,no,,,,2025-11-19|chase_9200|83.2|WALMART.COM,groceries
+2025-11-21,Chase,chase_9200,EB *DMV BOLLYWOOD PUNJ,51.99,other,no,,,,2025-11-21|chase_9200|51.99|EB *DMV BOLLYWOOD PUNJ,personal_purchases
+2025-11-21,Discover,discover_1263,PY *THE HORSE YOU CAME I BALTIMORE MD,125.00,other,no,,,,2025-11-21|discover_1263|125|PY *THE HORSE YOU CAME I BALTIMORE MD,personal_purchases
+2025-11-22,Chase,chase_4303,HOWARD WINE AND SPIRITS ELKRIDGE MD,34.87,other,no,,,,2025-11-22|chase_4303|34.87|HOWARD WINE AND SPIRITS ELKRIDGE MD,alcohol_or_parties
+2025-11-22,Chase,chase_9200,SRI SIVA VISHNU TEMPLE,83.00,other,no,,,,2025-11-22|chase_9200|83|SRI SIVA VISHNU TEMPLE,personal_purchases
+2025-11-26,Chase,chase_9200,WALMART.COM,62.24,groceries,no,,,,2025-11-26|chase_9200|62.24|WALMART.COM,groceries
+2025-11-26,Chase,chase_9200,ULTA #751,34.99,other,no,,,,2025-11-26|chase_9200|34.99|ULTA #751,personal_purchases
+2025-11-28,Chase,chase_4303,EB *DC BOLLYWOOD KAALA 8014137200 CA,155.50,other,no,,,,2025-11-28|chase_4303|155.5|EB *DC BOLLYWOOD KAALA 8014137200 CA,personal_purchases
+2025-11-28,Chase,chase_9200,JONATHAN'S FRES,21.85,other,no,,,,2025-11-28|chase_9200|21.85|JONATHAN'S FRES,personal_purchases
+2025-11-29,Chase,chase_4303,SQ *BRIAN'S DOTS Baltimore MD,31.80,other,no,,,,2025-11-29|chase_4303|31.8|SQ *BRIAN'S DOTS Baltimore MD,personal_purchases
+2025-11-30,Chase,chase_4303,KOI 301-3460001 DC,32.50,other,no,,,,2025-11-30|chase_4303|32.5|KOI 301-3460001 DC,personal_purchases
+2025-12-01,BofA,bofa_6420,"Zelle payment to Shaukat MD for ""Rent - November""; Conf# x41xamvpz",1250.00,rent_housing,yes,rent,850.00,,"2025-12-01|bofa_6420|-1250|Zelle payment to Shaukat MD for ""Rent - November""; Conf# x41xamvpz",rent_housing
+2025-12-01,Chase,chase_4303,PUREFITNESS LLC 344-4770005 VA,33.99,other,no,,,,2025-12-01|chase_4303|33.99|PUREFITNESS LLC 344-4770005 VA,personal_purchases
+2025-12-01,Chase,chase_4303,TOUS LES JOURS ELLICOTT ELLICOTT CITY MD,21.59,other,no,,,,2025-12-01|chase_4303|21.59|TOUS LES JOURS ELLICOTT ELLICOTT CITY MD,personal_purchases
+2025-12-02,Chase,chase_9200,UBER *TRIP,39.98,other,no,,,,2025-12-02|chase_9200|39.98|UBER *TRIP,personal_purchases
+2025-12-03,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:8929310446 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,918.69,other,yes,credit_card_payment,,,2025-12-03|bofa_6420|-918.69|CHASE CREDIT CRD DES:EPAY ID:8929310446 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2025-12-03,Chase,chase_9200,JOINFREEDELIVERYCOM,25.00,food_dining,no,,,,2025-12-03|chase_9200|25|JOINFREEDELIVERYCOM,personal_purchases
+2025-12-04,Chase,chase_4303,DOMINO'S 4620 COLUMBIA MD,21.18,food_dining,yes,split,10.59,,2025-12-04|chase_4303|21.18|DOMINO'S 4620 COLUMBIA MD,personal_purchases
+2025-12-05,Chase,chase_4303,COSTCO WHSE #1000 ELKRIDGE MD,246.99,groceries,no,,,,2025-12-05|chase_4303|246.99|COSTCO WHSE #1000 ELKRIDGE MD,groceries
+2025-12-05,Discover,discover_1263,KROGER FUEL #3555 TABB VA,42.87,groceries,no,,,,2025-12-05|discover_1263|42.87|KROGER FUEL #3555 TABB VA,groceries
+2025-12-05,Discover,discover_1263,MOXY VIRGINIA BEACH VIRGINIA BEACVA,30.00,other,no,,,,2025-12-05|discover_1263|30|MOXY VIRGINIA BEACH VIRGINIA BEACVA,personal_purchases
+2025-12-05,Discover,discover_1263,MOXY VIRGINIA BEACH VIRGINIA BEACVA,36.00,other,no,,,,2025-12-05|discover_1263|36|MOXY VIRGINIA BEACH VIRGINIA BEACVA,personal_purchases
+2025-12-05,Discover,discover_1263,SPO*MOMOKITCHEN NORFOLK VA,28.10,food_dining,no,,,,2025-12-05|discover_1263|28.1|SPO*MOMOKITCHEN NORFOLK VA,personal_purchases
+2025-12-06,Chase,chase_4303,T J MAXX #1250 COLUMBIA MD,31.79,other,no,,,,2025-12-06|chase_4303|31.79|T J MAXX #1250 COLUMBIA MD,personal_purchases
+2025-12-07,Chase,chase_4303,COSTCO GAS #1000 ELKRIDGE MD,31.81,groceries,no,,,,2025-12-07|chase_4303|31.81|COSTCO GAS #1000 ELKRIDGE MD,groceries
+2025-12-07,Chase,chase_4303,DWARAKAS BAWARCHI INDIAN COLUMBIA MD,39.20,food_dining,no,,,,2025-12-07|chase_4303|39.2|DWARAKAS BAWARCHI INDIAN COLUMBIA MD,personal_purchases
+2025-12-10,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,314.16,other,yes,credit_card_payment,,,2025-12-10|bofa_6420|-314.16|DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2025-12-12,BofA,bofa_6420,Zelle payment to Manish ODU Conf# x56g43otm,500.00,zelle_sent,yes,,,,2025-12-12|bofa_6420|-500|Zelle payment to Manish ODU Conf# x56g43otm,transfers_to_others
+2025-12-14,Discover,discover_1263,DD *PIZZATWIST 6506819470 CA,35.35,food_dining,no,,,,2025-12-14|discover_1263|35.35|DD *PIZZATWIST 6506819470 CA,personal_purchases
+2025-12-15,Chase,chase_9200,JOINFREEDELIVERYCOM,25.00,food_dining,no,,,,2025-12-15|chase_9200|-25|JOINFREEDELIVERYCOM,personal_purchases
+2025-12-16,Discover,discover_1263,PRICELN*COURTYARD BY M 203-299-8000 CT,146.59,other,no,,,,2025-12-16|discover_1263|146.59|PRICELN*COURTYARD BY M 203-299-8000 CT,personal_purchases
+2025-12-25,Discover,discover_1263,STARBUCKS STORE 78760 NEW YORK NY,28.47,food_dining,no,,,,2025-12-25|discover_1263|28.47|STARBUCKS STORE 78760 NEW YORK NY,personal_purchases
+2025-12-25,Discover,discover_1263,TST*BOMBAYS INDIAN CUI MANHATTAN NY,100.00,food_dining,no,,,,2025-12-25|discover_1263|100|TST*BOMBAYS INDIAN CUI MANHATTAN NY,personal_purchases
+2025-12-25,Discover,discover_1263,TST*SARAVANAA BHAVAN- EDISON NJ,74.63,food_dining,no,,,,2025-12-25|discover_1263|74.63|TST*SARAVANAA BHAVAN- EDISON NJ,personal_purchases
+2025-12-25,Discover,discover_1263,ZMH - GRAB AND GO NEW YORK NY,28.58,other,no,,,,2025-12-25|discover_1263|28.58|ZMH - GRAB AND GO NEW YORK NY,personal_purchases
+2025-12-26,Discover,discover_1263,BAPS SHAYONA- CAFE ROBBI WINDSOR NJ,55.59,food_dining,no,,,,2025-12-26|discover_1263|55.59|BAPS SHAYONA- CAFE ROBBI WINDSOR NJ,personal_purchases
+2025-12-26,Discover,discover_1263,BAPS SHAYONA- SHOP ROBBI WINDSOR NJ,62.47,other,no,,,,2025-12-26|discover_1263|62.47|BAPS SHAYONA- SHOP ROBBI WINDSOR NJ,personal_purchases
+2025-12-29,Discover,discover_1263,BAPS SHAYONA- SHOP ROBBI WINDSOR NJ,22.75,other,no,,,,2025-12-29|discover_1263|22.75|BAPS SHAYONA- SHOP ROBBI WINDSOR NJ,personal_purchases
+2025-12-29,Discover,discover_1263,HYATT HOUSE JC F&B JERSEY CITY NJ,100.00,other,no,,,,2025-12-29|discover_1263|100|HYATT HOUSE JC F&B JERSEY CITY NJ,personal_purchases
+2025-12-30,Discover,discover_1263,LUKOIL 69707 WOODLYN PA,41.00,other,no,,,,2025-12-30|discover_1263|41|LUKOIL 69707 WOODLYN PA,personal_purchases
+2025-12-30,Discover,discover_1263,SQ *DOMINIQUE ANSEL BA NEW YORK NY,27.22,other,no,,,,2025-12-30|discover_1263|27.22|SQ *DOMINIQUE ANSEL BA NEW YORK NY,personal_purchases
+2025-12-31,BofA,bofa_6420,Zelle payment to ANIL VASIREDDI Conf# sk4kr7txm,1000.00,zelle_sent,yes,,,,2025-12-31|bofa_6420|-1000|Zelle payment to ANIL VASIREDDI Conf# sk4kr7txm,transfers_to_others
+2025-12-31,Discover,discover_1263,BOULEVARD FINE WINE OWINGS MILLS MD,95.84,food_dining,no,,,,2025-12-31|discover_1263|95.84|BOULEVARD FINE WINE OWINGS MILLS MD,personal_purchases
+2026-01-01,Chase,chase_9200,PLANET OF THE...,32.45,other,no,,,,2026-01-01|chase_9200|32.45|PLANET OF THE...,personal_purchases
+2026-01-02,BofA,bofa_6420,Zelle payment to Shaukat MD Conf# ugz8dovfj,1250.00,rent_housing,yes,rent,850.00,,2026-01-02|bofa_6420|-1250|Zelle payment to Shaukat MD Conf# ugz8dovfj,rent_housing
+2026-01-02,Chase,chase_9200,NATIONAL AQUARIUM INC,216.55,other,no,,,,2026-01-02|chase_9200|216.55|NATIONAL AQUARIUM INC,personal_purchases
+2026-01-03,Chase,chase_9200,TST*OSTERIA AL VOLO,276.45,food_dining,no,,,,2026-01-03|chase_9200|276.45|TST*OSTERIA AL VOLO,personal_purchases
+2026-01-07,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:9020764297 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,600.00,other,yes,credit_card_payment,,,2026-01-07|bofa_6420|-600|CHASE CREDIT CRD DES:EPAY ID:9020764297 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2026-01-11,Discover,discover_1263,DAVES HOT CHICKEN 1157 VIENNA VA,34.70,other,no,,,,2026-01-11|discover_1263|34.7|DAVES HOT CHICKEN 1157 VIENNA VA,personal_purchases
+2026-01-12,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:9034052106 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,100.00,other,yes,credit_card_payment,,,2026-01-12|bofa_6420|-100|CHASE CREDIT CRD DES:EPAY ID:9034052106 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2026-01-18,Discover,discover_1263,DOLLAR TREE STERLING VA,42.67,other,no,,,,2026-01-18|discover_1263|42.67|DOLLAR TREE STERLING VA,personal_purchases
+2026-01-18,Discover,discover_1263,WALMART STORE 02038 STERLING VA,73.30,groceries,no,,,,2026-01-18|discover_1263|73.3|WALMART STORE 02038 STERLING VA,groceries
+2026-01-20,BofA,bofa_6420,Zelle payment to Divya ODU Conf# yquc0mdy6,80.00,zelle_sent,yes,,,,2026-01-20|bofa_6420|-80|Zelle payment to Divya ODU Conf# yquc0mdy6,transfers_to_others
+2026-01-22,Discover,discover_1263,LOTTE PLAZA CATONSVILLE BALTIMORE MD,192.19,other,yes,split,38.44,,2026-01-22|discover_1263|192.19|LOTTE PLAZA CATONSVILLE BALTIMORE MD,personal_purchases
+2026-01-23,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:9063355847 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,100.00,other,yes,credit_card_payment,,,2026-01-23|bofa_6420|-100|CHASE CREDIT CRD DES:EPAY ID:9063355847 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2026-01-29,Discover,discover_1263,REISTERSTOWN WINE & SPIR REISTERSTOWN,24.38,other,no,,,,2026-01-29|discover_1263|24.38|REISTERSTOWN WINE & SPIR REISTERSTOWN,personal_purchases
+2026-01-30,BofA,bofa_6420,CHECKCARD 0129 EMIRATES AI 17622055622 416-5536889 NY 24717056030870300310410,884.49,other,no,,,,2026-01-30|bofa_6420|-884.49|CHECKCARD 0129 EMIRATES AI 17622055622 416-5536889 NY 24717056030870300310410,personal_purchases
+2026-01-30,Discover,discover_1263,RIOT* AN61YUJBCYMY 866-373-9211 CA,21.19,other,no,,,,2026-01-30|discover_1263|21.19|RIOT* AN61YUJBCYMY 866-373-9211 CA,personal_purchases
+2026-02-02,BofA,bofa_6420,Zelle payment to Shaukat MD Conf# skgf6ea4s,1250.00,rent_housing,yes,rent,850.00,,2026-02-02|bofa_6420|-1250|Zelle payment to Shaukat MD Conf# skgf6ea4s,rent_housing
+2026-02-06,Discover,discover_1263,DAVES HOT CHICKEN 1164 OWINGS MILLS MD,22.76,food_dining,no,,,,2026-02-06|discover_1263|22.76|DAVES HOT CHICKEN 1164 OWINGS MILLS MD,personal_purchases
+2026-02-09,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,167.71,other,yes,credit_card_payment,,,2026-02-09|bofa_6420|-167.71|DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2026-02-10,BofA,bofa_6420,Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,1000.00,other,yes,credit_card_payment,,,2026-02-10|bofa_6420|-1000|Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2026-02-11,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,38.39,other,yes,credit_card_payment,,,2026-02-11|bofa_6420|-38.39|DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2026-02-13,Chase,chase_9200,TST*BARCOCINA,270.12,food_dining,no,,,,2026-02-13|chase_9200|270.12|TST*BARCOCINA,personal_purchases
+2026-02-16,Chase,chase_9200,LOUDOUN COUNTY GENERAL DI,218.40,other,no,,,,2026-02-16|chase_9200|218.4|LOUDOUN COUNTY GENERAL DI,personal_purchases
+2026-02-17,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:9128948842 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,656.94,other,yes,credit_card_payment,,,2026-02-17|bofa_6420|-656.94|CHASE CREDIT CRD DES:EPAY ID:9128948842 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2026-02-21,Chase,chase_9200,GIANT 920,26.74,groceries,no,,,,2026-02-21|chase_9200|26.74|GIANT 920,groceries
+2026-02-22,Chase,chase_9200,SQ *TRIVENI FOODCOURT,36.01,other,yes,split,18.00,,2026-02-22|chase_9200|36.01|SQ *TRIVENI FOODCOURT,personal_purchases
+2026-02-22,Chase,chase_9200,SQ *TRIVENI FOODCOURT,21.18,other,yes,split,10.59,,2026-02-22|chase_9200|21.18|SQ *TRIVENI FOODCOURT,personal_purchases
+2026-02-23,Discover,discover_1263,DOMINO'S 4616 REISTERSTOWN MD,21.71,food_dining,yes,split,10.86,,2026-02-23|discover_1263|21.71|DOMINO'S 4616 REISTERSTOWN MD,personal_purchases
+2026-02-27,BofA,bofa_6420,DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,21.71,other,yes,credit_card_payment,,,2026-02-27|bofa_6420|-21.71|DISCOVER DES:E-PAYMENT ID:1263 INDN:ADDEPALLI ABHIRAM CO ID:2510020270 WEB,debit_to_cc_payments
+2026-02-28,Chase,chase_9200,DAVES HOT CHICKEN 1164,44.46,other,no,,,,2026-02-28|chase_9200|44.46|DAVES HOT CHICKEN 1164,personal_purchases
+2026-03-02,BofA,bofa_6420,Zelle payment to Shaukat MD Conf# xb9fcassj,1350.00,rent_housing,yes,rent,850.00,,2026-03-02|bofa_6420|-1350|Zelle payment to Shaukat MD Conf# xb9fcassj,rent_housing
+2026-03-06,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:9176701677 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,500.00,other,yes,credit_card_payment,,,2026-03-06|bofa_6420|-500|CHASE CREDIT CRD DES:EPAY ID:9176701677 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2026-03-06,Chase,chase_9200,DOMINO'S 4616,21.71,food_dining,yes,split,10.86,,2026-03-06|chase_9200|21.71|DOMINO'S 4616,personal_purchases
+2026-03-07,Chase,chase_9200,5 OCLOCK WINES & SPIRITS,26.14,other,no,,,,2026-03-07|chase_9200|26.14|5 OCLOCK WINES & SPIRITS,alcohol_or_parties
+2026-03-07,Chase,chase_9200,EB *DMVS RAASLEELA-BOL,89.22,other,no,,,,2026-03-07|chase_9200|89.22|EB *DMVS RAASLEELA-BOL,personal_purchases
+2026-03-08,Chase,chase_9200,MCDONALD'S M2371 OF VA,23.82,food_dining,no,,,,2026-03-08|chase_9200|23.82|MCDONALD'S M2371 OF VA,personal_purchases
+2026-03-10,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:9188496333 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,200.00,other,yes,credit_card_payment,,,2026-03-10|bofa_6420|-200|CHASE CREDIT CRD DES:EPAY ID:9188496333 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2026-03-12,Chase,chase_9200,BESTBUYCOM807154235771,1099.00,other,no,,,,2026-03-12|chase_9200|1099|BESTBUYCOM807154235771,personal_purchases
+2026-03-12,Chase,chase_9200,LUFTHAN 2202243120131,1251.34,other,no,,,,2026-03-12|chase_9200|1251.34|LUFTHAN 2202243120131,personal_purchases
+2026-03-13,Chase,chase_9200,REISTERSTOWN WINE & SPIR,26.14,other,no,,,,2026-03-13|chase_9200|26.14|REISTERSTOWN WINE & SPIR,personal_purchases
+2026-03-14,Chase,chase_9200,7-ELEVEN 29741,28.52,other,no,,,,2026-03-14|chase_9200|28.52|7-ELEVEN 29741,personal_purchases
+2026-03-17,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:9207322305 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,1800.00,other,yes,credit_card_payment,,,2026-03-17|bofa_6420|-1800|CHASE CREDIT CRD DES:EPAY ID:9207322305 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2026-03-18,Chase,chase_9200,BWW HANOVER 770,130.00,other,no,,,,2026-03-18|chase_9200|130|BWW HANOVER 770,personal_purchases
+2026-03-22,Chase,chase_9200,CLAUDE.AI SUBSCRIPTION,21.20,other,yes,other,,,2026-03-22|chase_9200|21.2|CLAUDE.AI SUBSCRIPTION,personal_purchases
+2026-03-23,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:9221596258 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,700.00,other,yes,credit_card_payment,,,2026-03-23|bofa_6420|-700|CHASE CREDIT CRD DES:EPAY ID:9221596258 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2026-03-26,Discover,discover_1263,RIOT* AN6KK9QM5DF1 866-373-9211 CA,21.19,other,no,,,,2026-03-26|discover_1263|21.19|RIOT* AN6KK9QM5DF1 866-373-9211 CA,personal_purchases
+2026-04-01,BofA,bofa_6420,Zelle payment to Shaukat MD Conf# zkesk3bep,1350.00,rent_housing,yes,rent,950.00,,2026-04-01|bofa_6420|-1350|Zelle payment to Shaukat MD Conf# zkesk3bep,rent_housing
+2026-04-01,Chase,chase_9200,BEST TAX FILER,87.98,other,no,other,87.98,tax,2026-04-01|chase_9200|87.98|BEST TAX FILER,personal_purchases
+2026-04-05,Chase,chase_9200,AMF Pikesville Lanes,123.67,other,no,split,24.73,,2026-04-05|chase_9200|123.67|AMF Pikesville Lanes,personal_purchases
+2026-04-05,Chase,chase_9200,340 BOWLERO PIKESVILLE,32.00,other,no,rent,10.67,,2026-04-05|chase_9200|32|340 BOWLERO PIKESVILLE,personal_purchases
+2026-04-05,Chase,chase_9200,LOTTE PLAZA CATONSVILLE,191.73,other,yes,split,47.93,,2026-04-05|chase_9200|191.73|LOTTE PLAZA CATONSVILLE,personal_purchases
+2026-04-06,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:9261125135 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,150.00,other,yes,credit_card_payment,,,2026-04-06|bofa_6420|-150|CHASE CREDIT CRD DES:EPAY ID:9261125135 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2026-04-09,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:9270508636 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,400.00,other,yes,credit_card_payment,,,2026-04-09|bofa_6420|-400|CHASE CREDIT CRD DES:EPAY ID:9270508636 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2026-04-10,Chase,chase_9200,BOULEVARD FINE WINE,28.32,other,no,,,,2026-04-10|chase_9200|28.32|BOULEVARD FINE WINE,personal_purchases
+2026-04-16,BofA,bofa_6420,Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,270.00,other,yes,credit_card_payment,,,2026-04-16|bofa_6420|-270|Discover (CONA) DES:NET/MOBILE ID:4001 INDN:VENKATASAIABHIR ADDEPA CO ID:4510020271 WEB,debit_to_cc_payments
+2026-04-18,Chase,chase_9200,BKJ INC,115.00,other,no,,,,2026-04-18|chase_9200|115|BKJ INC,personal_purchases
+2026-04-19,Chase,chase_9200,HCW ATTRACTIONS/FOODSE,257.25,other,no,,,,2026-04-19|chase_9200|257.25|HCW ATTRACTIONS/FOODSE,personal_purchases
+2026-04-19,Chase,chase_9200,SQ *TRIVENI FOODCOURT,30.72,other,yes,groceries,15.36,,2026-04-19|chase_9200|30.72|SQ *TRIVENI FOODCOURT,personal_purchases
+2026-04-19,Chase,chase_9200,SQ *TRIVENI FOODCOURT,26.48,other,yes,split,8.83,,2026-04-19|chase_9200|26.48|SQ *TRIVENI FOODCOURT,personal_purchases
+2026-04-21,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:9303578238 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,600.00,other,yes,credit_card_payment,,,2026-04-21|bofa_6420|-600|CHASE CREDIT CRD DES:EPAY ID:9303578238 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2026-04-22,Chase,chase_9200,CLAUDE.AI SUBSCRIPTION,21.20,other,yes,other,21.20,,2026-04-22|chase_9200|21.2|CLAUDE.AI SUBSCRIPTION,personal_purchases
+2026-04-24,Chase,chase_9200,5 OCLOCK WINES & SPIRITS,83.49,other,no,,,,2026-04-24|chase_9200|83.49|5 OCLOCK WINES & SPIRITS,alcohol_or_parties
+2026-05-01,BofA,bofa_6420,Zelle payment to Shaukat MD Conf# y4sqj9cf1,1050.00,rent_housing,yes,rent,1050.00,,2026-05-01|bofa_6420|-1050|Zelle payment to Shaukat MD Conf# y4sqj9cf1,rent_housing
+2026-05-01,BofA,bofa_6420,CHASE CREDIT CRD DES:EPAY ID:9328765087 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,200.00,other,yes,credit_card_payment,,,2026-05-01|bofa_6420|-200|CHASE CREDIT CRD DES:EPAY ID:9328765087 INDN:VENKATA SAI A ADDEPALL CO ID:5760039224 WEB,debit_to_cc_payments
+2026-05-03,Discover,discover_1263,TST*HASHTAG INDIA - AS ASHBURN VA,46.59,food_dining,yes,split,23.30,,2026-05-03|discover_1263|46.59|TST*HASHTAG INDIA - AS ASHBURN VA,personal_purchases
+2026-05-05,Discover,discover_1263,SOUTHWES 800-435-9792 TX,154.40,other,yes,,,,2026-05-05|discover_1263|154.4|SOUTHWES 800-435-9792 TX,personal_purchases
+2026-05-05,Discover,discover_1263,SOUTHWES 800-435-9792 TX,180.20,other,yes,other,180.20,,2026-05-05|discover_1263|180.2|SOUTHWES 800-435-9792 TX,personal_purchases
+2026-05-09,Discover,discover_1263,TRIVENI SUPERMARKET MARY ELLICOTT,123.60,groceries,yes,split,30.90,,2026-05-09|discover_1263|123.6|TRIVENI SUPERMARKET MARY ELLICOTT,groceries
+2026-05-22,Chase,chase_9200,CLAUDE.AI SUBSCRIPTION,21.20,other,yes,other,21.20,,2026-05-22|chase_9200|21.2|CLAUDE.AI SUBSCRIPTION,personal_purchases
+2026-05-23,Chase,chase_9200,LOTTE PLAZA CATONSVILLE,238.92,other,yes,split,47.78,,2026-05-23|chase_9200|238.92|LOTTE PLAZA CATONSVILLE,personal_purchases
+2026-05-26,Chase,chase_9200,SPO*LONEOAKFARMBREWINGCOM,73.56,food_dining,yes,split,24.52,,2026-05-26|chase_9200|73.56|SPO*LONEOAKFARMBREWINGCOM,personal_purchases
