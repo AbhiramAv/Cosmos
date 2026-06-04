@@ -1,0 +1,32 @@
+profiles:
+  - name: BullBearian
+    slug: bullbearian
+    profile_path: /opt/data/profiles/bullbearian
+    hermes_profile_path: /opt/data/.hermes/profiles/BullBearian
+    skill_path: /opt/data/.hermes/profiles/BullBearian/skills/bullbearian/SKILL.md
+    memory_path: /opt/data/.hermes/profiles/BullBearian/memories/
+    cron_path: /opt/data/.hermes/profiles/BullBearian/cron/
+    target: origin
+    state: active
+    created: "2026-04-01"
+    jobs:
+      - BullBearian Daily Finance Scan (8 AM EST)
+      - BullBearian Risk Alert Scan (10/12/2/4 PM EST)
+      - BullBearian Weekly Portfolio Health Check (Sunday 10 AM EST)
+      - BullBearian Saturday Frontier Watchlist Builder (Saturday 12 PM EST)
+    rollback: Revert by removing /opt/data/profiles/bullbearian and /opt/data/.hermes/profiles/BullBearian, then `hermes profile remove bullbearian`.
+
+  - name: Cipher
+    slug: cipher
+    profile_path: /opt/data/profiles/Cipher
+    hermes_profile_path: /opt/data/profiles/Cipher
+    skill_path: /opt/data/profiles/Cipher/custom_skills/cipher/SKILL.md
+    memory_path: /opt/data/profiles/Cipher/memories/
+    cron_path: /opt/data/profiles/Cipher/cron/
+    target: origin
+    state: active
+    created: "2026-06-04"
+    jobs:
+      - Cipher Daily AI/Cloud/Quantum Brief (7 AM EST)
+      - Cipher Weekly Deep Digest (Sunday 7 AM EST)
+    rollback: Revert by removing /opt/data/profiles/Cipher, then `hermes profile remove cipher`.
