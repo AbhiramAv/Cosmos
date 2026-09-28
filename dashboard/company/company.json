@@ -1,1 +1,311 @@
-{"activity":[{"at":"2026-09-28T13:10:00-04:00","text":"CEO started the company dashboard build (Web Builder, App Studio)."},{"at":"2026-09-28T12:55:00-04:00","text":"App Studio department founded with 6 agents: App Architect, UI Designer, iOS Builder, Web Builder, QA Tester, Release Manager."},{"at":"2026-09-28T12:50:00-04:00","text":"Company policy set: Ram's tap required for spending money, publishing apps, deleting data."},{"at":"2026-09-28T12:47:00-04:00","text":"Company structure created: 6 departments, 19 staff agents with cards."},{"at":"2026-09-28T12:45:00-04:00","text":"GitHub connected as AbhiramAv; Cosmos repo identified as source of truth."}],"ceo":{"current_task":"Building the company dashboard","name":"Cosmos CEO","status":"working"},"departments":[{"agents":[{"current_task":"Tracking dashboard build","id":"task-manager","name":"Task Manager","role":"Creates, updates and tracks tasks","status":"working"},{"current_task":null,"id":"cron-manager","name":"Cron Manager","role":"Recurring jobs and schedules","status":"idle"},{"current_task":null,"id":"admin-assistant","name":"Admin Assistant","role":"Reminders and follow-ups","status":"idle"}],"id":"operations","name":"Operations"},{"agents":[{"current_task":null,"id":"obsidian-librarian","name":"Obsidian Librarian","role":"Notes and second-brain structure","status":"idle"},{"current_task":null,"id":"memory-curator","name":"Memory Curator","role":"Durable memories, stale context cleanup","status":"idle"},{"current_task":null,"id":"daily-log","name":"Daily Log Agent","role":"Daily summaries and check-ins","status":"idle"}],"id":"knowledge","name":"Knowledge"},{"agents":[{"current_task":null,"id":"quick-researcher","name":"Quick Researcher","role":"Fast searches and summaries","status":"idle"},{"current_task":null,"id":"scraper","name":"Scraper Agent","role":"Page scraping and extraction","status":"idle"},{"current_task":null,"id":"source-validator","name":"Source Validator","role":"Source quality and fact checks","status":"idle"}],"id":"research","name":"Research"},{"agents":[{"current_task":"Building the company dashboard","id":"coding","name":"Coding Agent","role":"Implements repo and code changes","status":"working"},{"current_task":null,"id":"debugging","name":"Debugging Agent","role":"Investigates failures systematically","status":"idle"},{"current_task":"Pushing company structure to Cosmos repo","id":"github-manager","name":"GitHub Manager","role":"Issues, branches, PRs, repo hygiene","status":"working"},{"current_task":null,"id":"supabase","name":"Supabase Agent","role":"Schema, migrations, backend queries","status":"idle"}],"id":"engineering","name":"Engineering"},{"agents":[{"current_task":null,"id":"app-architect","name":"App Architect","role":"App specs: screens, data model, stack","status":"idle"},{"current_task":null,"id":"ui-designer","name":"UI Designer","role":"Mockups, design system, app icon","status":"idle"},{"current_task":null,"id":"ios-builder","name":"iOS Builder","role":"Swift/SwiftUI builds, saved locally","status":"idle"},{"current_task":"Building the company dashboard","id":"web-builder","name":"Web Builder","role":"Web apps, frontend and backend","status":"working"},{"current_task":null,"id":"qa-tester","name":"QA Tester","role":"Tests builds, verifies fixes","status":"idle"},{"current_task":null,"id":"release-manager","name":"Release Manager","role":"TestFlight and App Store releases","status":"idle"}],"id":"app-studio","name":"App Studio"},{"agents":[{"current_task":null,"id":"habit-routine","name":"Habit/Routine Agent","role":"Routines, check-ins, habit logs","status":"idle"},{"current_task":null,"id":"reflection","name":"Reflection Agent","role":"Journaling prompts and insights","status":"idle"},{"current_task":null,"id":"goal-tracker","name":"Goal Tracker","role":"Life and project goals","status":"idle"}],"id":"life-os","name":"Life OS"},{"agents":[{"current_task":null,"id":"usage-tracker","name":"Usage Tracker","role":"Model cost and token usage","status":"idle"},{"current_task":null,"id":"cost-optimizer","name":"Cost Optimizer","role":"Cheaper routing recommendations","status":"idle"},{"current_task":null,"id":"failure-monitor","name":"Failure Monitor","role":"Failed jobs, retries, blocked tasks","status":"idle"}],"id":"observability","name":"Observability"}],"notifications":[{"at":"2026-09-28T13:10:00-04:00","kind":"info","text":"Company dashboard build is in progress. This page updates automatically as work happens."},{"at":"2026-09-28T12:55:00-04:00","kind":"info","text":"New department: App Studio is now staffed and ready for iOS and web app work."}],"tasks":[{"assignee":"Web Builder","chain":["CEO","App Studio","Web Builder"],"department":"App Studio","id":"task-001","progress":60,"source":"chat","status":"in_progress","title":"Build the company dashboard","updated_at":"2026-09-28T13:10:00-04:00"},{"assignee":"GitHub Manager","chain":["CEO","Engineering","GitHub Manager"],"department":"Engineering","id":"task-002","progress":30,"source":"chat","status":"in_progress","title":"Push company structure to Cosmos repo","updated_at":"2026-09-28T13:10:00-04:00"}],"updated_at":"2026-09-28T13:10:00-04:00"}
+{
+ "activity": [
+  {
+   "at": "2026-09-28T13:15:00-04:00",
+   "text": "Company dashboard went live at abhiramav.github.io/Cosmos \u2014 bookmark it in Safari."
+  },
+  {
+   "at": "2026-09-28T13:15:00-04:00",
+   "text": "Cosmos repo updated: agents/ structure, dashboard source, Pages deploy workflow."
+  },
+  {
+   "at": "2026-09-28T13:10:00-04:00",
+   "text": "CEO started the company dashboard build (Web Builder, App Studio)."
+  },
+  {
+   "at": "2026-09-28T12:55:00-04:00",
+   "text": "App Studio department founded with 6 agents: App Architect, UI Designer, iOS Builder, Web Builder, QA Tester, Release Manager."
+  },
+  {
+   "at": "2026-09-28T12:50:00-04:00",
+   "text": "Company policy set: Ram's tap required for spending money, publishing apps, deleting data."
+  },
+  {
+   "at": "2026-09-28T12:47:00-04:00",
+   "text": "Company structure created: 6 departments, 19 staff agents with cards."
+  },
+  {
+   "at": "2026-09-28T12:45:00-04:00",
+   "text": "GitHub connected as AbhiramAv; Cosmos repo identified as source of truth."
+  }
+ ],
+ "ceo": {
+  "name": "Cosmos CEO",
+  "status": "working",
+  "current_task": "Monitoring company dashboard and task inbox"
+ },
+ "departments": [
+  {
+   "agents": [
+    {
+     "current_task": null,
+     "id": "task-manager",
+     "name": "Task Manager",
+     "role": "Creates, updates and tracks tasks",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "cron-manager",
+     "name": "Cron Manager",
+     "role": "Recurring jobs and schedules",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "admin-assistant",
+     "name": "Admin Assistant",
+     "role": "Reminders and follow-ups",
+     "status": "idle"
+    }
+   ],
+   "id": "operations",
+   "name": "Operations"
+  },
+  {
+   "agents": [
+    {
+     "current_task": null,
+     "id": "obsidian-librarian",
+     "name": "Obsidian Librarian",
+     "role": "Notes and second-brain structure",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "memory-curator",
+     "name": "Memory Curator",
+     "role": "Durable memories, stale context cleanup",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "daily-log",
+     "name": "Daily Log Agent",
+     "role": "Daily summaries and check-ins",
+     "status": "idle"
+    }
+   ],
+   "id": "knowledge",
+   "name": "Knowledge"
+  },
+  {
+   "agents": [
+    {
+     "current_task": null,
+     "id": "quick-researcher",
+     "name": "Quick Researcher",
+     "role": "Fast searches and summaries",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "scraper",
+     "name": "Scraper Agent",
+     "role": "Page scraping and extraction",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "source-validator",
+     "name": "Source Validator",
+     "role": "Source quality and fact checks",
+     "status": "idle"
+    }
+   ],
+   "id": "research",
+   "name": "Research"
+  },
+  {
+   "agents": [
+    {
+     "current_task": null,
+     "id": "coding",
+     "name": "Coding Agent",
+     "role": "Implements repo and code changes",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "debugging",
+     "name": "Debugging Agent",
+     "role": "Investigates failures systematically",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "github-manager",
+     "name": "GitHub Manager",
+     "role": "Issues, branches, PRs, repo hygiene",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "supabase",
+     "name": "Supabase Agent",
+     "role": "Schema, migrations, backend queries",
+     "status": "idle"
+    }
+   ],
+   "id": "engineering",
+   "name": "Engineering"
+  },
+  {
+   "agents": [
+    {
+     "current_task": null,
+     "id": "app-architect",
+     "name": "App Architect",
+     "role": "App specs: screens, data model, stack",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "ui-designer",
+     "name": "UI Designer",
+     "role": "Mockups, design system, app icon",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "ios-builder",
+     "name": "iOS Builder",
+     "role": "Swift/SwiftUI builds, saved locally",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "web-builder",
+     "name": "Web Builder",
+     "role": "Web apps, frontend and backend",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "qa-tester",
+     "name": "QA Tester",
+     "role": "Tests builds, verifies fixes",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "release-manager",
+     "name": "Release Manager",
+     "role": "TestFlight and App Store releases",
+     "status": "idle"
+    }
+   ],
+   "id": "app-studio",
+   "name": "App Studio"
+  },
+  {
+   "agents": [
+    {
+     "current_task": null,
+     "id": "habit-routine",
+     "name": "Habit/Routine Agent",
+     "role": "Routines, check-ins, habit logs",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "reflection",
+     "name": "Reflection Agent",
+     "role": "Journaling prompts and insights",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "goal-tracker",
+     "name": "Goal Tracker",
+     "role": "Life and project goals",
+     "status": "idle"
+    }
+   ],
+   "id": "life-os",
+   "name": "Life OS"
+  },
+  {
+   "agents": [
+    {
+     "current_task": null,
+     "id": "usage-tracker",
+     "name": "Usage Tracker",
+     "role": "Model cost and token usage",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "cost-optimizer",
+     "name": "Cost Optimizer",
+     "role": "Cheaper routing recommendations",
+     "status": "idle"
+    },
+    {
+     "current_task": null,
+     "id": "failure-monitor",
+     "name": "Failure Monitor",
+     "role": "Failed jobs, retries, blocked tasks",
+     "status": "idle"
+    }
+   ],
+   "id": "observability",
+   "name": "Observability"
+  }
+ ],
+ "notifications": [
+  {
+   "at": "2026-09-28T13:15:00-04:00",
+   "kind": "done",
+   "text": "Company dashboard is live. Open it, add to your home screen, and use + New task to delegate work."
+  },
+  {
+   "at": "2026-09-28T13:15:00-04:00",
+   "kind": "info",
+   "text": "Task inbox watcher will pick up new website tasks every 15 minutes once the GitHub connection is restored."
+  },
+  {
+   "at": "2026-09-28T13:10:00-04:00",
+   "kind": "info",
+   "text": "Company dashboard build is in progress. This page updates automatically as work happens."
+  },
+  {
+   "at": "2026-09-28T12:55:00-04:00",
+   "kind": "info",
+   "text": "New department: App Studio is now staffed and ready for iOS and web app work."
+  }
+ ],
+ "tasks": [
+  {
+   "assignee": "Web Builder",
+   "chain": [
+    "CEO",
+    "App Studio",
+    "Web Builder"
+   ],
+   "department": "App Studio",
+   "id": "task-001",
+   "progress": 100,
+   "source": "chat",
+   "status": "done",
+   "title": "Build the company dashboard",
+   "updated_at": "2026-09-28T13:15:00-04:00"
+  },
+  {
+   "assignee": "GitHub Manager",
+   "chain": [
+    "CEO",
+    "Engineering",
+    "GitHub Manager"
+   ],
+   "department": "Engineering",
+   "id": "task-002",
+   "progress": 100,
+   "source": "chat",
+   "status": "done",
+   "title": "Push company structure to Cosmos repo",
+   "updated_at": "2026-09-28T13:15:00-04:00"
+  }
+ ],
+ "updated_at": "2026-09-28T13:15:00-04:00"
+}
