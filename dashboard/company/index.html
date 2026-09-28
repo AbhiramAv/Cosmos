@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0b0e14" />
+  <title>Cosmos HQ — Company Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">C</div>
+      <div>
+        <h1>Cosmos HQ</h1>
+        <p class="sub">Ram's agent company · live dashboard</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span id="updated" class="updated">…</span>
+      <a id="new-task" class="btn-primary" target="_blank" rel="noopener" href="#">＋ New task</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="exec-floor">
+      <h2>Executive</h2>
+      <div id="ceo" class="ceo-card"></div>
+    </section>
+
+    <section>
+      <h2>Departments <span class="hint">— the office floors</span></h2>
+      <div id="departments"></div>
+    </section>
+
+    <section>
+      <h2>Tasks <span class="hint">— live progress</span></h2>
+      <div id="kanban" class="kanban"></div>
+    </section>
+
+    <section class="two-col">
+      <div>
+        <h2>Activity</h2>
+        <ul id="activity" class="feed"></ul>
+      </div>
+      <div>
+        <h2>Notifications</h2>
+        <ul id="notifications" class="feed"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Data is kept fresh by the Cosmos CEO agent. Assign work with <b>＋ New task</b> — it opens a task request the CEO picks up and routes to the right agents.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
