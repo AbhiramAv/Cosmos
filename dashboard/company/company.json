@@ -2,7 +2,7 @@
  "activity": [
   {
    "at": "2026-09-28T13:15:00-04:00",
-   "text": "Company dashboard went live at abhiramav.github.io/Cosmos \u2014 bookmark it in Safari."
+   "text": "Company dashboard went live at abhiramav.github.io/Cosmos — bookmark it in Safari."
   },
   {
    "at": "2026-09-28T13:15:00-04:00",
@@ -255,6 +255,11 @@
  ],
  "notifications": [
   {
+   "at": "2026-09-29T18:47:00-04:00",
+   "kind": "info",
+   "text": "Task inbox watcher running every 15 minutes; inbox empty, GitHub credential healthy."
+  },
+  {
    "at": "2026-09-28T13:15:00-04:00",
    "kind": "done",
    "text": "Company dashboard is live. Open it, add to your home screen, and use + New task to delegate work."
@@ -262,7 +267,7 @@
   {
    "at": "2026-09-28T13:15:00-04:00",
    "kind": "info",
-   "text": "Task inbox watcher will pick up new website tasks every 15 minutes once the GitHub connection is restored."
+   "text": "Task inbox watcher is active: picks up new 'task' issues every 15 minutes (GitHub connection restored 2026-09-28)."
   },
   {
    "at": "2026-09-28T13:10:00-04:00",
@@ -307,5 +312,5 @@
    "updated_at": "2026-09-28T13:15:00-04:00"
   }
  ],
- "updated_at": "2026-09-28T13:15:00-04:00"
+ "updated_at": "2026-09-29T18:47:00-04:00"
 }
